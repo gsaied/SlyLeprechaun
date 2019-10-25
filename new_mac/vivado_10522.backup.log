@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Oct 19 22:31:24 2019
+# Process ID: 10522
+# Current directory: /home/gsaied/Desktop/verilog_rtl/new_mac
+# Command line: vivado -mode tcl -source synth.tcl
+# Log file: /home/gsaied/Desktop/verilog_rtl/new_mac/vivado.log
+# Journal file: /home/gsaied/Desktop/verilog_rtl/new_mac/vivado.jou
+#-----------------------------------------------------------
+source synth.tcl
+# set dirt /home/gsaied/Desktop/verilog_rtl/new_mac
+# cd dirt
+couldn't change working directory to "dirt": no such file or directory
+    while executing
+"cd dirt"
+    (file "synth.tcl" line 2)
+vi synth.tcl 
+WARNING: [Common 17-259] Unknown Tcl command 'vi synth.tcl' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 19 22:31:52 2019...

@@ -1,0 +1,16 @@
+/*
+* THIS IS THE TOP MODULE OF CONV1 LAYER.
+* THIS LAYER SHOULD BE DEALING WITH IMAGE MAP AND EXTERNAL CONTROL.
+* OUTPUT OF THIS LAYER IS TO BE CONTROLLED BY INTERNAL CONTROL SIGNAL FIRED
+* WHEN THE CONVOLUTION ENDS
+* CREATED ON 19th OCT
+*/
+
+module conv1_master (
+	input rst,
+	input clk,
+	input start,
+	output conv_finished
+);
+reg [15:0] in_fm [(256*256*3)-1:0] ;
+endmodule

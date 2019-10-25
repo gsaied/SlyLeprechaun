@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Oct 19 22:31:54 2019
+# Process ID: 10571
+# Current directory: /home/gsaied/Desktop/verilog_rtl/new_mac
+# Command line: vivado -mode tcl -source synth.tcl
+# Log file: /home/gsaied/Desktop/verilog_rtl/new_mac/vivado.log
+# Journal file: /home/gsaied/Desktop/verilog_rtl/new_mac/vivado.jou
+#-----------------------------------------------------------
+source synth.tcl
+# set dirt /home/gsaied/Desktop/verilog_rtl/new_mac
+# cd $dirt
+# read_verilog  mac.v 
+# synth_design -top mac -rtl
+Command: synth_design -top mac -rtl
+Starting synth_design
+Using part: xc7vx485tffg1157-1
+ERROR: [Synth 8-2576] procedural assignment to a non-register mul_out is not permitted [/home/gsaied/Desktop/verilog_rtl/new_mac/mac.v:12]
+ERROR: [Synth 8-2576] procedural assignment to a non-register mul_out is not permitted [/home/gsaied/Desktop/verilog_rtl/new_mac/mac.v:14]
+INFO: [Synth 8-2350] module mac ignored due to previous errors [/home/gsaied/Desktop/verilog_rtl/new_mac/mac.v:1]
+Failed to read verilog '/home/gsaied/Desktop/verilog_rtl/new_mac/mac.v'
+1 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 19 22:32:20 2019...

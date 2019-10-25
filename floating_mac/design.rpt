@@ -1,0 +1,64 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Oct 23 10:24:08 2019
+| Host         : GCS running 64-bit Ubuntu 18.04.3 LTS
+| Command      : report_design_analysis -file /home/gsaied/Desktop/verilog_rtl/floating_mac/design.rpt
+| Design       : mac
+| Device       : xc7vx690t
+-------------------------------------------------------------------------------------------------------
+
+Report Design Analysis
+
+Table of Contents
+-----------------
+1. Setup Path Characteristics 1-1
+2. Logic Level Distribution
+
+1. Setup Path Characteristics 1-1
+---------------------------------
+
++---------------------------+----------------------------------------------------+
+|      Characteristics      |                       Path #1                      |
++---------------------------+----------------------------------------------------+
+| Requirement               |                                              0.000 |
+| Path Delay                |                                              4.367 |
+| Logic Delay               | 3.498(81%)                                         |
+| Net Delay                 | 0.869(19%)                                         |
+| Clock Skew                |                                              0.000 |
+| Slack                     |                                                inf |
+| Clock Relationship        | Safely Timed                                       |
+| Logic Levels              |                                                  7 |
+| Routes                    |                                                  0 |
+| Logical Path              | IBUF DSP48E1 LUT2 CARRY4 CARRY4 CARRY4 CARRY4 FDCE |
+| Start Point Clock         | input port clock                                   |
+| End Point Clock           |                                                    |
+| DSP Block                 | Comb                                               |
+| BRAM                      | None                                               |
+| IO Crossings              |                                                  0 |
+| Config Crossings          |                                                  0 |
+| SLR Crossings             |                                                  0 |
+| PBlocks                   |                                                  0 |
+| High Fanout               |                                                  2 |
+| Dont Touch                |                                                  0 |
+| Mark Debug                |                                                  0 |
+| Start Point Pin Primitive | pixel[9]                                           |
+| End Point Pin Primitive   | FDCE/D                                             |
+| Start Point Pin           | pixel[9]                                           |
+| End Point Pin             | mac_out_reg[13]/D                                  |
++---------------------------+----------------------------------------------------+
+* Bounding box calculated as % of dimensions for the target device (620, 1000)
+
+
+2. Logic Level Distribution
+---------------------------
+
++-----------------+-------------+----+---+---+---+---+
+| End Point Clock | Requirement |  2 | 4 | 5 | 6 | 7 |
++-----------------+-------------+----+---+---+---+---+
+| (none)          | 0.000ns     | 32 | 4 | 4 | 4 | 4 |
++-----------------+-------------+----+---+---+---+---+
+* Columns represent the logic levels per end point clock
+** Distribution is for top worst 48 paths
+
+
