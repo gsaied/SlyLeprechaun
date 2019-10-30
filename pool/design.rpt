@@ -1,11 +1,11 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Mon Oct  7 08:10:17 2019
+| Date         : Tue Oct 29 19:51:18 2019
 | Host         : GCS running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_design_analysis -file /home/gsaied/Desktop/verilog_rtl/pool/design.rpt
 | Design       : pool
-| Device       : xc7vx485t
+| Device       : xc7vx690t
 -----------------------------------------------------------------------------------------------
 
 Report Design Analysis
@@ -18,46 +18,46 @@ Table of Contents
 1. Setup Path Characteristics 1-1
 ---------------------------------
 
-+---------------------------+----------------------------------------------------------------------------------------------------+
-|      Characteristics      |                                               Path #1                                              |
-+---------------------------+----------------------------------------------------------------------------------------------------+
-| Requirement               |                                                                                              0.000 |
-| Path Delay                |                                                                                             10.345 |
-| Logic Delay               | 5.839(57%)                                                                                         |
-| Net Delay                 | 4.505(43%)                                                                                         |
-| Clock Skew                |                                                                                              0.000 |
-| Slack                     |                                                                                                inf |
-| Clock Relationship        | Safely Timed                                                                                       |
-| Logic Levels              |                                                                                                 17 |
-| Routes                    |                                                                                                  0 |
-| Logical Path              | IBUF LUT3 LUT4 CARRY4 CARRY4 LUT3 CARRY4 LUT3 LUT4 CARRY4 CARRY4 LUT3 LUT5 LUT6 CARRY4 CARRY4 OBUF |
-| Start Point Clock         | input port clock                                                                                   |
-| End Point Clock           |                                                                                                    |
-| DSP Block                 | None                                                                                               |
-| BRAM                      | None                                                                                               |
-| IO Crossings              |                                                                                                  0 |
-| Config Crossings          |                                                                                                  0 |
-| SLR Crossings             |                                                                                                  0 |
-| PBlocks                   |                                                                                                  0 |
-| High Fanout               |                                                                                                  3 |
-| Dont Touch                |                                                                                                  0 |
-| Mark Debug                |                                                                                                  0 |
-| Start Point Pin Primitive | in41[2]                                                                                            |
-| End Point Pin Primitive   | pool_out[7]                                                                                        |
-| Start Point Pin           | in41[2]                                                                                            |
-| End Point Pin             | pool_out[7]                                                                                        |
-+---------------------------+----------------------------------------------------------------------------------------------------+
-* Bounding box calculated as % of dimensions for the target device (628, 700)
++---------------------------+---------------------------------------------------------------------------------------------+
+|      Characteristics      |                                           Path #1                                           |
++---------------------------+---------------------------------------------------------------------------------------------+
+| Requirement               |                                                                                       0.000 |
+| Path Delay                |                                                                                       7.875 |
+| Logic Delay               | 4.384(56%)                                                                                  |
+| Net Delay                 | 3.491(44%)                                                                                  |
+| Clock Skew                |                                                                                       0.000 |
+| Slack                     |                                                                                         inf |
+| Clock Relationship        | Safely Timed                                                                                |
+| Logic Levels              |                                                                                          16 |
+| Routes                    |                                                                                           0 |
+| Logical Path              | IBUF LUT3 LUT4 CARRY4 LUT3 LUT4 CARRY4 CARRY4 LUT3 LUT4 CARRY4 CARRY4 LUT3 LUT5 CARRY4 OBUF |
+| Start Point Clock         | input port clock                                                                            |
+| End Point Clock           |                                                                                             |
+| DSP Block                 | None                                                                                        |
+| BRAM                      | None                                                                                        |
+| IO Crossings              |                                                                                           0 |
+| Config Crossings          |                                                                                           0 |
+| SLR Crossings             |                                                                                           0 |
+| PBlocks                   |                                                                                           0 |
+| High Fanout               |                                                                                           3 |
+| Dont Touch                |                                                                                           0 |
+| Mark Debug                |                                                                                           0 |
+| Start Point Pin Primitive | in41[3]                                                                                     |
+| End Point Pin Primitive   | pool_out[9]                                                                                 |
+| Start Point Pin           | in41[3]                                                                                     |
+| End Point Pin             | pool_out[9]                                                                                 |
++---------------------------+---------------------------------------------------------------------------------------------+
+* Bounding box calculated as % of dimensions for the target device (620, 1000)
 
 
 2. Logic Level Distribution
 ---------------------------
 
-+-----------------+-------------+----+----+----+----+
-| End Point Clock | Requirement | 14 | 15 | 16 | 17 |
-+-----------------+-------------+----+----+----+----+
-| (none)          | 0.000ns     |  1 |  4 |  1 |  4 |
-+-----------------+-------------+----+----+----+----+
++-----------------+-------------+----+----+----+----+----+
+| End Point Clock | Requirement | 13 | 14 | 15 | 16 | 17 |
++-----------------+-------------+----+----+----+----+----+
+| (none)          | 0.000ns     |  1 |  2 |  3 |  3 |  1 |
++-----------------+-------------+----+----+----+----+----+
 * Columns represent the logic levels per end point clock
 ** Distribution is for top worst 10 paths
 

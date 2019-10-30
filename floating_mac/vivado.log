@@ -2,108 +2,72 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Oct 23 15:37:03 2019
-# Process ID: 4095
+# Start of session at: Mon Oct 28 06:40:54 2019
+# Process ID: 26481
 # Current directory: /home/gsaied/Desktop/verilog_rtl/floating_mac
-# Command line: vivado
+# Command line: vivado -mode tcl -source synth.tcl
 # Log file: /home/gsaied/Desktop/verilog_rtl/floating_mac/vivado.log
 # Journal file: /home/gsaied/Desktop/verilog_rtl/floating_mac/vivado.jou
 #-----------------------------------------------------------
+source synth.tcl
+# set dirt /home/gsaied/Desktop/verilog_rtl/floating_mac
+# cd $dirt
+# read_verilog  mac.v 
+# synth_design -top mac -rtl
+Command: synth_design -top mac -rtl
+Starting synth_design
+Using part: xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1415.992 ; gain = 26.996 ; free physical = 1350 ; free virtual = 5639
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mac' [/home/gsaied/Desktop/verilog_rtl/floating_mac/mac.v:4]
+INFO: [Synth 8-6157] synthesizing module 'MUXF8_L' [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:27744]
+INFO: [Synth 8-6155] done synthesizing module 'MUXF8_L' (1#1) [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:27744]
+WARNING: [Synth 8-3848] Net I0 in module/entity mac does not have driver. [/home/gsaied/Desktop/verilog_rtl/floating_mac/mac.v:26]
+WARNING: [Synth 8-3848] Net I1 in module/entity mac does not have driver. [/home/gsaied/Desktop/verilog_rtl/floating_mac/mac.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mac' (2#1) [/home/gsaied/Desktop/verilog_rtl/floating_mac/mac.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1460.742 ; gain = 71.746 ; free physical = 1355 ; free virtual = 5652
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1460.742 ; gain = 71.746 ; free physical = 1354 ; free virtual = 5652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1460.742 ; gain = 71.746 ; free physical = 1354 ; free virtual = 5652
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1888.617 ; gain = 0.000 ; free physical = 960 ; free virtual = 5265
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  MUXF8_L => MUXF8: 1 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1888.617 ; gain = 499.621 ; free physical = 960 ; free virtual = 5265
+11 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1888.617 ; gain = 499.625 ; free physical = 960 ; free virtual = 5265
+# report_utilization -file $dirt/utiliziation.rpt
+ERROR: [Common 17-69] Command failed: report_utilization can be run only after synthesis has successfully completed.
+
 start_gui
-open_project /home/gsaied/Desktop/verilog_rtl/floating_mac/sdds/sdds.xpr
-Scanning sources...
-Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 6409.887 ; gain = 89.863 ; free physical = 853 ; free virtual = 4753
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/gsaied/Desktop/verilog_rtl/floating_mac/sdds/sdds.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'mac' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/gsaied/Desktop/verilog_rtl/floating_mac/sdds/sdds.sim/sim_1/behav/xsim'
-xvlog --incr --relax -prj mac_vlog.prj
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gsaied/Desktop/verilog_rtl/floating_mac/mac.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mac
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/gsaied/Desktop/verilog_rtl/floating_mac/sdds/sdds.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto d26ac5fdd5a14f798e0757f7eb622af8 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mac_behav xil_defaultlib.mac xil_defaultlib.glbl -log elaborate.log 
-Using 8 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4100] "/home/gsaied/Desktop/verilog_rtl/floating_mac/sdds/sdds.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.mac
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot mac_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/gsaied/Desktop/verilog_rtl/floating_mac/sdds/sdds.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "mac_behav -key {Behavioral:sim_1:Functional:mac} -tclbatch {mac.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2018.3
-Time resolution is 1 ps
-source mac.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'mac_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 6511.406 ; gain = 77.668 ; free physical = 953 ; free virtual = 4711
-add_force {/mac/rst} -radix hex {1 0ns}
-add_force {/mac/clk} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
-run 10 ns
-run 10 ns
-run 10 ns
-add_force {/mac/rst} -radix hex {0 0ns}
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-add_force {/mac/pixel} -radix hex {3cfb 0ns}
-add_force {/mac/kernel} -radix hex {3cfb 0ns}
-run 10 ns
-add_force {/mac/rst} -radix hex {1 0ns}
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-run 10 ns
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Oct 24 02:25:05 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 28 06:42:22 2019...

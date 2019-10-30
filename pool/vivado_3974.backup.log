@@ -1,0 +1,443 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Oct 29 18:51:05 2019
+# Process ID: 3974
+# Current directory: /home/gsaied/Desktop/verilog_rtl/pool
+# Command line: vivado -mode tcl -source synth.tcl
+# Log file: /home/gsaied/Desktop/verilog_rtl/pool/vivado.log
+# Journal file: /home/gsaied/Desktop/verilog_rtl/pool/vivado.jou
+#-----------------------------------------------------------
+source synth.tcl
+# set dirt /home/gsaied/Desktop/verilog_rtl/pool
+# cd /
+# read_verilog [ glob ./home/gsaied/Desktop/verilog_rtl/pool/*.v ] 
+# synth_design -top pool -part xc7vx690t
+Command: synth_design -top pool -part xc7vx690t
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3980 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1425.730 ; gain = 65.000 ; free physical = 4908 ; free virtual = 8751
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pool' [/home/gsaied/Desktop/verilog_rtl/pool/pool.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'pool' (1#1) [/home/gsaied/Desktop/verilog_rtl/pool/pool.v:7]
+WARNING: [Synth 8-3331] design pool has unconnected port pool_en
+WARNING: [Synth 8-3331] design pool has unconnected port in2[15]
+WARNING: [Synth 8-3331] design pool has unconnected port in2[14]
+WARNING: [Synth 8-3331] design pool has unconnected port in2[13]
+WARNING: [Synth 8-3331] design pool has unconnected port in2[12]
+WARNING: [Synth 8-3331] design pool has unconnected port in2[11]
+WARNING: [Synth 8-3331] design pool has unconnected port in2[10]
+WARNING: [Synth 8-3331] design pool has unconnected port in2[9]
+WARNING: [Synth 8-3331] design pool has unconnected port in2[8]
+WARNING: [Synth 8-3331] design pool has unconnected port in2[7]
+WARNING: [Synth 8-3331] design pool has unconnected port in2[6]
+WARNING: [Synth 8-3331] design pool has unconnected port in2[5]
+WARNING: [Synth 8-3331] design pool has unconnected port in2[4]
+WARNING: [Synth 8-3331] design pool has unconnected port in2[3]
+WARNING: [Synth 8-3331] design pool has unconnected port in2[2]
+WARNING: [Synth 8-3331] design pool has unconnected port in2[1]
+WARNING: [Synth 8-3331] design pool has unconnected port in2[0]
+WARNING: [Synth 8-3331] design pool has unconnected port in3[15]
+WARNING: [Synth 8-3331] design pool has unconnected port in3[14]
+WARNING: [Synth 8-3331] design pool has unconnected port in3[13]
+WARNING: [Synth 8-3331] design pool has unconnected port in3[12]
+WARNING: [Synth 8-3331] design pool has unconnected port in3[11]
+WARNING: [Synth 8-3331] design pool has unconnected port in3[10]
+WARNING: [Synth 8-3331] design pool has unconnected port in3[9]
+WARNING: [Synth 8-3331] design pool has unconnected port in3[8]
+WARNING: [Synth 8-3331] design pool has unconnected port in3[7]
+WARNING: [Synth 8-3331] design pool has unconnected port in3[6]
+WARNING: [Synth 8-3331] design pool has unconnected port in3[5]
+WARNING: [Synth 8-3331] design pool has unconnected port in3[4]
+WARNING: [Synth 8-3331] design pool has unconnected port in3[3]
+WARNING: [Synth 8-3331] design pool has unconnected port in3[2]
+WARNING: [Synth 8-3331] design pool has unconnected port in3[1]
+WARNING: [Synth 8-3331] design pool has unconnected port in3[0]
+WARNING: [Synth 8-3331] design pool has unconnected port in4[15]
+WARNING: [Synth 8-3331] design pool has unconnected port in4[14]
+WARNING: [Synth 8-3331] design pool has unconnected port in4[13]
+WARNING: [Synth 8-3331] design pool has unconnected port in4[12]
+WARNING: [Synth 8-3331] design pool has unconnected port in4[11]
+WARNING: [Synth 8-3331] design pool has unconnected port in4[10]
+WARNING: [Synth 8-3331] design pool has unconnected port in4[9]
+WARNING: [Synth 8-3331] design pool has unconnected port in4[8]
+WARNING: [Synth 8-3331] design pool has unconnected port in4[7]
+WARNING: [Synth 8-3331] design pool has unconnected port in4[6]
+WARNING: [Synth 8-3331] design pool has unconnected port in4[5]
+WARNING: [Synth 8-3331] design pool has unconnected port in4[4]
+WARNING: [Synth 8-3331] design pool has unconnected port in4[3]
+WARNING: [Synth 8-3331] design pool has unconnected port in4[2]
+WARNING: [Synth 8-3331] design pool has unconnected port in4[1]
+WARNING: [Synth 8-3331] design pool has unconnected port in4[0]
+WARNING: [Synth 8-3331] design pool has unconnected port in5[15]
+WARNING: [Synth 8-3331] design pool has unconnected port in5[14]
+WARNING: [Synth 8-3331] design pool has unconnected port in5[13]
+WARNING: [Synth 8-3331] design pool has unconnected port in5[12]
+WARNING: [Synth 8-3331] design pool has unconnected port in5[11]
+WARNING: [Synth 8-3331] design pool has unconnected port in5[10]
+WARNING: [Synth 8-3331] design pool has unconnected port in5[9]
+WARNING: [Synth 8-3331] design pool has unconnected port in5[8]
+WARNING: [Synth 8-3331] design pool has unconnected port in5[7]
+WARNING: [Synth 8-3331] design pool has unconnected port in5[6]
+WARNING: [Synth 8-3331] design pool has unconnected port in5[5]
+WARNING: [Synth 8-3331] design pool has unconnected port in5[4]
+WARNING: [Synth 8-3331] design pool has unconnected port in5[3]
+WARNING: [Synth 8-3331] design pool has unconnected port in5[2]
+WARNING: [Synth 8-3331] design pool has unconnected port in5[1]
+WARNING: [Synth 8-3331] design pool has unconnected port in5[0]
+WARNING: [Synth 8-3331] design pool has unconnected port in6[15]
+WARNING: [Synth 8-3331] design pool has unconnected port in6[14]
+WARNING: [Synth 8-3331] design pool has unconnected port in6[13]
+WARNING: [Synth 8-3331] design pool has unconnected port in6[12]
+WARNING: [Synth 8-3331] design pool has unconnected port in6[11]
+WARNING: [Synth 8-3331] design pool has unconnected port in6[10]
+WARNING: [Synth 8-3331] design pool has unconnected port in6[9]
+WARNING: [Synth 8-3331] design pool has unconnected port in6[8]
+WARNING: [Synth 8-3331] design pool has unconnected port in6[7]
+WARNING: [Synth 8-3331] design pool has unconnected port in6[6]
+WARNING: [Synth 8-3331] design pool has unconnected port in6[5]
+WARNING: [Synth 8-3331] design pool has unconnected port in6[4]
+WARNING: [Synth 8-3331] design pool has unconnected port in6[3]
+WARNING: [Synth 8-3331] design pool has unconnected port in6[2]
+WARNING: [Synth 8-3331] design pool has unconnected port in6[1]
+WARNING: [Synth 8-3331] design pool has unconnected port in6[0]
+WARNING: [Synth 8-3331] design pool has unconnected port in7[15]
+WARNING: [Synth 8-3331] design pool has unconnected port in7[14]
+WARNING: [Synth 8-3331] design pool has unconnected port in7[13]
+WARNING: [Synth 8-3331] design pool has unconnected port in7[12]
+WARNING: [Synth 8-3331] design pool has unconnected port in7[11]
+WARNING: [Synth 8-3331] design pool has unconnected port in7[10]
+WARNING: [Synth 8-3331] design pool has unconnected port in7[9]
+WARNING: [Synth 8-3331] design pool has unconnected port in7[8]
+WARNING: [Synth 8-3331] design pool has unconnected port in7[7]
+WARNING: [Synth 8-3331] design pool has unconnected port in7[6]
+WARNING: [Synth 8-3331] design pool has unconnected port in7[5]
+WARNING: [Synth 8-3331] design pool has unconnected port in7[4]
+WARNING: [Synth 8-3331] design pool has unconnected port in7[3]
+WARNING: [Synth 8-3331] design pool has unconnected port in7[2]
+WARNING: [Synth 8-3331] design pool has unconnected port in7[1]
+WARNING: [Synth 8-3331] design pool has unconnected port in7[0]
+WARNING: [Synth 8-3331] design pool has unconnected port in8[15]
+WARNING: [Synth 8-3331] design pool has unconnected port in8[14]
+WARNING: [Synth 8-3331] design pool has unconnected port in8[13]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1470.480 ; gain = 109.750 ; free physical = 4920 ; free virtual = 8764
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1470.480 ; gain = 109.750 ; free physical = 4921 ; free virtual = 8765
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1157-3
+INFO: [Device 21-403] Loading part xc7vx690tffg1157-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1478.484 ; gain = 117.754 ; free physical = 4920 ; free virtual = 8764
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1486.492 ; gain = 125.762 ; free physical = 4911 ; free virtual = 8755
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pool 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design pool has port pool_out[15] driven by constant 0
+WARNING: [Synth 8-3917] design pool has port pool_out[14] driven by constant 0
+WARNING: [Synth 8-3917] design pool has port pool_out[13] driven by constant 0
+WARNING: [Synth 8-3917] design pool has port pool_out[12] driven by constant 0
+WARNING: [Synth 8-3917] design pool has port pool_out[11] driven by constant 0
+WARNING: [Synth 8-3917] design pool has port pool_out[10] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1767.812 ; gain = 407.082 ; free physical = 4585 ; free virtual = 8435
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1767.812 ; gain = 407.082 ; free physical = 4585 ; free virtual = 8435
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1767.812 ; gain = 407.082 ; free physical = 4584 ; free virtual = 8434
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1767.812 ; gain = 407.082 ; free physical = 4585 ; free virtual = 8435
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1767.812 ; gain = 407.082 ; free physical = 4585 ; free virtual = 8435
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1767.812 ; gain = 407.082 ; free physical = 4585 ; free virtual = 8435
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1767.812 ; gain = 407.082 ; free physical = 4585 ; free virtual = 8435
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1767.812 ; gain = 407.082 ; free physical = 4585 ; free virtual = 8435
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1767.812 ; gain = 407.082 ; free physical = 4585 ; free virtual = 8435
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     4|
+|2     |LUT2   |    16|
+|3     |IBUF   |    32|
+|4     |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    68|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1767.812 ; gain = 407.082 ; free physical = 4585 ; free virtual = 8435
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1992 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1767.812 ; gain = 407.082 ; free physical = 4587 ; free virtual = 8437
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1767.820 ; gain = 407.082 ; free physical = 4591 ; free virtual = 8441
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1868.445 ; gain = 0.000 ; free physical = 4507 ; free virtual = 8333
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+12 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1868.445 ; gain = 515.719 ; free physical = 4555 ; free virtual = 8389
+# opt_design
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx690t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1900.461 ; gain = 32.012 ; free physical = 4561 ; free virtual = 8388
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1e79cf52
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2469.766 ; gain = 569.305 ; free physical = 3982 ; free virtual = 7810
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1e79cf52
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2538.766 ; gain = 0.000 ; free physical = 3916 ; free virtual = 7752
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1e79cf52
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2538.766 ; gain = 0.000 ; free physical = 3916 ; free virtual = 7752
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 52b3ef8b
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2538.766 ; gain = 0.000 ; free physical = 3916 ; free virtual = 7752
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 52b3ef8b
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2538.766 ; gain = 0.000 ; free physical = 3916 ; free virtual = 7752
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 17ec8daad
+
+Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2538.766 ; gain = 0.000 ; free physical = 3915 ; free virtual = 7750
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 17ec8daad
+
+Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2538.766 ; gain = 0.000 ; free physical = 3915 ; free virtual = 7750
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2538.766 ; gain = 0.000 ; free physical = 3915 ; free virtual = 7750
+Ending Logic Optimization Task | Checksum: 17ec8daad
+
+Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2538.766 ; gain = 0.000 ; free physical = 3915 ; free virtual = 7750
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 17ec8daad
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2538.766 ; gain = 0.000 ; free physical = 3915 ; free virtual = 7750
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 17ec8daad
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2538.766 ; gain = 0.000 ; free physical = 3915 ; free virtual = 7750
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2538.766 ; gain = 0.000 ; free physical = 3915 ; free virtual = 7750
+Ending Netlist Obfuscation Task | Checksum: 17ec8daad
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2538.766 ; gain = 0.000 ; free physical = 3915 ; free virtual = 7750
+INFO: [Common 17-83] Releasing license: Implementation
+16 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2538.766 ; gain = 670.320 ; free physical = 3915 ; free virtual = 7750
+# report_utilization -file $dirt/utiliziation.rpt
+# report_timing_summary -file $dirt/timing.rpt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+# report_design_analysis -file $dirt/design.rpt
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 29 18:52:47 2019...

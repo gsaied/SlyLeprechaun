@@ -1,12 +1,12 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Mon Oct  7 08:10:17 2019
+| Date         : Tue Oct 29 19:51:17 2019
 | Host         : GCS running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_timing_summary -file /home/gsaied/Desktop/verilog_rtl/pool/timing.rpt
 | Design       : pool
-| Device       : 7vx485t-ffg1157
-| Speed File   : -1  PRODUCTION 1.12 2014-09-11
+| Device       : 7vx690t-ffg1157
+| Speed File   : -3  PRODUCTION 1.11 2014-09-11
 ----------------------------------------------------------------------------------------------
 
 Timing Summary Report

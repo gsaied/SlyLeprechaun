@@ -20,4 +20,11 @@ module mac (
 		else
 			mac_out<= {sign_bit,exponent,mantissa[19:10]} + mac_out ;
 	end
-endmodule
+	wire LO,IO,I1;
+   MUXF8_L MUXF8_L_inst (
+      .LO(LO),  // Output of MUX to local routing
+      .I0(I0),  // Input (tie to MUXF7 L/LO out)
+      .I1(I1),  // Input (tie to MUXF7 L/LO out)
+      .S(rst)     // Input select to MUX
+   );
+   endmodule

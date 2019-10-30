@@ -2,12 +2,14 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Oct 28 06:40:54 2019
-# Process ID: 26481
+# Start of session at: Mon Oct 28 06:38:35 2019
+# Process ID: 26254
 # Current directory: /home/gsaied/Desktop/verilog_rtl/floating_mac
-# Command line: vivado -mode tcl -source synth.tcl
+# Command line: vivado -mode tcl
 # Log file: /home/gsaied/Desktop/verilog_rtl/floating_mac/vivado.log
 # Journal file: /home/gsaied/Desktop/verilog_rtl/floating_mac/vivado.jou
 #-----------------------------------------------------------
-source synth.tcl
-start_gui
+cd ~/Desktop/verilog_rtl/floating_mac
+check_syntax mac.v 
+check_syntax -help
+source synth.tcl 
