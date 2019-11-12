@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/gsaied/Desktop/verilog_rtl/ram_3d/ram_3d.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_3d
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gsaied/Desktop/verilog_rtl/ram_3d/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

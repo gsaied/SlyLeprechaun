@@ -1,0 +1,26 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Mon Nov 11 16:09:56 2019
+| Host         : GCS running 64-bit Ubuntu 18.04.3 LTS
+| Command      : report_design_analysis -file /home/gsaied/Desktop/verilog_rtl/conv10/design.rpt
+| Design       : rom_array
+| Device       : xc7vx690t
+-------------------------------------------------------------------------------------------------
+
+Report Design Analysis
+
+Table of Contents
+-----------------
+1. Logic Level Distribution
+
+1. Logic Level Distribution
+---------------------------
+
++-----------------+-------------+
+| End Point Clock | Requirement |
++-----------------+-------------+
+* Columns represent the logic levels per end point clock
+** Distribution is for top worst 0 paths
+
+

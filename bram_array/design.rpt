@@ -1,0 +1,64 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Sun Nov 10 04:50:39 2019
+| Host         : GCS running 64-bit Ubuntu 18.04.3 LTS
+| Command      : report_design_analysis -file /home/gsaied/Desktop/verilog_rtl/bram_array/design.rpt
+| Design       : ram_3d
+| Device       : xc7vx690t
+-----------------------------------------------------------------------------------------------------
+
+Report Design Analysis
+
+Table of Contents
+-----------------
+1. Setup Path Characteristics 1-1
+2. Logic Level Distribution
+
+1. Setup Path Characteristics 1-1
+---------------------------------
+
++---------------------------+----------------------------------------+
+|      Characteristics      |                 Path #1                |
++---------------------------+----------------------------------------+
+| Requirement               |                                 10.000 |
+| Path Delay                |                                  3.794 |
+| Logic Delay               | 3.359(89%)                             |
+| Net Delay                 | 0.434(11%)                             |
+| Clock Skew                |                                 -1.657 |
+| Slack                     |                                 -1.486 |
+| Clock Relationship        | Safely Timed                           |
+| Logic Levels              |                                      1 |
+| Routes                    |                                      0 |
+| Logical Path              | RAMB18E1 OBUF                          |
+| Start Point Clock         | clk                                    |
+| End Point Clock           | clk                                    |
+| DSP Block                 | None                                   |
+| BRAM                      | No DO_REG                              |
+| IO Crossings              |                                      0 |
+| Config Crossings          |                                      0 |
+| SLR Crossings             |                                      0 |
+| PBlocks                   |                                      0 |
+| High Fanout               |                                      1 |
+| Dont Touch                |                                      0 |
+| Mark Debug                |                                      0 |
+| Start Point Pin Primitive | RAMB18E1/CLKARDCLK                     |
+| End Point Pin Primitive   | douta[0][0]                            |
+| Start Point Pin           | genblk2[0].ram3d_reg[0][797]/CLKARDCLK |
+| End Point Pin             | douta[0][0]                            |
++---------------------------+----------------------------------------+
+* Bounding box calculated as % of dimensions for the target device (620, 1000)
+
+
+2. Logic Level Distribution
+---------------------------
+
++-----------------+-------------+------+
+| End Point Clock | Requirement |   1  |
++-----------------+-------------+------+
+| clk             | 10.000ns    | 1000 |
++-----------------+-------------+------+
+* Columns represent the logic levels per end point clock
+** Distribution is for top worst 1000 paths
+
+
