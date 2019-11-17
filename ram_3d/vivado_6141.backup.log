@@ -1,0 +1,361 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Nov 16 02:38:04 2019
+# Process ID: 6141
+# Current directory: /home/gsaied/Desktop/verilog_rtl/ram_3d
+# Command line: vivado -mode tcl -source synth.tcl
+# Log file: /home/gsaied/Desktop/verilog_rtl/ram_3d/vivado.log
+# Journal file: /home/gsaied/Desktop/verilog_rtl/ram_3d/vivado.jou
+#-----------------------------------------------------------
+source synth.tcl
+# set dirt /home/gsaied/Desktop/verilog_rtl/ram_3d
+# cd $dirt
+# read_verilog -sv ram_3d.sv
+# create_fileset -constrset constr
+# add_files ram_3d.xdc
+# synth_design -top ram_3d -part xc7vx690t -constrset constr
+Command: synth_design -top ram_3d -part xc7vx690t -constrset constr
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6147 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1425.000 ; gain = 28.000 ; free physical = 1788 ; free virtual = 6698
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ram_3d' [/home/gsaied/Desktop/verilog_rtl/ram_3d/ram_3d.sv:1]
+	Parameter ram_num bound to: 3 - type: integer 
+	Parameter width bound to: 16 - type: integer 
+	Parameter address bound to: 12 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/ram_3d/ram_3d.sv:21]
+INFO: [Synth 8-5859] Recognized 3D RAM genblk1[0].ram3d_reg. This will most likely be implemented in Block/Distributed/Ultra RAMs.  [/home/gsaied/Desktop/verilog_rtl/ram_3d/ram_3d.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'ram_3d' (1#1) [/home/gsaied/Desktop/verilog_rtl/ram_3d/ram_3d.sv:1]
+WARNING: [Synth 8-3331] design ram_3d has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1617.172 ; gain = 220.172 ; free physical = 1826 ; free virtual = 6728
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1617.172 ; gain = 220.172 ; free physical = 1822 ; free virtual = 6732
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1617.172 ; gain = 220.172 ; free physical = 1822 ; free virtual = 6732
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx690tffg1157-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/gsaied/Desktop/verilog_rtl/ram_3d/ram_3d.xdc]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'clk' is not supported, ignoring it [/home/gsaied/Desktop/verilog_rtl/ram_3d/ram_3d.xdc:2]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'clk' is not supported, ignoring it [/home/gsaied/Desktop/verilog_rtl/ram_3d/ram_3d.xdc:3]
+Finished Parsing XDC File [/home/gsaied/Desktop/verilog_rtl/ram_3d/ram_3d.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/gsaied/Desktop/verilog_rtl/ram_3d/ram_3d.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ram_3d_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ram_3d_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1946.055 ; gain = 0.000 ; free physical = 1401 ; free virtual = 6303
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1946.055 ; gain = 0.000 ; free physical = 1401 ; free virtual = 6303
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1946.055 ; gain = 0.000 ; free physical = 1401 ; free virtual = 6303
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1946.055 ; gain = 0.000 ; free physical = 1401 ; free virtual = 6303
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1946.055 ; gain = 549.055 ; free physical = 1494 ; free virtual = 6388
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1157-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1946.055 ; gain = 549.055 ; free physical = 1494 ; free virtual = 6388
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1946.055 ; gain = 549.055 ; free physical = 1492 ; free virtual = 6388
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3971] The signal genblk2[0].ram3d_reg[0][3203] was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal genblk2[1].ram3d_reg[1][3203] was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal genblk2[2].ram3d_reg[2][3203] was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1946.055 ; gain = 549.055 ; free physical = 1469 ; free virtual = 6380
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 6     
++---RAMs : 
+	              64K Bit         RAMs := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ram_3d 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 6     
++---RAMs : 
+	              64K Bit         RAMs := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design ram_3d has unconnected port rst
+INFO: [Synth 8-3971] The signal genblk1[0].ram3d_reg[0][3203] was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal genblk1[1].ram3d_reg[1][3203] was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal genblk1[2].ram3d_reg[2][3203] was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1946.055 ; gain = 549.055 ; free physical = 1459 ; free virtual = 6372
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ram_3d      | genblk2[0].ram3d_reg[0][3203] | 4 K x 16(READ_FIRST)   | W | R | 4 K x 16(READ_FIRST)   | W | R | Port A and B     | 0      | 2      | 
+|ram_3d      | genblk2[1].ram3d_reg[1][3203] | 4 K x 16(READ_FIRST)   | W | R | 4 K x 16(READ_FIRST)   | W | R | Port A and B     | 0      | 2      | 
+|ram_3d      | genblk2[2].ram3d_reg[2][3203] | 4 K x 16(READ_FIRST)   | W | R | 4 K x 16(READ_FIRST)   | W | R | Port A and B     | 0      | 2      | 
++------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_0/genblk2[0].ram3d_reg[0][3203]_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/genblk2[0].ram3d_reg[0][3203]_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/genblk2[0].ram3d_reg[0][3203]_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/genblk2[0].ram3d_reg[0][3203]_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_1/genblk2[1].ram3d_reg[1][3203]_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_1/genblk2[1].ram3d_reg[1][3203]_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_1/genblk2[1].ram3d_reg[1][3203]_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_1/genblk2[1].ram3d_reg[1][3203]_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/genblk2[2].ram3d_reg[2][3203]_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/genblk2[2].ram3d_reg[2][3203]_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/genblk2[2].ram3d_reg[2][3203]_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/genblk2[2].ram3d_reg[2][3203]_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1946.055 ; gain = 549.055 ; free physical = 1320 ; free virtual = 6234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1946.055 ; gain = 549.055 ; free physical = 1320 ; free virtual = 6234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ram_3d      | genblk2[0].ram3d_reg[0][3203] | 4 K x 16(READ_FIRST)   | W | R | 4 K x 16(READ_FIRST)   | W | R | Port A and B     | 0      | 2      | 
+|ram_3d      | genblk2[1].ram3d_reg[1][3203] | 4 K x 16(READ_FIRST)   | W | R | 4 K x 16(READ_FIRST)   | W | R | Port A and B     | 0      | 2      | 
+|ram_3d      | genblk2[2].ram3d_reg[2][3203] | 4 K x 16(READ_FIRST)   | W | R | 4 K x 16(READ_FIRST)   | W | R | Port A and B     | 0      | 2      | 
++------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance genblk2[0].ram3d_reg[0][3203]_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance genblk2[0].ram3d_reg[0][3203]_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance genblk2[0].ram3d_reg[0][3203]_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance genblk2[0].ram3d_reg[0][3203]_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance genblk2[1].ram3d_reg[1][3203]_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance genblk2[1].ram3d_reg[1][3203]_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance genblk2[1].ram3d_reg[1][3203]_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance genblk2[1].ram3d_reg[1][3203]_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance genblk2[2].ram3d_reg[2][3203]_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance genblk2[2].ram3d_reg[2][3203]_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance genblk2[2].ram3d_reg[2][3203]_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance genblk2[2].ram3d_reg[2][3203]_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1954.062 ; gain = 557.062 ; free physical = 1319 ; free virtual = 6233
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1954.062 ; gain = 557.062 ; free physical = 1319 ; free virtual = 6233
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1954.062 ; gain = 557.062 ; free physical = 1319 ; free virtual = 6233
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1954.062 ; gain = 557.062 ; free physical = 1319 ; free virtual = 6233
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1954.062 ; gain = 557.062 ; free physical = 1319 ; free virtual = 6233
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1954.062 ; gain = 557.062 ; free physical = 1319 ; free virtual = 6233
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1954.062 ; gain = 557.062 ; free physical = 1319 ; free virtual = 6233
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |RAMB36E1 |     6|
+|3     |IBUF     |   181|
+|4     |OBUF     |    96|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   284|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1954.062 ; gain = 557.062 ; free physical = 1319 ; free virtual = 6233
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1954.062 ; gain = 228.180 ; free physical = 1375 ; free virtual = 6288
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1954.070 ; gain = 557.062 ; free physical = 1385 ; free virtual = 6299
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/gsaied/Desktop/verilog_rtl/ram_3d/ram_3d.xdc]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'clk' is not supported, ignoring it [/home/gsaied/Desktop/verilog_rtl/ram_3d/ram_3d.xdc:2]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'clk' is not supported, ignoring it [/home/gsaied/Desktop/verilog_rtl/ram_3d/ram_3d.xdc:3]
+Finished Parsing XDC File [/home/gsaied/Desktop/verilog_rtl/ram_3d/ram_3d.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1977.062 ; gain = 0.000 ; free physical = 1312 ; free virtual = 6209
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1977.062 ; gain = 588.066 ; free physical = 1352 ; free virtual = 6266
+# report_utilization -file $dirt/utiliziation.rpt
+# report_design_analysis -file $dirt/design.rpt
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'clk' is not supported, ignoring it [/home/gsaied/Desktop/verilog_rtl/ram_3d/ram_3d.xdc:2]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'clk' is not supported, ignoring it [/home/gsaied/Desktop/verilog_rtl/ram_3d/ram_3d.xdc:3]
+report_design_analysis: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2486.062 ; gain = 509.000 ; free physical = 827 ; free virtual = 5724
+# report_timing -file $dirt/timing.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 16 02:41:31 2019...

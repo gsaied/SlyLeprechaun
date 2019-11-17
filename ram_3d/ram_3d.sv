@@ -17,7 +17,7 @@ module ram_3d #(
 	output reg [width-1:0] douta  [0:ram_num-1],
 	output reg [width-1:0] doutb  [0:ram_num-1] 
 );
-   //(* rom_style="{block}" *)
+   (* ram_style="{distributed}" *)
 reg [width-1:0] ram3d [0:ram_num-1][0:2**address-1] ;
 genvar i ;
 generate 

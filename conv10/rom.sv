@@ -16,7 +16,7 @@ module rom (
    reg [ROM_WIDTH-1:0] ch1 [(2**ROM_ADDR_BITS)-1:0];
    (* rom_style="{distributed | block}" *)
    reg [ROM_WIDTH-1:0] ch2 [(2**ROM_ADDR_BITS)-1:0];
-   (* rom_style="{distributed | block}" *)
+   //(* rom_style="{distributed | block}" *)
    reg [ROM_WIDTH-1:0] ch3 [(2**ROM_ADDR_BITS)-1:0];
 
 
@@ -35,7 +35,7 @@ module rom (
          ch2_out <= ch2[address2];
 	 end
  end
-      always @(posedge clk) begin
+      always @(*) begin
 	      if (en) begin
          ch3_out <= ch3[address3];
 	 end

@@ -1,0 +1,437 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Nov 16 02:26:32 2019
+# Process ID: 5951
+# Current directory: /home/gsaied/Desktop/verilog_rtl/rom_comb
+# Command line: vivado -mode tcl -source synth.tcl
+# Log file: /home/gsaied/Desktop/verilog_rtl/rom_comb/vivado.log
+# Journal file: /home/gsaied/Desktop/verilog_rtl/rom_comb/vivado.jou
+#-----------------------------------------------------------
+source synth.tcl
+# set dirt /home/gsaied/Desktop/verilog_rtl/rom_comb
+# cd $dirt
+# read_verilog -sv [ glob *.sv ] 
+# create_fileset -constrset constr
+# add_files rom_comb.xdc
+# synth_design -top rom_comb -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none -constrset constr
+Command: synth_design -top rom_comb -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none -constrset constr
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5957 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1424.996 ; gain = 28.000 ; free physical = 1758 ; free virtual = 6591
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rom_comb' [/home/gsaied/Desktop/verilog_rtl/rom_comb/rom_comb.sv:2]
+	Parameter WIDTH bound to: 16 - type: integer 
+	Parameter NUM bound to: 100 - type: integer 
+	Parameter ADDR bound to: 10 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/rom_comb/rom_comb.sv:15]
+INFO: [Synth 8-3876] $readmem data file 'img.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/rom_comb/rom_comb.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'rom_comb' (1#1) [/home/gsaied/Desktop/verilog_rtl/rom_comb/rom_comb.sv:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1522.746 ; gain = 125.750 ; free physical = 1721 ; free virtual = 6554
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1522.746 ; gain = 125.750 ; free physical = 1729 ; free virtual = 6561
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1522.746 ; gain = 125.750 ; free physical = 1729 ; free virtual = 6561
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx690tffg1157-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/gsaied/Desktop/verilog_rtl/rom_comb/rom_comb.xdc]
+Finished Parsing XDC File [/home/gsaied/Desktop/verilog_rtl/rom_comb/rom_comb.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2018.355 ; gain = 0.000 ; free physical = 1297 ; free virtual = 6129
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2018.355 ; gain = 0.000 ; free physical = 1297 ; free virtual = 6129
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2018.355 ; gain = 0.000 ; free physical = 1296 ; free virtual = 6129
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2018.355 ; gain = 621.359 ; free physical = 1397 ; free virtual = 6214
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1157-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2018.355 ; gain = 621.359 ; free physical = 1397 ; free virtual = 6214
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2018.355 ; gain = 621.359 ; free physical = 1399 ; free virtual = 6216
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2018.355 ; gain = 621.359 ; free physical = 1357 ; free virtual = 6174
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:52 ; elapsed = 00:01:58 . Memory (MB): peak = 2043.387 ; gain = 646.391 ; free physical = 1142 ; free virtual = 6007
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
+|rom_comb    | p_0_out    | 1024x16       | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:59 ; elapsed = 00:02:05 . Memory (MB): peak = 2084.387 ; gain = 687.391 ; free physical = 1015 ; free virtual = 5890
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:05 ; elapsed = 00:02:11 . Memory (MB): peak = 2094.957 ; gain = 697.961 ; free physical = 1106 ; free virtual = 5972
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:23 ; elapsed = 00:02:30 . Memory (MB): peak = 2341.293 ; gain = 944.297 ; free physical = 1164 ; free virtual = 6038
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:24 ; elapsed = 00:02:31 . Memory (MB): peak = 2341.293 ; gain = 944.297 ; free physical = 1172 ; free virtual = 6038
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:24 ; elapsed = 00:02:31 . Memory (MB): peak = 2341.293 ; gain = 944.297 ; free physical = 1164 ; free virtual = 6039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:24 ; elapsed = 00:02:31 . Memory (MB): peak = 2341.293 ; gain = 944.297 ; free physical = 1165 ; free virtual = 6040
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT4  |   200|
+|2     |LUT5  |   200|
+|3     |LUT6  | 13000|
+|4     |MUXF7 |  5400|
+|5     |MUXF8 |  2700|
+|6     |IBUF  |  1000|
+|7     |OBUF  |  1600|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       | 24100|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:24 ; elapsed = 00:02:31 . Memory (MB): peak = 2341.293 ; gain = 944.297 ; free physical = 1165 ; free virtual = 6040
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:12 ; elapsed = 00:02:18 . Memory (MB): peak = 2341.293 ; gain = 448.688 ; free physical = 1218 ; free virtual = 6093
+Synthesis Optimization Complete : Time (s): cpu = 00:02:25 ; elapsed = 00:02:31 . Memory (MB): peak = 2341.301 ; gain = 944.297 ; free physical = 1229 ; free virtual = 6104
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8100 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'rom_comb' is not ideal for floorplanning, since the cellview 'rom_comb' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/gsaied/Desktop/verilog_rtl/rom_comb/rom_comb.xdc]
+Finished Parsing XDC File [/home/gsaied/Desktop/verilog_rtl/rom_comb/rom_comb.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2341.301 ; gain = 0.000 ; free physical = 1159 ; free virtual = 6025
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+15 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:29 ; elapsed = 00:02:35 . Memory (MB): peak = 2341.301 ; gain = 952.309 ; free physical = 1231 ; free virtual = 6097
+# report_design_analysis -file $dirt/design.rpt
+report_design_analysis: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 2601.098 ; gain = 259.797 ; free physical = 649 ; free virtual = 5524
+# report_utilization -file $dirt/utiliziation.rpt
+# report_timing -file $dirt/timing.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+vi utiliziation.rpt 
+WARNING: [Common 17-259] Unknown Tcl command 'vi utiliziation.rpt' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+cd ../ram_3d/
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+vi ram_3d.sv 
+WARNING: [Common 17-259] Unknown Tcl command 'vi ram_3d.sv' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+source synth.tcl 
+# set dirt /home/gsaied/Desktop/verilog_rtl/ram_3d
+# cd $dirt
+# read_verilog -sv ram_3d.sv
+# create_fileset -constrset constr
+ERROR: [Vivado 12-426] fileset with name 'constr' already exists
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 16 02:38:00 2019...

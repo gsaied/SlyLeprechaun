@@ -1,10 +1,10 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Mon Nov 11 16:09:56 2019
+| Date         : Wed Nov 13 06:11:50 2019
 | Host         : GCS running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_design_analysis -file /home/gsaied/Desktop/verilog_rtl/conv10/design.rpt
-| Design       : rom_array
+| Design       : rom2
 | Device       : xc7vx690t
 -------------------------------------------------------------------------------------------------
 
@@ -12,15 +12,53 @@ Report Design Analysis
 
 Table of Contents
 -----------------
-1. Logic Level Distribution
+1. Setup Path Characteristics 1-1
+2. Logic Level Distribution
 
-1. Logic Level Distribution
+1. Setup Path Characteristics 1-1
+---------------------------------
+
++---------------------------+----------------------------+
+|      Characteristics      |           Path #1          |
++---------------------------+----------------------------+
+| Requirement               |                      0.000 |
+| Path Delay                |                      3.906 |
+| Logic Delay               | 2.686(69%)                 |
+| Net Delay                 | 1.220(31%)                 |
+| Clock Skew                |                      0.000 |
+| Slack                     |                        inf |
+| Clock Relationship        | Safely Timed               |
+| Logic Levels              |                          5 |
+| Routes                    |                          0 |
+| Logical Path              | IBUF MUXF7 MUXF8 LUT6 OBUF |
+| Start Point Clock         | input port clock           |
+| End Point Clock           |                            |
+| DSP Block                 | None                       |
+| BRAM                      | None                       |
+| IO Crossings              |                          0 |
+| Config Crossings          |                          0 |
+| SLR Crossings             |                          0 |
+| PBlocks                   |                          0 |
+| High Fanout               |                         32 |
+| Dont Touch                |                          0 |
+| Mark Debug                |                          0 |
+| Start Point Pin Primitive | address[8]                 |
+| End Point Pin Primitive   | rom_out[0]                 |
+| Start Point Pin           | address[8]                 |
+| End Point Pin             | rom_out[0]                 |
++---------------------------+----------------------------+
+* Bounding box calculated as % of dimensions for the target device (620, 1000)
+
+
+2. Logic Level Distribution
 ---------------------------
 
-+-----------------+-------------+
-| End Point Clock | Requirement |
-+-----------------+-------------+
++-----------------+-------------+---+
+| End Point Clock | Requirement | 5 |
++-----------------+-------------+---+
+| (none)          | 0.000ns     | 4 |
++-----------------+-------------+---+
 * Columns represent the logic levels per end point clock
-** Distribution is for top worst 0 paths
+** Distribution is for top worst 4 paths
 
 

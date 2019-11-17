@@ -7,7 +7,7 @@ if (shape == 'COLS')
 	for ch = 1:3 
 		for j = 1:length(im1(:,1,:))
 			for i = 1:length(im1(1,:,:))
-				final_vector  = dec2bin((im1(j,i,ch)),16);
+				final_vector  = dec2bin((im1(j,i,ch)),32);
 				%disp(r) ;
 				fdisp(id,final_vector) ; 
 			end

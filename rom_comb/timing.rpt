@@ -1,0 +1,54 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Sat Nov 16 02:29:27 2019
+| Host         : GCS running 64-bit Ubuntu 18.04.3 LTS
+| Command      : report_timing -file /home/gsaied/Desktop/verilog_rtl/rom_comb/timing.rpt
+| Design       : rom_comb
+| Device       : 7vx690t-ffg1157
+| Speed File   : -3  PRODUCTION 1.11 2014-09-11
+------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.926ns  (required time - arrival time)
+  Source:                 address[0][4]
+                            (input port)
+  Destination:            rom_out[0][5]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            5.000ns  (MaxDelay Path 5.000ns)
+  Data Path Delay:        4.074ns  (logic 2.483ns (60.949%)  route 1.591ns (39.051%))
+  Logic Levels:           5  (IBUF=1 LUT6=3 OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 5.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  address[0][4] (IN)
+                         net (fo=0)                   0.000     0.000    address[0][4]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  rom_out[0][6]_INST_0_i_31/O
+                         net (fo=121, unplaced)       0.434     0.993    rom_out[0][6]_INST_0_i_31_n_0
+                         LUT6 (Prop_lut6_I5_O)        0.043     1.036 r  rom_out[0][6]_INST_0_i_13/O
+                         net (fo=2, unplaced)         0.388     1.424    rom_out[0][6]_INST_0_i_13_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.043     1.467 r  rom_out[0][5]_INST_0_i_4/O
+                         net (fo=1, unplaced)         0.334     1.801    rom_out[0][5]_INST_0_i_4_n_0
+                         LUT6 (Prop_lut6_I3_O)        0.043     1.844 r  rom_out[0][5]_INST_0_i_1/O
+                         net (fo=1, unplaced)         0.434     2.278    rom_out[0]_OBUF[5]
+                         OBUF (Prop_obuf_I_O)         1.795     4.074 r  rom_out[0][5]_INST_0/O
+                         net (fo=0)                   0.000     4.074    rom_out[0][5]
+                                                                      r  rom_out[0][5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                    5.000     5.000    
+                         clock pessimism              0.000     5.000    
+                         output delay                -0.000     5.000    
+  -------------------------------------------------------------------
+                         required time                          5.000    
+                         arrival time                          -4.074    
+  -------------------------------------------------------------------
+                         slack                                  0.926    
+
+
+
+
