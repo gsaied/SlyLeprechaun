@@ -1,7 +1,7 @@
 module ram_3d #(
-	parameter ram_num = 3,
+	parameter ram_num = 10,
 	parameter width= 16 ,
-	parameter address= 12
+	parameter address= 10
 )	
 (
 	input clk,

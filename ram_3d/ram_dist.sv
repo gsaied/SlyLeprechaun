@@ -1,4 +1,4 @@
-module bb #
+module ram_dist #
 (
    parameter RAM_WIDTH = 16 ,
    parameter RAM_ADDR_BITS = 10 

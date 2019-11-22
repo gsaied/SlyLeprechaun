@@ -1,10 +1,10 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Sat Nov 16 02:53:37 2019
+| Date         : Fri Nov 22 15:01:40 2019
 | Host         : GCS running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_design_analysis -file /home/gsaied/Desktop/verilog_rtl/ram_3d/design.rpt
-| Design       : bb
+| Design       : ram_3d
 | Device       : xc7vx690t
 -------------------------------------------------------------------------------------------------
 
@@ -18,47 +18,47 @@ Table of Contents
 1. Setup Path Characteristics 1-1
 ---------------------------------
 
-+---------------------------+------------------------------------+
-|      Characteristics      |               Path #1              |
-+---------------------------+------------------------------------+
-| Requirement               |                              0.000 |
-| Path Delay                |                              4.052 |
-| Logic Delay               | 2.677(67%)                         |
-| Net Delay                 | 1.375(33%)                         |
-| Clock Skew                |                              0.000 |
-| Slack                     |                                inf |
-| Clock Relationship        | Safely Timed                       |
-| Logic Levels              |                                  6 |
-| Routes                    |                                  0 |
-| Logical Path              | IBUF RAMD64E LUT6 MUXF7 MUXF8 OBUF |
-| Start Point Clock         | input port clock                   |
-| End Point Clock           |                                    |
-| DSP Block                 | None                               |
-| BRAM                      | None                               |
-| IO Crossings              |                                  0 |
-| Config Crossings          |                                  0 |
-| SLR Crossings             |                                  0 |
-| PBlocks                   |                                  0 |
-| High Fanout               |                                256 |
-| Dont Touch                |                                  0 |
-| Mark Debug                |                                  0 |
-| Start Point Pin Primitive | read_address[5]                    |
-| End Point Pin Primitive   | output_data[0]                     |
-| Start Point Pin           | read_address[5]                    |
-| End Point Pin             | output_data[0]                     |
-+---------------------------+------------------------------------+
++---------------------------+----------------------------------------+
+|      Characteristics      |                 Path #1                |
++---------------------------+----------------------------------------+
+| Requirement               |                                  0.000 |
+| Path Delay                |                                  3.794 |
+| Logic Delay               | 3.359(89%)                             |
+| Net Delay                 | 0.434(11%)                             |
+| Clock Skew                |                                  0.000 |
+| Slack                     |                                    inf |
+| Clock Relationship        | Safely Timed                           |
+| Logic Levels              |                                      2 |
+| Routes                    |                                      0 |
+| Logical Path              | RAMB18E1 OBUF                          |
+| Start Point Clock         |                                        |
+| End Point Clock           |                                        |
+| DSP Block                 | None                                   |
+| BRAM                      | No DO_REG                              |
+| IO Crossings              |                                      0 |
+| Config Crossings          |                                      0 |
+| SLR Crossings             |                                      0 |
+| PBlocks                   |                                      0 |
+| High Fanout               |                                     20 |
+| Dont Touch                |                                      0 |
+| Mark Debug                |                                      0 |
+| Start Point Pin Primitive | RAMB18E1/CLKARDCLK                     |
+| End Point Pin Primitive   | douta[0][0]                            |
+| Start Point Pin           | genblk2[0].ram3d_reg[0][797]/CLKARDCLK |
+| End Point Pin             | douta[0][0]                            |
++---------------------------+----------------------------------------+
 * Bounding box calculated as % of dimensions for the target device (620, 1000)
 
 
 2. Logic Level Distribution
 ---------------------------
 
-+-----------------+-------------+-----+-----+----+
-| End Point Clock | Requirement |  1  |  2  |  6 |
-+-----------------+-------------+-----+-----+----+
-| (none)          | 0.000ns     | 632 | 352 | 16 |
-+-----------------+-------------+-----+-----+----+
++-----------------+-------------+-----+-----+
+| End Point Clock | Requirement |  1  |  2  |
++-----------------+-------------+-----+-----+
+| (none)          | 0.000ns     | 580 | 320 |
++-----------------+-------------+-----+-----+
 * Columns represent the logic levels per end point clock
-** Distribution is for top worst 1000 paths
+** Distribution is for top worst 900 paths
 
 

@@ -1,10 +1,10 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Sat Nov 16 02:53:38 2019
+| Date         : Fri Nov 22 15:01:40 2019
 | Host         : GCS running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_timing -file /home/gsaied/Desktop/verilog_rtl/ram_3d/timing.rpt
-| Design       : bb
+| Design       : ram_3d
 | Device       : 7vx690t-ffg1157
 | Speed File   : -3  PRODUCTION 1.11 2014-09-11
 ----------------------------------------------------------------------------------------
@@ -12,33 +12,24 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 Timing Report
 
 Slack:                    inf
-  Source:                 read_address[5]
-                            (input port)
-  Destination:            output_data[0]
+  Source:                 genblk2[0].ram3d_reg[0][797]/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1)
+  Destination:            douta[0][0]
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        4.052ns  (logic 2.677ns (66.068%)  route 1.375ns (33.932%))
-  Logic Levels:           6  (IBUF=1 LUT6=1 MUXF7=1 MUXF8=1 OBUF=1 RAMD64E=1)
+  Data Path Delay:        3.794ns  (logic 3.359ns (88.549%)  route 0.434ns (11.451%))
+  Logic Levels:           2  (OBUF=1 RAMB18E1=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-                                                      0.000     0.000 r  read_address[5] (IN)
-                         net (fo=0)                   0.000     0.000    read_address[5]
-                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  read_address_IBUF[5]_inst/O
-                         net (fo=256, unplaced)       0.434     0.993    ram_dist_reg_448_511_0_2/ADDRA5
-                         RAMD64E (Prop_ramd64e_RADR5_O)
-                                                      0.043     1.036 r  ram_dist_reg_448_511_0_2/RAMA/O
-                         net (fo=1, unplaced)         0.506     1.542    ram_dist_reg_448_511_0_2_n_0
-                         LUT6 (Prop_lut6_I0_O)        0.043     1.585 r  output_data_OBUF[0]_inst_i_5/O
-                         net (fo=1, unplaced)         0.000     1.585    output_data_OBUF[0]_inst_i_5_n_0
-                         MUXF7 (Prop_muxf7_I1_O)      0.113     1.698 r  output_data_OBUF[0]_inst_i_2/O
-                         net (fo=1, unplaced)         0.000     1.698    output_data_OBUF[0]_inst_i_2_n_0
-                         MUXF8 (Prop_muxf8_I0_O)      0.044     1.742 r  output_data_OBUF[0]_inst_i_1/O
-                         net (fo=1, unplaced)         0.434     2.176    output_data_OBUF[0]
-                         OBUF (Prop_obuf_I_O)         1.875     4.052 r  output_data_OBUF[0]_inst/O
-                         net (fo=0)                   0.000     4.052    output_data[0]
-                                                                      r  output_data[0] (OUT)
+                         RAMB18E1                     0.000     0.000 r  genblk2[0].ram3d_reg[0][797]/CLKARDCLK
+                         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      1.564     1.564 r  genblk2[0].ram3d_reg[0][797]/DOADO[0]
+                         net (fo=1, unplaced)         0.434     1.998    douta[0]_OBUF[0]
+                         OBUF (Prop_obuf_I_O)         1.795     3.794 r  douta[0][0]_INST_0/O
+                         net (fo=0)                   0.000     3.794    douta[0][0]
+                                                                      r  douta[0][0] (OUT)
   -------------------------------------------------------------------    -------------------
 
 
