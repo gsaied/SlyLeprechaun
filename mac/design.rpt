@@ -1,12 +1,12 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Sat Oct 19 07:12:48 2019
+| Date         : Sat Nov 23 15:24:17 2019
 | Host         : GCS running 64-bit Ubuntu 18.04.3 LTS
-| Command      : report_design_analysis -file /home/gsaied/Desktop/verilog_rtl/conv/design.rpt
+| Command      : report_design_analysis -file /home/gsaied/Desktop/verilog_rtl/mac/design.rpt
 | Design       : mac
 | Device       : xc7vx690t
------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
 
 Report Design Analysis
 
@@ -18,47 +18,47 @@ Table of Contents
 1. Setup Path Characteristics 1-1
 ---------------------------------
 
-+---------------------------+-------------------+
-|      Characteristics      |      Path #1      |
-+---------------------------+-------------------+
-| Requirement               |             0.000 |
-| Path Delay                |             3.038 |
-| Logic Delay               | 2.169(72%)        |
-| Net Delay                 | 0.869(28%)        |
-| Clock Skew                |             0.000 |
-| Slack                     |               inf |
-| Clock Relationship        | Safely Timed      |
-| Logic Levels              |                 3 |
-| Routes                    |                 0 |
-| Logical Path              | DSP48E1 LUT2 OBUF |
-| Start Point Clock         |                   |
-| End Point Clock           |                   |
-| DSP Block                 | Seq               |
-| BRAM                      | None              |
-| IO Crossings              |                 0 |
-| Config Crossings          |                 0 |
-| SLR Crossings             |                 0 |
-| PBlocks                   |                 0 |
-| High Fanout               |                 2 |
-| Dont Touch                |                 0 |
-| Mark Debug                |                 0 |
-| Start Point Pin Primitive | DSP48E1/CLK       |
-| End Point Pin Primitive   | mac_out[11]       |
-| Start Point Pin           | mac_out0/CLK      |
-| End Point Pin             | mac_out[11]       |
-+---------------------------+-------------------+
++---------------------------+------------------------------------------------------------------------------------------------------+
+|      Characteristics      |                                                Path #1                                               |
++---------------------------+------------------------------------------------------------------------------------------------------+
+| Requirement               |                                                                                                0.000 |
+| Path Delay                |                                                                                                4.774 |
+| Logic Delay               | 2.647(56%)                                                                                           |
+| Net Delay                 | 2.126(44%)                                                                                           |
+| Clock Skew                |                                                                                                0.000 |
+| Slack                     |                                                                                                  inf |
+| Clock Relationship        | Safely Timed                                                                                         |
+| Logic Levels              |                                                                                                   16 |
+| Routes                    |                                                                                                    0 |
+| Logical Path              | IBUF LUT2 LUT6 CARRY4 CARRY4 LUT3 LUT4 CARRY4 CARRY4 LUT3 LUT4 CARRY4 CARRY4 LUT2 CARRY4 CARRY4 FDCE |
+| Start Point Clock         | input port clock                                                                                     |
+| End Point Clock           |                                                                                                      |
+| DSP Block                 | None                                                                                                 |
+| BRAM                      | None                                                                                                 |
+| IO Crossings              |                                                                                                    0 |
+| Config Crossings          |                                                                                                    0 |
+| SLR Crossings             |                                                                                                    0 |
+| PBlocks                   |                                                                                                    0 |
+| High Fanout               |                                                                                                   33 |
+| Dont Touch                |                                                                                                    0 |
+| Mark Debug                |                                                                                                    0 |
+| Start Point Pin Primitive | pixel_in[2]                                                                                          |
+| End Point Pin Primitive   | FDCE/D                                                                                               |
+| Start Point Pin           | pixel_in[2]                                                                                          |
+| End Point Pin             | mac_out_reg[29]/D                                                                                    |
++---------------------------+------------------------------------------------------------------------------------------------------+
 * Bounding box calculated as % of dimensions for the target device (620, 1000)
 
 
 2. Logic Level Distribution
 ---------------------------
 
-+-----------------+-------------+----+---+----+
-| End Point Clock | Requirement |  1 | 2 |  3 |
-+-----------------+-------------+----+---+----+
-| (none)          | 0.000ns     | 82 | 1 | 32 |
-+-----------------+-------------+----+---+----+
++-----------------+-------------+----+---+---+----+----+----+----+----+
+| End Point Clock | Requirement |  2 | 8 | 9 | 12 | 13 | 14 | 15 | 16 |
++-----------------+-------------+----+---+---+----+----+----+----+----+
+| (none)          | 0.000ns     | 64 | 5 | 5 |  2 |  4 |  5 |  7 |  4 |
++-----------------+-------------+----+---+---+----+----+----+----+----+
 * Columns represent the logic levels per end point clock
-** Distribution is for top worst 115 paths
+** Distribution is for top worst 96 paths
 
 

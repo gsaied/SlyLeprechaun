@@ -1,0 +1,336 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Nov 26 18:28:21 2019
+# Process ID: 7197
+# Current directory: /home/gsaied/Desktop/verilog_rtl/first_layer/project_1/project_1.runs/impl_1
+# Command line: vivado -log conv1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source conv1.tcl -notrace
+# Log file: /home/gsaied/Desktop/verilog_rtl/first_layer/project_1/project_1.runs/impl_1/conv1.vdi
+# Journal file: /home/gsaied/Desktop/verilog_rtl/first_layer/project_1/project_1.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source conv1.tcl -notrace
+Command: link_design -top conv1 -part xc7vx690tffg1930-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 460 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7vx690tffg1930-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1771.910 ; gain = 0.000 ; free physical = 1964 ; free virtual = 6036
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1771.910 ; gain = 380.914 ; free physical = 1964 ; free virtual = 6036
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx690t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1836.930 ; gain = 55.016 ; free physical = 1951 ; free virtual = 6023
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 12a5291a9
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 2496.234 ; gain = 659.305 ; free physical = 1358 ; free virtual = 5441
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 12a5291a9
+
+Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.26 . Memory (MB): peak = 2574.234 ; gain = 0.000 ; free physical = 1294 ; free virtual = 5377
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 925edd02
+
+Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.33 . Memory (MB): peak = 2574.234 ; gain = 0.000 ; free physical = 1294 ; free virtual = 5377
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: d9c887ea
+
+Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:00.53 . Memory (MB): peak = 2574.234 ; gain = 0.000 ; free physical = 1294 ; free virtual = 5376
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: d9c887ea
+
+Time (s): cpu = 00:00:00.70 ; elapsed = 00:00:00.65 . Memory (MB): peak = 2574.234 ; gain = 0.000 ; free physical = 1294 ; free virtual = 5376
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 14bcbeb78
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2574.234 ; gain = 0.000 ; free physical = 1293 ; free virtual = 5376
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 14bcbeb78
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2574.234 ; gain = 0.000 ; free physical = 1293 ; free virtual = 5376
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2574.234 ; gain = 0.000 ; free physical = 1293 ; free virtual = 5376
+Ending Logic Optimization Task | Checksum: 14bcbeb78
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2574.234 ; gain = 0.000 ; free physical = 1293 ; free virtual = 5376
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.000 | TNS=0.000 |
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 128 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 64 newly gated: 0 Total Ports: 256
+Number of Flops added for Enable Generation: 4
+
+Ending PowerOpt Patch Enables Task | Checksum: 136e68017
+
+Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:00.46 . Memory (MB): peak = 2907.348 ; gain = 0.000 ; free physical = 1252 ; free virtual = 5339
+Ending Power Optimization Task | Checksum: 136e68017
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2907.348 ; gain = 333.113 ; free physical = 1261 ; free virtual = 5348
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: dc8f28fc
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.79 . Memory (MB): peak = 2907.348 ; gain = 0.000 ; free physical = 1264 ; free virtual = 5351
+Ending Final Cleanup Task | Checksum: dc8f28fc
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2907.348 ; gain = 0.000 ; free physical = 1264 ; free virtual = 5351
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2907.348 ; gain = 0.000 ; free physical = 1264 ; free virtual = 5351
+Ending Netlist Obfuscation Task | Checksum: dc8f28fc
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2907.348 ; gain = 0.000 ; free physical = 1264 ; free virtual = 5351
+INFO: [Common 17-83] Releasing license: Implementation
+29 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:30 . Memory (MB): peak = 2907.348 ; gain = 1135.438 ; free physical = 1264 ; free virtual = 5351
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2907.348 ; gain = 0.000 ; free physical = 1264 ; free virtual = 5351
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/gsaied/Desktop/verilog_rtl/first_layer/project_1/project_1.runs/impl_1/conv1_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file conv1_drc_opted.rpt -pb conv1_drc_opted.pb -rpx conv1_drc_opted.rpx
+Command: report_drc -file conv1_drc_opted.rpt -pb conv1_drc_opted.pb -rpx conv1_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/gsaied/Desktop/verilog_rtl/first_layer/project_1/project_1.runs/impl_1/conv1_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx690t'
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_1/img_out_reg_0_0 has an input control pin u_1/img_out_reg_0_0/ADDRARDADDR[0] (net: u_1/img_out_reg_1_2_0[0]) which is driven by a register (img_rom_address_reg[0]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_1/img_out_reg_0_0 has an input control pin u_1/img_out_reg_0_0/ADDRARDADDR[10] (net: u_1/img_out_reg_1_2_0[10]) which is driven by a register (img_rom_address_reg[10]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_1/img_out_reg_0_0 has an input control pin u_1/img_out_reg_0_0/ADDRARDADDR[11] (net: u_1/img_out_reg_1_2_0[11]) which is driven by a register (img_rom_address_reg[11]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_1/img_out_reg_0_0 has an input control pin u_1/img_out_reg_0_0/ADDRARDADDR[12] (net: u_1/img_out_reg_1_2_0[12]) which is driven by a register (img_rom_address_reg[12]_rep__4) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_1/img_out_reg_0_0 has an input control pin u_1/img_out_reg_0_0/ADDRARDADDR[13] (net: u_1/img_out_reg_1_2_0[13]) which is driven by a register (img_rom_address_reg[13]_rep__3) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_1/img_out_reg_0_0 has an input control pin u_1/img_out_reg_0_0/ADDRARDADDR[14] (net: u_1/img_out_reg_1_2_0[14]) which is driven by a register (img_rom_address_reg[14]_rep__4) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_1/img_out_reg_0_0 has an input control pin u_1/img_out_reg_0_0/ADDRARDADDR[15] (net: u_1/ADDRARDADDR[15]) which is driven by a register (img_rom_address_reg[15]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_1/img_out_reg_0_0 has an input control pin u_1/img_out_reg_0_0/ADDRARDADDR[1] (net: u_1/img_out_reg_1_2_0[1]) which is driven by a register (img_rom_address_reg[1]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_1/img_out_reg_0_0 has an input control pin u_1/img_out_reg_0_0/ADDRARDADDR[2] (net: u_1/img_out_reg_1_2_0[2]) which is driven by a register (img_rom_address_reg[2]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_1/img_out_reg_0_0 has an input control pin u_1/img_out_reg_0_0/ADDRARDADDR[3] (net: u_1/img_out_reg_1_2_0[3]) which is driven by a register (img_rom_address_reg[3]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_1/img_out_reg_0_0 has an input control pin u_1/img_out_reg_0_0/ADDRARDADDR[4] (net: u_1/img_out_reg_1_2_0[4]) which is driven by a register (img_rom_address_reg[4]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_1/img_out_reg_0_0 has an input control pin u_1/img_out_reg_0_0/ADDRARDADDR[5] (net: u_1/img_out_reg_1_2_0[5]) which is driven by a register (img_rom_address_reg[5]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_1/img_out_reg_0_0 has an input control pin u_1/img_out_reg_0_0/ADDRARDADDR[6] (net: u_1/img_out_reg_1_2_0[6]) which is driven by a register (img_rom_address_reg[6]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_1/img_out_reg_0_0 has an input control pin u_1/img_out_reg_0_0/ADDRARDADDR[7] (net: u_1/img_out_reg_1_2_0[7]) which is driven by a register (img_rom_address_reg[7]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_1/img_out_reg_0_0 has an input control pin u_1/img_out_reg_0_0/ADDRARDADDR[8] (net: u_1/img_out_reg_1_2_0[8]) which is driven by a register (img_rom_address_reg[8]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_1/img_out_reg_0_0 has an input control pin u_1/img_out_reg_0_0/ADDRARDADDR[9] (net: u_1/img_out_reg_1_2_0[9]) which is driven by a register (img_rom_address_reg[9]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_1/img_out_reg_0_0 has an input control pin u_1/img_out_reg_0_0/ENARDEN (net: u_1/img_out_reg_0_0_ENARDEN_cooolgate_en_sig_29) which is driven by a register (img_rom_address_reg[15]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_1/img_out_reg_0_0 has an input control pin u_1/img_out_reg_0_0/ENARDEN (net: u_1/img_out_reg_0_0_ENARDEN_cooolgate_en_sig_29) which is driven by a register (img_rom_address_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_1/img_out_reg_0_0 has an input control pin u_1/img_out_reg_0_0/ENARDEN (net: u_1/img_out_reg_0_0_ENARDEN_cooolgate_en_sig_29) which is driven by a register (img_rom_address_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_1/img_out_reg_0_1 has an input control pin u_1/img_out_reg_0_1/ADDRARDADDR[15] (net: u_1/ADDRARDADDR[15]) which is driven by a register (img_rom_address_reg[15]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2907.348 ; gain = 0.000 ; free physical = 1216 ; free virtual = 5305
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 39a4559e
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2907.348 ; gain = 0.000 ; free physical = 1216 ; free virtual = 5305
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2907.348 ; gain = 0.000 ; free physical = 1216 ; free virtual = 5305
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-415] IO Placement failed due to overutilization. This design contains 1028 I/O ports
+ while the target  device: 7vx690t package: ffg1930, contains only 1000 available user I/O. The target device has 1000 usable I/O pins of which 0 are already occupied by user-locked I/Os.
+ To rectify this issue:
+ 1. Ensure you are targeting the correct device and package.  Select a larger device or different package if necessary.
+ 2. Check the top-level ports of the design to ensure the correct number of ports are specified.
+ 3. Consider design changes to reduce the number of I/Os necessary.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+ERROR: [Place 30-68] Instance clk_3_BUFG_inst (BUFG) is not placed
+ERROR: [Place 30-68] Instance clk_IBUF_BUFG_inst (BUFG) is not placed
+ERROR: [Place 30-68] Instance clk_IBUF_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance clk_rom_reg_n_0_BUFG_inst (BUFG) is not placed
+ERROR: [Place 30-68] Instance conv1_en_IBUF_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance conv1_end_OBUF_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[0][0]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[0][10]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[0][11]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[0][12]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[0][13]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[0][14]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[0][15]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[0][1]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[0][2]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[0][3]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[0][4]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[0][5]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[0][6]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[0][7]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[0][8]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[0][9]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[10][0]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[10][10]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[10][11]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[10][12]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[10][13]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[10][14]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[10][15]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[10][1]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[10][2]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[10][3]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[10][4]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[10][5]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[10][6]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[10][7]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[10][8]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[10][9]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[11][0]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[11][10]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[11][11]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[11][12]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[11][13]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[11][14]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[11][15]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[11][1]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[11][2]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[11][3]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[11][4]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[11][5]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[11][6]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[11][7]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[11][8]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[11][9]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[12][0]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[12][10]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[12][11]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[12][12]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[12][13]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[12][14]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[12][15]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[12][1]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[12][2]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[12][3]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[12][4]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[12][5]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[12][6]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[12][7]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[12][8]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[12][9]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[13][0]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[13][10]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[13][11]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[13][12]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[13][13]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[13][14]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[13][15]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[13][1]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[13][2]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[13][3]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[13][4]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[13][5]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[13][6]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[13][7]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[13][8]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[13][9]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[14][0]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[14][10]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[14][11]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[14][12]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[14][13]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[14][14]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[14][15]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[14][1]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[14][2]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[14][3]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[14][4]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[14][5]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[14][6]_INST_0 (OBUF) is not placed
+ERROR: [Place 30-68] Instance ofm[14][7]_INST_0 (OBUF) is not placed
+INFO: [Common 17-14] Message 'Place 30-68' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 6e394958
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 2907.348 ; gain = 0.000 ; free physical = 1192 ; free virtual = 5282
+Phase 1 Placer Initialization | Checksum: 6e394958
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 2907.348 ; gain = 0.000 ; free physical = 1192 ; free virtual = 5282
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 6e394958
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 2907.348 ; gain = 0.000 ; free physical = 1209 ; free virtual = 5299
+INFO: [Common 17-83] Releasing license: Implementation
+47 Infos, 23 Warnings, 0 Critical Warnings and 103 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 26 18:29:30 2019...

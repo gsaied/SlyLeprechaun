@@ -1,0 +1,98 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Nov 25 02:16:16 2019
+# Process ID: 27158
+# Current directory: /home/gsaied/Desktop/verilog_rtl/conv10
+# Command line: vivado -mode tcl -source synth.tcl
+# Log file: /home/gsaied/Desktop/verilog_rtl/conv10/vivado.log
+# Journal file: /home/gsaied/Desktop/verilog_rtl/conv10/vivado.jou
+#-----------------------------------------------------------
+source synth.tcl
+# set dirt /home/gsaied/Desktop/verilog_rtl/conv10
+# cd $dirt
+# read_verilog -sv [ glob *.sv ] 
+# synth_design -top rom -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none
+Command: synth_design -top rom -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 27168 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1441.645 ; gain = 91.000 ; free physical = 138 ; free virtual = 2950
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rom' [/home/gsaied/Desktop/verilog_rtl/conv10/rom.sv:3]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed | block}" *) [/home/gsaied/Desktop/verilog_rtl/conv10/rom.sv:16]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed | block}" *) [/home/gsaied/Desktop/verilog_rtl/conv10/rom.sv:18]
+INFO: [Synth 8-3876] $readmem data file 'weights.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/conv10/rom.sv:24]
+INFO: [Synth 8-3876] $readmem data file 'weights2.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/conv10/rom.sv:25]
+INFO: [Synth 8-3876] $readmem data file 'weights3.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/conv10/rom.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'rom' (1#1) [/home/gsaied/Desktop/verilog_rtl/conv10/rom.sv:3]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1598.316 ; gain = 247.672 ; free physical = 194 ; free virtual = 2841
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1598.316 ; gain = 247.672 ; free physical = 180 ; free virtual = 2844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1157-3
+INFO: [Device 21-403] Loading part xc7vx690tffg1157-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1606.320 ; gain = 255.676 ; free physical = 178 ; free virtual = 2843
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'ch2_out_reg' [/home/gsaied/Desktop/verilog_rtl/conv10/rom.sv:43]
+WARNING: [Synth 8-327] inferring latch for variable 'ch3_out_reg' [/home/gsaied/Desktop/verilog_rtl/conv10/rom.sv:42]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 1987.539 ; gain = 636.895 ; free physical = 215 ; free virtual = 2362
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |rom__GB0      |           1|     32816|
+|2     |rom__2_rom    |           1|     32752|
++------+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 

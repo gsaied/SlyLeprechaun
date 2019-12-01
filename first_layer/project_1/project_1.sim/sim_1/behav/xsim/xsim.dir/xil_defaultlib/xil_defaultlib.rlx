@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/gsaied/Desktop/verilog_rtl/first_layer/biasing_rom.sv,1574785121,systemVerilog,,/home/gsaied/Desktop/verilog_rtl/first_layer/img_rom.sv,,biasing_rom,,,,,,,,
+/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv,1574875957,systemVerilog,,,,conv1,,,,,,,,
+/home/gsaied/Desktop/verilog_rtl/first_layer/img_rom.sv,1574780324,systemVerilog,,/home/gsaied/Desktop/verilog_rtl/first_layer/mac.sv,,img_rom,,,,,,,,
+/home/gsaied/Desktop/verilog_rtl/first_layer/mac.sv,1574788925,systemVerilog,,/home/gsaied/Desktop/verilog_rtl/first_layer/rom.sv,,mac,,,,,,,,
+/home/gsaied/Desktop/verilog_rtl/first_layer/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+/home/gsaied/Desktop/verilog_rtl/first_layer/rom.sv,1574817500,systemVerilog,,/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv,,rom_array_layer_1,,,,,,,,

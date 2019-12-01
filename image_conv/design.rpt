@@ -1,10 +1,10 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Mon Nov 11 19:57:01 2019
-| Host         : GCS running 64-bit Ubuntu 18.04.3 LTS
+| Date         : Mon Nov 25 23:27:24 2019
+| Host         : GCS running 64-bit unknown
 | Command      : report_design_analysis -file /home/gsaied/Desktop/verilog_rtl/image_conv/design.rpt
-| Design       : rom
+| Design       : rom_wrapper
 | Device       : xc7vx690t
 -----------------------------------------------------------------------------------------------------
 
@@ -18,47 +18,47 @@ Table of Contents
 1. Setup Path Characteristics 1-1
 ---------------------------------
 
-+---------------------------+--------------------------+
-|      Characteristics      |          Path #1         |
-+---------------------------+--------------------------+
-| Requirement               |                    0.000 |
-| Path Delay                |                    3.794 |
-| Logic Delay               | 3.359(89%)               |
-| Net Delay                 | 0.434(11%)               |
-| Clock Skew                |                    0.000 |
-| Slack                     |                      inf |
-| Clock Relationship        | Safely Timed             |
-| Logic Levels              |                        2 |
-| Routes                    |                        0 |
-| Logical Path              | RAMB18E1 OBUF            |
-| Start Point Clock         |                          |
-| End Point Clock           |                          |
-| DSP Block                 | None                     |
-| BRAM                      | No DO_REG                |
-| IO Crossings              |                        0 |
-| Config Crossings          |                        0 |
-| SLR Crossings             |                        0 |
-| PBlocks                   |                        0 |
-| High Fanout               |                        3 |
-| Dont Touch                |                        0 |
-| Mark Debug                |                        0 |
-| Start Point Pin Primitive | RAMB18E1/CLKARDCLK       |
-| End Point Pin Primitive   | ch1_out[0][0]            |
-| Start Point Pin           | ch1_out_reg[0]/CLKARDCLK |
-| End Point Pin             | ch1_out[0][0]            |
-+---------------------------+--------------------------+
++---------------------------+---------------------+
+|      Characteristics      |       Path #1       |
++---------------------------+---------------------+
+| Requirement               |               0.000 |
+| Path Delay                |               2.534 |
+| Logic Delay               | 2.099(83%)          |
+| Net Delay                 | 0.434(17%)          |
+| Clock Skew                |               0.000 |
+| Slack                     |                 inf |
+| Clock Relationship        | Safely Timed        |
+| Logic Levels              |                   2 |
+| Routes                    |                   0 |
+| Logical Path              | FDRE OBUF           |
+| Start Point Clock         |                     |
+| End Point Clock           |                     |
+| DSP Block                 | None                |
+| BRAM                      | None                |
+| IO Crossings              |                   0 |
+| Config Crossings          |                   0 |
+| SLR Crossings             |                   0 |
+| PBlocks                   |                   0 |
+| High Fanout               |                 331 |
+| Dont Touch                |                   0 |
+| Mark Debug                |                   0 |
+| Start Point Pin Primitive | FDRE/C              |
+| End Point Pin Primitive   | rom_out[0][0]       |
+| Start Point Pin           | rom_out_reg[0][0]/C |
+| End Point Pin             | rom_out[0][0]       |
++---------------------------+---------------------+
 * Bounding box calculated as % of dimensions for the target device (620, 1000)
 
 
 2. Logic Level Distribution
 ---------------------------
 
-+-----------------+-------------+----+----+
-| End Point Clock | Requirement |  1 |  2 |
-+-----------------+-------------+----+----+
-| (none)          | 0.000ns     | 33 | 48 |
-+-----------------+-------------+----+----+
++-----------------+-------------+-----+
+| End Point Clock | Requirement |  2  |
++-----------------+-------------+-----+
+| (none)          | 0.000ns     | 662 |
++-----------------+-------------+-----+
 * Columns represent the logic levels per end point clock
-** Distribution is for top worst 81 paths
+** Distribution is for top worst 662 paths
 
 

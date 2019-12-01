@@ -1,175 +1,1889 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
-----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Sat Oct 19 07:12:47 2019
+| Date         : Sat Nov 23 15:24:16 2019
 | Host         : GCS running 64-bit Ubuntu 18.04.3 LTS
-| Command      : report_timing_summary -file /home/gsaied/Desktop/verilog_rtl/conv/timing.rpt
+| Command      : report_timing -max_paths 50 -file /home/gsaied/Desktop/verilog_rtl/mac/timing.rpt
 | Design       : mac
 | Device       : 7vx690t-ffg1157
 | Speed File   : -3  PRODUCTION 1.11 2014-09-11
-----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 
-Timing Summary Report
+Timing Report
 
-------------------------------------------------------------------------------------------------
-| Timer Settings
-| --------------
-------------------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 pixel_in[2]
+                            (input port)
+  Destination:            A1/mac_out_reg[29]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.774ns  (logic 2.647ns (55.457%)  route 2.126ns (44.543%))
+  Logic Levels:           16  (CARRY4=8 IBUF=1 LUT2=2 LUT3=2 LUT4=2 LUT6=1)
 
-  Enable Multi Corner Analysis               :  Yes
-  Enable Pessimism Removal                   :  Yes
-  Pessimism Removal Resolution               :  Nearest Common Node
-  Enable Input Delay Default Clock           :  No
-  Enable Preset / Clear Arcs                 :  No
-  Disable Flight Delays                      :  No
-  Ignore I/O Paths                           :  No
-  Timing Early Launch at Borrowing Latches   :  false
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  pixel_in[2] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[2]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 f  pixel_in_IBUF[2]_inst/O
+                         net (fo=33, unplaced)        0.434     0.993    M1/pixel_in_IBUF[2]
+                         LUT2 (Prop_lut2_I0_O)        0.050     1.043 r  M1/mac_out[23]_i_79/O
+                         net (fo=1, unplaced)         0.244     1.287    M1/mac_out[23]_i_79_n_0
+                         LUT6 (Prop_lut6_I3_O)        0.043     1.330 r  M1/mac_out[23]_i_59/O
+                         net (fo=1, unplaced)         0.000     1.330    M1/mac_out[23]_i_59_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.246     1.576 r  M1/mac_out_reg[23]_i_42/CO[3]
+                         net (fo=1, unplaced)         0.000     1.576    M1/mac_out_reg[23]_i_42_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.116     1.692 r  M1/mac_out_reg[27]_i_40/O[2]
+                         net (fo=2, unplaced)         0.388     2.080    M1/mac_out_reg[27]_i_40_n_5
+                         LUT3 (Prop_lut3_I0_O)        0.132     2.212 r  M1/mac_out[23]_i_18/O
+                         net (fo=2, unplaced)         0.280     2.492    M1/mac_out[23]_i_18_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.126     2.618 r  M1/mac_out[23]_i_22/O
+                         net (fo=1, unplaced)         0.000     2.618    M1/mac_out[23]_i_22_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     2.791 r  M1/mac_out_reg[23]_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.791    M1/mac_out_reg[23]_i_15_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     2.950 r  M1/mac_out_reg[27]_i_15/O[1]
+                         net (fo=2, unplaced)         0.329     3.279    M1/mac_out_reg[27]_i_15_n_6
+                         LUT3 (Prop_lut3_I0_O)        0.129     3.408 r  M1/mac_out[23]_i_8/O
+                         net (fo=2, unplaced)         0.198     3.606    M1/mac_out[23]_i_8_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     3.738 r  M1/mac_out[23]_i_12/O
+                         net (fo=1, unplaced)         0.000     3.738    M1/mac_out[23]_i_12_n_0
+                         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.177     3.915 r  M1/mac_out_reg[23]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.915    M1/mac_out_reg[23]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     4.069 r  M1/mac_out_reg[27]_i_6/O[3]
+                         net (fo=1, unplaced)         0.253     4.322    A1/P[27]
+                         LUT2 (Prop_lut2_I1_O)        0.120     4.442 r  A1/mac_out[27]_i_2/O
+                         net (fo=1, unplaced)         0.000     4.442    A1/mac_out[27]_i_2_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     4.615 r  A1/mac_out_reg[27]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.615    A1/mac_out_reg[27]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     4.774 r  A1/mac_out_reg[31]_i_1/O[1]
+                         net (fo=1, unplaced)         0.000     4.774    A1/mac_out_reg[31]_i_1_n_6
+                         FDCE                                         r  A1/mac_out_reg[29]/D
+  -------------------------------------------------------------------    -------------------
 
-  Corner  Analyze    Analyze    
-  Name    Max Paths  Min Paths  
-  ------  ---------  ---------  
-  Slow    Yes        Yes        
-  Fast    Yes        Yes        
+Slack:                    inf
+  Source:                 pixel_in[2]
+                            (input port)
+  Destination:            A1/mac_out_reg[31]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.769ns  (logic 2.642ns (55.411%)  route 2.126ns (44.589%))
+  Logic Levels:           16  (CARRY4=8 IBUF=1 LUT2=2 LUT3=2 LUT4=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  pixel_in[2] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[2]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 f  pixel_in_IBUF[2]_inst/O
+                         net (fo=33, unplaced)        0.434     0.993    M1/pixel_in_IBUF[2]
+                         LUT2 (Prop_lut2_I0_O)        0.050     1.043 r  M1/mac_out[23]_i_79/O
+                         net (fo=1, unplaced)         0.244     1.287    M1/mac_out[23]_i_79_n_0
+                         LUT6 (Prop_lut6_I3_O)        0.043     1.330 r  M1/mac_out[23]_i_59/O
+                         net (fo=1, unplaced)         0.000     1.330    M1/mac_out[23]_i_59_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.246     1.576 r  M1/mac_out_reg[23]_i_42/CO[3]
+                         net (fo=1, unplaced)         0.000     1.576    M1/mac_out_reg[23]_i_42_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.116     1.692 r  M1/mac_out_reg[27]_i_40/O[2]
+                         net (fo=2, unplaced)         0.388     2.080    M1/mac_out_reg[27]_i_40_n_5
+                         LUT3 (Prop_lut3_I0_O)        0.132     2.212 r  M1/mac_out[23]_i_18/O
+                         net (fo=2, unplaced)         0.280     2.492    M1/mac_out[23]_i_18_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.126     2.618 r  M1/mac_out[23]_i_22/O
+                         net (fo=1, unplaced)         0.000     2.618    M1/mac_out[23]_i_22_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     2.791 r  M1/mac_out_reg[23]_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.791    M1/mac_out_reg[23]_i_15_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     2.950 r  M1/mac_out_reg[27]_i_15/O[1]
+                         net (fo=2, unplaced)         0.329     3.279    M1/mac_out_reg[27]_i_15_n_6
+                         LUT3 (Prop_lut3_I0_O)        0.129     3.408 r  M1/mac_out[23]_i_8/O
+                         net (fo=2, unplaced)         0.198     3.606    M1/mac_out[23]_i_8_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     3.738 r  M1/mac_out[23]_i_12/O
+                         net (fo=1, unplaced)         0.000     3.738    M1/mac_out[23]_i_12_n_0
+                         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.177     3.915 r  M1/mac_out_reg[23]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.915    M1/mac_out_reg[23]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     4.069 r  M1/mac_out_reg[27]_i_6/O[3]
+                         net (fo=1, unplaced)         0.253     4.322    A1/P[27]
+                         LUT2 (Prop_lut2_I1_O)        0.120     4.442 r  A1/mac_out[27]_i_2/O
+                         net (fo=1, unplaced)         0.000     4.442    A1/mac_out[27]_i_2_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     4.615 r  A1/mac_out_reg[27]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.615    A1/mac_out_reg[27]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     4.769 r  A1/mac_out_reg[31]_i_1/O[3]
+                         net (fo=1, unplaced)         0.000     4.769    A1/mac_out_reg[31]_i_1_n_4
+                         FDCE                                         r  A1/mac_out_reg[31]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[2]
+                            (input port)
+  Destination:            A1/mac_out_reg[30]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.731ns  (logic 2.604ns (55.052%)  route 2.126ns (44.948%))
+  Logic Levels:           16  (CARRY4=8 IBUF=1 LUT2=2 LUT3=2 LUT4=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  pixel_in[2] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[2]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 f  pixel_in_IBUF[2]_inst/O
+                         net (fo=33, unplaced)        0.434     0.993    M1/pixel_in_IBUF[2]
+                         LUT2 (Prop_lut2_I0_O)        0.050     1.043 r  M1/mac_out[23]_i_79/O
+                         net (fo=1, unplaced)         0.244     1.287    M1/mac_out[23]_i_79_n_0
+                         LUT6 (Prop_lut6_I3_O)        0.043     1.330 r  M1/mac_out[23]_i_59/O
+                         net (fo=1, unplaced)         0.000     1.330    M1/mac_out[23]_i_59_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.246     1.576 r  M1/mac_out_reg[23]_i_42/CO[3]
+                         net (fo=1, unplaced)         0.000     1.576    M1/mac_out_reg[23]_i_42_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.116     1.692 r  M1/mac_out_reg[27]_i_40/O[2]
+                         net (fo=2, unplaced)         0.388     2.080    M1/mac_out_reg[27]_i_40_n_5
+                         LUT3 (Prop_lut3_I0_O)        0.132     2.212 r  M1/mac_out[23]_i_18/O
+                         net (fo=2, unplaced)         0.280     2.492    M1/mac_out[23]_i_18_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.126     2.618 r  M1/mac_out[23]_i_22/O
+                         net (fo=1, unplaced)         0.000     2.618    M1/mac_out[23]_i_22_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     2.791 r  M1/mac_out_reg[23]_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.791    M1/mac_out_reg[23]_i_15_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     2.950 r  M1/mac_out_reg[27]_i_15/O[1]
+                         net (fo=2, unplaced)         0.329     3.279    M1/mac_out_reg[27]_i_15_n_6
+                         LUT3 (Prop_lut3_I0_O)        0.129     3.408 r  M1/mac_out[23]_i_8/O
+                         net (fo=2, unplaced)         0.198     3.606    M1/mac_out[23]_i_8_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     3.738 r  M1/mac_out[23]_i_12/O
+                         net (fo=1, unplaced)         0.000     3.738    M1/mac_out[23]_i_12_n_0
+                         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.177     3.915 r  M1/mac_out_reg[23]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.915    M1/mac_out_reg[23]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     4.069 r  M1/mac_out_reg[27]_i_6/O[3]
+                         net (fo=1, unplaced)         0.253     4.322    A1/P[27]
+                         LUT2 (Prop_lut2_I1_O)        0.120     4.442 r  A1/mac_out[27]_i_2/O
+                         net (fo=1, unplaced)         0.000     4.442    A1/mac_out[27]_i_2_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     4.615 r  A1/mac_out_reg[27]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.615    A1/mac_out_reg[27]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.116     4.731 r  A1/mac_out_reg[31]_i_1/O[2]
+                         net (fo=1, unplaced)         0.000     4.731    A1/mac_out_reg[31]_i_1_n_5
+                         FDCE                                         r  A1/mac_out_reg[30]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[2]
+                            (input port)
+  Destination:            A1/mac_out_reg[28]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.723ns  (logic 2.596ns (54.976%)  route 2.126ns (45.024%))
+  Logic Levels:           16  (CARRY4=8 IBUF=1 LUT2=2 LUT3=2 LUT4=2 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  pixel_in[2] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[2]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 f  pixel_in_IBUF[2]_inst/O
+                         net (fo=33, unplaced)        0.434     0.993    M1/pixel_in_IBUF[2]
+                         LUT2 (Prop_lut2_I0_O)        0.050     1.043 r  M1/mac_out[23]_i_79/O
+                         net (fo=1, unplaced)         0.244     1.287    M1/mac_out[23]_i_79_n_0
+                         LUT6 (Prop_lut6_I3_O)        0.043     1.330 r  M1/mac_out[23]_i_59/O
+                         net (fo=1, unplaced)         0.000     1.330    M1/mac_out[23]_i_59_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.246     1.576 r  M1/mac_out_reg[23]_i_42/CO[3]
+                         net (fo=1, unplaced)         0.000     1.576    M1/mac_out_reg[23]_i_42_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.116     1.692 r  M1/mac_out_reg[27]_i_40/O[2]
+                         net (fo=2, unplaced)         0.388     2.080    M1/mac_out_reg[27]_i_40_n_5
+                         LUT3 (Prop_lut3_I0_O)        0.132     2.212 r  M1/mac_out[23]_i_18/O
+                         net (fo=2, unplaced)         0.280     2.492    M1/mac_out[23]_i_18_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.126     2.618 r  M1/mac_out[23]_i_22/O
+                         net (fo=1, unplaced)         0.000     2.618    M1/mac_out[23]_i_22_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     2.791 r  M1/mac_out_reg[23]_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.791    M1/mac_out_reg[23]_i_15_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     2.950 r  M1/mac_out_reg[27]_i_15/O[1]
+                         net (fo=2, unplaced)         0.329     3.279    M1/mac_out_reg[27]_i_15_n_6
+                         LUT3 (Prop_lut3_I0_O)        0.129     3.408 r  M1/mac_out[23]_i_8/O
+                         net (fo=2, unplaced)         0.198     3.606    M1/mac_out[23]_i_8_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     3.738 r  M1/mac_out[23]_i_12/O
+                         net (fo=1, unplaced)         0.000     3.738    M1/mac_out[23]_i_12_n_0
+                         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.177     3.915 r  M1/mac_out_reg[23]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.915    M1/mac_out_reg[23]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     4.069 r  M1/mac_out_reg[27]_i_6/O[3]
+                         net (fo=1, unplaced)         0.253     4.322    A1/P[27]
+                         LUT2 (Prop_lut2_I1_O)        0.120     4.442 r  A1/mac_out[27]_i_2/O
+                         net (fo=1, unplaced)         0.000     4.442    A1/mac_out[27]_i_2_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     4.615 r  A1/mac_out_reg[27]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.615    A1/mac_out_reg[27]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.108     4.723 r  A1/mac_out_reg[31]_i_1/O[0]
+                         net (fo=1, unplaced)         0.000     4.723    A1/mac_out_reg[31]_i_1_n_7
+                         FDCE                                         r  A1/mac_out_reg[28]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[25]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.703ns  (logic 2.692ns (57.251%)  route 2.010ns (42.749%))
+  Logic Levels:           15  (CARRY4=8 IBUF=1 LUT2=1 LUT3=2 LUT4=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[15]_i_41/O
+                         net (fo=1, unplaced)         0.256     1.292    M1/mac_out[15]_i_41_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.245     1.537 r  M1/mac_out_reg[15]_i_27/CO[3]
+                         net (fo=1, unplaced)         0.000     1.537    M1/mac_out_reg[15]_i_27_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     1.691 r  M1/mac_out_reg[19]_i_37/O[3]
+                         net (fo=2, unplaced)         0.264     1.955    M1/mac_out_reg[19]_i_37_n_4
+                         LUT3 (Prop_lut3_I2_O)        0.123     2.078 r  M1/mac_out[19]_i_21/O
+                         net (fo=2, unplaced)         0.276     2.354    M1/mac_out[19]_i_21_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.128     2.482 r  M1/mac_out[19]_i_25/O
+                         net (fo=1, unplaced)         0.000     2.482    M1/mac_out[19]_i_25_n_0
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.238     2.720 r  M1/mac_out_reg[19]_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.720    M1/mac_out_reg[19]_i_15_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     2.879 r  M1/mac_out_reg[23]_i_15/O[1]
+                         net (fo=2, unplaced)         0.329     3.208    M1/mac_out_reg[23]_i_15_n_6
+                         LUT3 (Prop_lut3_I0_O)        0.129     3.337 r  M1/mac_out[19]_i_8/O
+                         net (fo=2, unplaced)         0.198     3.535    M1/mac_out[19]_i_8_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     3.667 r  M1/mac_out[19]_i_12/O
+                         net (fo=1, unplaced)         0.000     3.667    M1/mac_out[19]_i_12_n_0
+                         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.177     3.844 r  M1/mac_out_reg[19]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.844    M1/mac_out_reg[19]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     3.998 r  M1/mac_out_reg[23]_i_6/O[3]
+                         net (fo=1, unplaced)         0.253     4.251    A1/P[23]
+                         LUT2 (Prop_lut2_I1_O)        0.120     4.371 r  A1/mac_out[23]_i_2/O
+                         net (fo=1, unplaced)         0.000     4.371    A1/mac_out[23]_i_2_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     4.544 r  A1/mac_out_reg[23]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.544    A1/mac_out_reg[23]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     4.703 r  A1/mac_out_reg[27]_i_1/O[1]
+                         net (fo=1, unplaced)         0.000     4.703    A1/mac_out_reg[27]_i_1_n_6
+                         FDCE                                         r  A1/mac_out_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[27]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.698ns  (logic 2.687ns (57.206%)  route 2.010ns (42.794%))
+  Logic Levels:           15  (CARRY4=8 IBUF=1 LUT2=1 LUT3=2 LUT4=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[15]_i_41/O
+                         net (fo=1, unplaced)         0.256     1.292    M1/mac_out[15]_i_41_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.245     1.537 r  M1/mac_out_reg[15]_i_27/CO[3]
+                         net (fo=1, unplaced)         0.000     1.537    M1/mac_out_reg[15]_i_27_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     1.691 r  M1/mac_out_reg[19]_i_37/O[3]
+                         net (fo=2, unplaced)         0.264     1.955    M1/mac_out_reg[19]_i_37_n_4
+                         LUT3 (Prop_lut3_I2_O)        0.123     2.078 r  M1/mac_out[19]_i_21/O
+                         net (fo=2, unplaced)         0.276     2.354    M1/mac_out[19]_i_21_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.128     2.482 r  M1/mac_out[19]_i_25/O
+                         net (fo=1, unplaced)         0.000     2.482    M1/mac_out[19]_i_25_n_0
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.238     2.720 r  M1/mac_out_reg[19]_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.720    M1/mac_out_reg[19]_i_15_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     2.879 r  M1/mac_out_reg[23]_i_15/O[1]
+                         net (fo=2, unplaced)         0.329     3.208    M1/mac_out_reg[23]_i_15_n_6
+                         LUT3 (Prop_lut3_I0_O)        0.129     3.337 r  M1/mac_out[19]_i_8/O
+                         net (fo=2, unplaced)         0.198     3.535    M1/mac_out[19]_i_8_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     3.667 r  M1/mac_out[19]_i_12/O
+                         net (fo=1, unplaced)         0.000     3.667    M1/mac_out[19]_i_12_n_0
+                         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.177     3.844 r  M1/mac_out_reg[19]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.844    M1/mac_out_reg[19]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     3.998 r  M1/mac_out_reg[23]_i_6/O[3]
+                         net (fo=1, unplaced)         0.253     4.251    A1/P[23]
+                         LUT2 (Prop_lut2_I1_O)        0.120     4.371 r  A1/mac_out[23]_i_2/O
+                         net (fo=1, unplaced)         0.000     4.371    A1/mac_out[23]_i_2_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     4.544 r  A1/mac_out_reg[23]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.544    A1/mac_out_reg[23]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     4.698 r  A1/mac_out_reg[27]_i_1/O[3]
+                         net (fo=1, unplaced)         0.000     4.698    A1/mac_out_reg[27]_i_1_n_4
+                         FDCE                                         r  A1/mac_out_reg[27]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[26]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.660ns  (logic 2.649ns (56.857%)  route 2.010ns (43.143%))
+  Logic Levels:           15  (CARRY4=8 IBUF=1 LUT2=1 LUT3=2 LUT4=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[15]_i_41/O
+                         net (fo=1, unplaced)         0.256     1.292    M1/mac_out[15]_i_41_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.245     1.537 r  M1/mac_out_reg[15]_i_27/CO[3]
+                         net (fo=1, unplaced)         0.000     1.537    M1/mac_out_reg[15]_i_27_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     1.691 r  M1/mac_out_reg[19]_i_37/O[3]
+                         net (fo=2, unplaced)         0.264     1.955    M1/mac_out_reg[19]_i_37_n_4
+                         LUT3 (Prop_lut3_I2_O)        0.123     2.078 r  M1/mac_out[19]_i_21/O
+                         net (fo=2, unplaced)         0.276     2.354    M1/mac_out[19]_i_21_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.128     2.482 r  M1/mac_out[19]_i_25/O
+                         net (fo=1, unplaced)         0.000     2.482    M1/mac_out[19]_i_25_n_0
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.238     2.720 r  M1/mac_out_reg[19]_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.720    M1/mac_out_reg[19]_i_15_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     2.879 r  M1/mac_out_reg[23]_i_15/O[1]
+                         net (fo=2, unplaced)         0.329     3.208    M1/mac_out_reg[23]_i_15_n_6
+                         LUT3 (Prop_lut3_I0_O)        0.129     3.337 r  M1/mac_out[19]_i_8/O
+                         net (fo=2, unplaced)         0.198     3.535    M1/mac_out[19]_i_8_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     3.667 r  M1/mac_out[19]_i_12/O
+                         net (fo=1, unplaced)         0.000     3.667    M1/mac_out[19]_i_12_n_0
+                         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.177     3.844 r  M1/mac_out_reg[19]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.844    M1/mac_out_reg[19]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     3.998 r  M1/mac_out_reg[23]_i_6/O[3]
+                         net (fo=1, unplaced)         0.253     4.251    A1/P[23]
+                         LUT2 (Prop_lut2_I1_O)        0.120     4.371 r  A1/mac_out[23]_i_2/O
+                         net (fo=1, unplaced)         0.000     4.371    A1/mac_out[23]_i_2_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     4.544 r  A1/mac_out_reg[23]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.544    A1/mac_out_reg[23]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.116     4.660 r  A1/mac_out_reg[27]_i_1/O[2]
+                         net (fo=1, unplaced)         0.000     4.660    A1/mac_out_reg[27]_i_1_n_5
+                         FDCE                                         r  A1/mac_out_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[24]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.652ns  (logic 2.641ns (56.783%)  route 2.010ns (43.217%))
+  Logic Levels:           15  (CARRY4=8 IBUF=1 LUT2=1 LUT3=2 LUT4=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[15]_i_41/O
+                         net (fo=1, unplaced)         0.256     1.292    M1/mac_out[15]_i_41_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.245     1.537 r  M1/mac_out_reg[15]_i_27/CO[3]
+                         net (fo=1, unplaced)         0.000     1.537    M1/mac_out_reg[15]_i_27_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     1.691 r  M1/mac_out_reg[19]_i_37/O[3]
+                         net (fo=2, unplaced)         0.264     1.955    M1/mac_out_reg[19]_i_37_n_4
+                         LUT3 (Prop_lut3_I2_O)        0.123     2.078 r  M1/mac_out[19]_i_21/O
+                         net (fo=2, unplaced)         0.276     2.354    M1/mac_out[19]_i_21_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.128     2.482 r  M1/mac_out[19]_i_25/O
+                         net (fo=1, unplaced)         0.000     2.482    M1/mac_out[19]_i_25_n_0
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.238     2.720 r  M1/mac_out_reg[19]_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.720    M1/mac_out_reg[19]_i_15_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     2.879 r  M1/mac_out_reg[23]_i_15/O[1]
+                         net (fo=2, unplaced)         0.329     3.208    M1/mac_out_reg[23]_i_15_n_6
+                         LUT3 (Prop_lut3_I0_O)        0.129     3.337 r  M1/mac_out[19]_i_8/O
+                         net (fo=2, unplaced)         0.198     3.535    M1/mac_out[19]_i_8_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     3.667 r  M1/mac_out[19]_i_12/O
+                         net (fo=1, unplaced)         0.000     3.667    M1/mac_out[19]_i_12_n_0
+                         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.177     3.844 r  M1/mac_out_reg[19]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.844    M1/mac_out_reg[19]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     3.998 r  M1/mac_out_reg[23]_i_6/O[3]
+                         net (fo=1, unplaced)         0.253     4.251    A1/P[23]
+                         LUT2 (Prop_lut2_I1_O)        0.120     4.371 r  A1/mac_out[23]_i_2/O
+                         net (fo=1, unplaced)         0.000     4.371    A1/mac_out[23]_i_2_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     4.544 r  A1/mac_out_reg[23]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.544    A1/mac_out_reg[23]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.108     4.652 r  A1/mac_out_reg[27]_i_1/O[0]
+                         net (fo=1, unplaced)         0.000     4.652    A1/mac_out_reg[27]_i_1_n_7
+                         FDCE                                         r  A1/mac_out_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[21]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.598ns  (logic 2.592ns (56.384%)  route 2.005ns (43.616%))
+  Logic Levels:           15  (CARRY4=8 IBUF=1 LUT2=1 LUT3=2 LUT4=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[15]_i_41/O
+                         net (fo=1, unplaced)         0.256     1.292    M1/mac_out[15]_i_41_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.245     1.537 r  M1/mac_out_reg[15]_i_27/CO[3]
+                         net (fo=1, unplaced)         0.000     1.537    M1/mac_out_reg[15]_i_27_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.116     1.653 r  M1/mac_out_reg[19]_i_37/O[2]
+                         net (fo=2, unplaced)         0.255     1.908    M1/mac_out_reg[19]_i_37_n_5
+                         LUT3 (Prop_lut3_I2_O)        0.128     2.036 r  M1/mac_out[15]_i_17/O
+                         net (fo=2, unplaced)         0.280     2.316    M1/mac_out[15]_i_17_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.126     2.442 r  M1/mac_out[15]_i_21/O
+                         net (fo=1, unplaced)         0.000     2.442    M1/mac_out[15]_i_21_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     2.615 r  M1/mac_out_reg[15]_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.615    M1/mac_out_reg[15]_i_15_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     2.774 r  M1/mac_out_reg[19]_i_15/O[1]
+                         net (fo=2, unplaced)         0.329     3.103    M1/mac_out_reg[19]_i_15_n_6
+                         LUT3 (Prop_lut3_I0_O)        0.129     3.232 r  M1/mac_out[15]_i_8/O
+                         net (fo=2, unplaced)         0.198     3.430    M1/mac_out[15]_i_8_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     3.562 r  M1/mac_out[15]_i_12/O
+                         net (fo=1, unplaced)         0.000     3.562    M1/mac_out[15]_i_12_n_0
+                         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.177     3.739 r  M1/mac_out_reg[15]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.739    M1/mac_out_reg[15]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     3.893 r  M1/mac_out_reg[19]_i_6/O[3]
+                         net (fo=1, unplaced)         0.253     4.146    A1/P[19]
+                         LUT2 (Prop_lut2_I1_O)        0.120     4.266 r  A1/mac_out[19]_i_2/O
+                         net (fo=1, unplaced)         0.000     4.266    A1/mac_out[19]_i_2_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     4.439 r  A1/mac_out_reg[19]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.439    A1/mac_out_reg[19]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     4.598 r  A1/mac_out_reg[23]_i_1/O[1]
+                         net (fo=1, unplaced)         0.000     4.598    A1/mac_out_reg[23]_i_1_n_6
+                         FDCE                                         r  A1/mac_out_reg[21]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[23]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.593ns  (logic 2.587ns (56.336%)  route 2.005ns (43.664%))
+  Logic Levels:           15  (CARRY4=8 IBUF=1 LUT2=1 LUT3=2 LUT4=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[15]_i_41/O
+                         net (fo=1, unplaced)         0.256     1.292    M1/mac_out[15]_i_41_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.245     1.537 r  M1/mac_out_reg[15]_i_27/CO[3]
+                         net (fo=1, unplaced)         0.000     1.537    M1/mac_out_reg[15]_i_27_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.116     1.653 r  M1/mac_out_reg[19]_i_37/O[2]
+                         net (fo=2, unplaced)         0.255     1.908    M1/mac_out_reg[19]_i_37_n_5
+                         LUT3 (Prop_lut3_I2_O)        0.128     2.036 r  M1/mac_out[15]_i_17/O
+                         net (fo=2, unplaced)         0.280     2.316    M1/mac_out[15]_i_17_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.126     2.442 r  M1/mac_out[15]_i_21/O
+                         net (fo=1, unplaced)         0.000     2.442    M1/mac_out[15]_i_21_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     2.615 r  M1/mac_out_reg[15]_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.615    M1/mac_out_reg[15]_i_15_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     2.774 r  M1/mac_out_reg[19]_i_15/O[1]
+                         net (fo=2, unplaced)         0.329     3.103    M1/mac_out_reg[19]_i_15_n_6
+                         LUT3 (Prop_lut3_I0_O)        0.129     3.232 r  M1/mac_out[15]_i_8/O
+                         net (fo=2, unplaced)         0.198     3.430    M1/mac_out[15]_i_8_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     3.562 r  M1/mac_out[15]_i_12/O
+                         net (fo=1, unplaced)         0.000     3.562    M1/mac_out[15]_i_12_n_0
+                         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.177     3.739 r  M1/mac_out_reg[15]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.739    M1/mac_out_reg[15]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     3.893 r  M1/mac_out_reg[19]_i_6/O[3]
+                         net (fo=1, unplaced)         0.253     4.146    A1/P[19]
+                         LUT2 (Prop_lut2_I1_O)        0.120     4.266 r  A1/mac_out[19]_i_2/O
+                         net (fo=1, unplaced)         0.000     4.266    A1/mac_out[19]_i_2_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     4.439 r  A1/mac_out_reg[19]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.439    A1/mac_out_reg[19]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     4.593 r  A1/mac_out_reg[23]_i_1/O[3]
+                         net (fo=1, unplaced)         0.000     4.593    A1/mac_out_reg[23]_i_1_n_4
+                         FDCE                                         r  A1/mac_out_reg[23]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[22]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.560ns  (logic 2.633ns (57.753%)  route 1.926ns (42.247%))
+  Logic Levels:           14  (CARRY4=7 IBUF=1 LUT2=1 LUT3=2 LUT4=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[15]_i_41/O
+                         net (fo=1, unplaced)         0.256     1.292    M1/mac_out[15]_i_41_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.245     1.537 r  M1/mac_out_reg[15]_i_27/CO[3]
+                         net (fo=1, unplaced)         0.000     1.537    M1/mac_out_reg[15]_i_27_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     1.691 r  M1/mac_out_reg[19]_i_37/O[3]
+                         net (fo=2, unplaced)         0.264     1.955    M1/mac_out_reg[19]_i_37_n_4
+                         LUT3 (Prop_lut3_I2_O)        0.123     2.078 r  M1/mac_out[19]_i_21/O
+                         net (fo=2, unplaced)         0.276     2.354    M1/mac_out[19]_i_21_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.128     2.482 r  M1/mac_out[19]_i_25/O
+                         net (fo=1, unplaced)         0.000     2.482    M1/mac_out[19]_i_25_n_0
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.238     2.720 r  M1/mac_out_reg[19]_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.720    M1/mac_out_reg[19]_i_15_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     2.879 r  M1/mac_out_reg[23]_i_15/O[1]
+                         net (fo=2, unplaced)         0.329     3.208    M1/mac_out_reg[23]_i_15_n_6
+                         LUT3 (Prop_lut3_I0_O)        0.129     3.337 r  M1/mac_out[19]_i_8/O
+                         net (fo=2, unplaced)         0.198     3.535    M1/mac_out[19]_i_8_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     3.667 r  M1/mac_out[19]_i_12/O
+                         net (fo=1, unplaced)         0.000     3.667    M1/mac_out[19]_i_12_n_0
+                         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.177     3.844 r  M1/mac_out_reg[19]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.844    M1/mac_out_reg[19]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     4.003 r  M1/mac_out_reg[23]_i_6/O[1]
+                         net (fo=1, unplaced)         0.169     4.172    A1/P[21]
+                         LUT2 (Prop_lut2_I1_O)        0.121     4.293 r  A1/mac_out[23]_i_4/O
+                         net (fo=1, unplaced)         0.000     4.293    A1/mac_out[23]_i_4_n_0
+                         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.267     4.560 r  A1/mac_out_reg[23]_i_1/O[2]
+                         net (fo=1, unplaced)         0.000     4.560    A1/mac_out_reg[23]_i_1_n_5
+                         FDCE                                         r  A1/mac_out_reg[22]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[20]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.547ns  (logic 2.541ns (55.895%)  route 2.005ns (44.105%))
+  Logic Levels:           15  (CARRY4=8 IBUF=1 LUT2=1 LUT3=2 LUT4=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[15]_i_41/O
+                         net (fo=1, unplaced)         0.256     1.292    M1/mac_out[15]_i_41_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.245     1.537 r  M1/mac_out_reg[15]_i_27/CO[3]
+                         net (fo=1, unplaced)         0.000     1.537    M1/mac_out_reg[15]_i_27_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.116     1.653 r  M1/mac_out_reg[19]_i_37/O[2]
+                         net (fo=2, unplaced)         0.255     1.908    M1/mac_out_reg[19]_i_37_n_5
+                         LUT3 (Prop_lut3_I2_O)        0.128     2.036 r  M1/mac_out[15]_i_17/O
+                         net (fo=2, unplaced)         0.280     2.316    M1/mac_out[15]_i_17_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.126     2.442 r  M1/mac_out[15]_i_21/O
+                         net (fo=1, unplaced)         0.000     2.442    M1/mac_out[15]_i_21_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     2.615 r  M1/mac_out_reg[15]_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.615    M1/mac_out_reg[15]_i_15_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     2.774 r  M1/mac_out_reg[19]_i_15/O[1]
+                         net (fo=2, unplaced)         0.329     3.103    M1/mac_out_reg[19]_i_15_n_6
+                         LUT3 (Prop_lut3_I0_O)        0.129     3.232 r  M1/mac_out[15]_i_8/O
+                         net (fo=2, unplaced)         0.198     3.430    M1/mac_out[15]_i_8_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     3.562 r  M1/mac_out[15]_i_12/O
+                         net (fo=1, unplaced)         0.000     3.562    M1/mac_out[15]_i_12_n_0
+                         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.177     3.739 r  M1/mac_out_reg[15]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.739    M1/mac_out_reg[15]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     3.893 r  M1/mac_out_reg[19]_i_6/O[3]
+                         net (fo=1, unplaced)         0.253     4.146    A1/P[19]
+                         LUT2 (Prop_lut2_I1_O)        0.120     4.266 r  A1/mac_out[19]_i_2/O
+                         net (fo=1, unplaced)         0.000     4.266    A1/mac_out[19]_i_2_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     4.439 r  A1/mac_out_reg[19]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.439    A1/mac_out_reg[19]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.108     4.547 r  A1/mac_out_reg[23]_i_1/O[0]
+                         net (fo=1, unplaced)         0.000     4.547    A1/mac_out_reg[23]_i_1_n_7
+                         FDCE                                         r  A1/mac_out_reg[20]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[19]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.484ns  (logic 2.562ns (57.148%)  route 1.921ns (42.852%))
+  Logic Levels:           14  (CARRY4=7 IBUF=1 LUT2=1 LUT3=2 LUT4=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[15]_i_41/O
+                         net (fo=1, unplaced)         0.256     1.292    M1/mac_out[15]_i_41_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.245     1.537 r  M1/mac_out_reg[15]_i_27/CO[3]
+                         net (fo=1, unplaced)         0.000     1.537    M1/mac_out_reg[15]_i_27_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.116     1.653 r  M1/mac_out_reg[19]_i_37/O[2]
+                         net (fo=2, unplaced)         0.255     1.908    M1/mac_out_reg[19]_i_37_n_5
+                         LUT3 (Prop_lut3_I2_O)        0.128     2.036 r  M1/mac_out[15]_i_17/O
+                         net (fo=2, unplaced)         0.280     2.316    M1/mac_out[15]_i_17_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.126     2.442 r  M1/mac_out[15]_i_21/O
+                         net (fo=1, unplaced)         0.000     2.442    M1/mac_out[15]_i_21_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     2.615 r  M1/mac_out_reg[15]_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.615    M1/mac_out_reg[15]_i_15_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     2.774 r  M1/mac_out_reg[19]_i_15/O[1]
+                         net (fo=2, unplaced)         0.329     3.103    M1/mac_out_reg[19]_i_15_n_6
+                         LUT3 (Prop_lut3_I0_O)        0.129     3.232 r  M1/mac_out[15]_i_8/O
+                         net (fo=2, unplaced)         0.198     3.430    M1/mac_out[15]_i_8_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     3.562 r  M1/mac_out[15]_i_12/O
+                         net (fo=1, unplaced)         0.000     3.562    M1/mac_out[15]_i_12_n_0
+                         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.177     3.739 r  M1/mac_out_reg[15]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.739    M1/mac_out_reg[15]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     3.898 r  M1/mac_out_reg[19]_i_6/O[1]
+                         net (fo=1, unplaced)         0.169     4.067    A1/P[17]
+                         LUT2 (Prop_lut2_I1_O)        0.121     4.188 r  A1/mac_out[19]_i_4/O
+                         net (fo=1, unplaced)         0.000     4.188    A1/mac_out[19]_i_4_n_0
+                         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.296     4.484 r  A1/mac_out_reg[19]_i_1/O[3]
+                         net (fo=1, unplaced)         0.000     4.484    A1/mac_out_reg[19]_i_1_n_4
+                         FDCE                                         r  A1/mac_out_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[17]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.455ns  (logic 2.441ns (54.804%)  route 2.013ns (45.196%))
+  Logic Levels:           14  (CARRY4=7 IBUF=1 LUT2=3 LUT3=2 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[15]_i_41/O
+                         net (fo=1, unplaced)         0.256     1.292    M1/mac_out[15]_i_41_n_0
+                         CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.264     1.556 r  M1/mac_out_reg[15]_i_27/O[2]
+                         net (fo=2, unplaced)         0.255     1.811    M1/mac_out_reg[15]_i_27_n_5
+                         LUT2 (Prop_lut2_I1_O)        0.128     1.939 r  M1/mac_out[11]_i_17/O
+                         net (fo=2, unplaced)         0.280     2.219    M1/mac_out[11]_i_17_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.126     2.345 r  M1/mac_out[11]_i_20/O
+                         net (fo=1, unplaced)         0.000     2.345    M1/mac_out[11]_i_20_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     2.518 r  M1/mac_out_reg[11]_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.518    M1/mac_out_reg[11]_i_15_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.116     2.634 r  M1/mac_out_reg[15]_i_15/O[2]
+                         net (fo=2, unplaced)         0.255     2.889    M1/mac_out_reg[15]_i_15_n_5
+                         LUT2 (Prop_lut2_I0_O)        0.128     3.017 r  M1/mac_out[11]_i_7/O
+                         net (fo=2, unplaced)         0.280     3.297    M1/mac_out[11]_i_7_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.126     3.423 r  M1/mac_out[11]_i_11/O
+                         net (fo=1, unplaced)         0.000     3.423    M1/mac_out[11]_i_11_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     3.596 r  M1/mac_out_reg[11]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.596    M1/mac_out_reg[11]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     3.750 r  M1/mac_out_reg[15]_i_6/O[3]
+                         net (fo=1, unplaced)         0.253     4.003    A1/P[15]
+                         LUT2 (Prop_lut2_I1_O)        0.120     4.123 r  A1/mac_out[15]_i_2/O
+                         net (fo=1, unplaced)         0.000     4.123    A1/mac_out[15]_i_2_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     4.296 r  A1/mac_out_reg[15]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.296    A1/mac_out_reg[15]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     4.455 r  A1/mac_out_reg[19]_i_1/O[1]
+                         net (fo=1, unplaced)         0.000     4.455    A1/mac_out_reg[19]_i_1_n_6
+                         FDCE                                         r  A1/mac_out_reg[17]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[18]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.455ns  (logic 2.533ns (56.869%)  route 1.921ns (43.131%))
+  Logic Levels:           14  (CARRY4=7 IBUF=1 LUT2=1 LUT3=2 LUT4=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[15]_i_41/O
+                         net (fo=1, unplaced)         0.256     1.292    M1/mac_out[15]_i_41_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.245     1.537 r  M1/mac_out_reg[15]_i_27/CO[3]
+                         net (fo=1, unplaced)         0.000     1.537    M1/mac_out_reg[15]_i_27_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.116     1.653 r  M1/mac_out_reg[19]_i_37/O[2]
+                         net (fo=2, unplaced)         0.255     1.908    M1/mac_out_reg[19]_i_37_n_5
+                         LUT3 (Prop_lut3_I2_O)        0.128     2.036 r  M1/mac_out[15]_i_17/O
+                         net (fo=2, unplaced)         0.280     2.316    M1/mac_out[15]_i_17_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.126     2.442 r  M1/mac_out[15]_i_21/O
+                         net (fo=1, unplaced)         0.000     2.442    M1/mac_out[15]_i_21_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     2.615 r  M1/mac_out_reg[15]_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.615    M1/mac_out_reg[15]_i_15_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     2.774 r  M1/mac_out_reg[19]_i_15/O[1]
+                         net (fo=2, unplaced)         0.329     3.103    M1/mac_out_reg[19]_i_15_n_6
+                         LUT3 (Prop_lut3_I0_O)        0.129     3.232 r  M1/mac_out[15]_i_8/O
+                         net (fo=2, unplaced)         0.198     3.430    M1/mac_out[15]_i_8_n_0
+                         LUT4 (Prop_lut4_I3_O)        0.132     3.562 r  M1/mac_out[15]_i_12/O
+                         net (fo=1, unplaced)         0.000     3.562    M1/mac_out[15]_i_12_n_0
+                         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.177     3.739 r  M1/mac_out_reg[15]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.739    M1/mac_out_reg[15]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     3.898 r  M1/mac_out_reg[19]_i_6/O[1]
+                         net (fo=1, unplaced)         0.169     4.067    A1/P[17]
+                         LUT2 (Prop_lut2_I1_O)        0.121     4.188 r  A1/mac_out[19]_i_4/O
+                         net (fo=1, unplaced)         0.000     4.188    A1/mac_out[19]_i_4_n_0
+                         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.267     4.455 r  A1/mac_out_reg[19]_i_1/O[2]
+                         net (fo=1, unplaced)         0.000     4.455    A1/mac_out_reg[19]_i_1_n_5
+                         FDCE                                         r  A1/mac_out_reg[18]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[16]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.404ns  (logic 2.390ns (54.281%)  route 2.013ns (45.719%))
+  Logic Levels:           14  (CARRY4=7 IBUF=1 LUT2=3 LUT3=2 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[15]_i_41/O
+                         net (fo=1, unplaced)         0.256     1.292    M1/mac_out[15]_i_41_n_0
+                         CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.264     1.556 r  M1/mac_out_reg[15]_i_27/O[2]
+                         net (fo=2, unplaced)         0.255     1.811    M1/mac_out_reg[15]_i_27_n_5
+                         LUT2 (Prop_lut2_I1_O)        0.128     1.939 r  M1/mac_out[11]_i_17/O
+                         net (fo=2, unplaced)         0.280     2.219    M1/mac_out[11]_i_17_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.126     2.345 r  M1/mac_out[11]_i_20/O
+                         net (fo=1, unplaced)         0.000     2.345    M1/mac_out[11]_i_20_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     2.518 r  M1/mac_out_reg[11]_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.518    M1/mac_out_reg[11]_i_15_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.116     2.634 r  M1/mac_out_reg[15]_i_15/O[2]
+                         net (fo=2, unplaced)         0.255     2.889    M1/mac_out_reg[15]_i_15_n_5
+                         LUT2 (Prop_lut2_I0_O)        0.128     3.017 r  M1/mac_out[11]_i_7/O
+                         net (fo=2, unplaced)         0.280     3.297    M1/mac_out[11]_i_7_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.126     3.423 r  M1/mac_out[11]_i_11/O
+                         net (fo=1, unplaced)         0.000     3.423    M1/mac_out[11]_i_11_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     3.596 r  M1/mac_out_reg[11]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.596    M1/mac_out_reg[11]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.154     3.750 r  M1/mac_out_reg[15]_i_6/O[3]
+                         net (fo=1, unplaced)         0.253     4.003    A1/P[15]
+                         LUT2 (Prop_lut2_I1_O)        0.120     4.123 r  A1/mac_out[15]_i_2/O
+                         net (fo=1, unplaced)         0.000     4.123    A1/mac_out[15]_i_2_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     4.296 r  A1/mac_out_reg[15]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.296    A1/mac_out_reg[15]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.108     4.404 r  A1/mac_out_reg[19]_i_1/O[0]
+                         net (fo=1, unplaced)         0.000     4.404    A1/mac_out_reg[19]_i_1_n_7
+                         FDCE                                         r  A1/mac_out_reg[16]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[15]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.341ns  (logic 2.411ns (55.552%)  route 1.929ns (44.447%))
+  Logic Levels:           13  (CARRY4=6 IBUF=1 LUT2=3 LUT3=2 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[15]_i_41/O
+                         net (fo=1, unplaced)         0.256     1.292    M1/mac_out[15]_i_41_n_0
+                         CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.264     1.556 r  M1/mac_out_reg[15]_i_27/O[2]
+                         net (fo=2, unplaced)         0.255     1.811    M1/mac_out_reg[15]_i_27_n_5
+                         LUT2 (Prop_lut2_I1_O)        0.128     1.939 r  M1/mac_out[11]_i_17/O
+                         net (fo=2, unplaced)         0.280     2.219    M1/mac_out[11]_i_17_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.126     2.345 r  M1/mac_out[11]_i_20/O
+                         net (fo=1, unplaced)         0.000     2.345    M1/mac_out[11]_i_20_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     2.518 r  M1/mac_out_reg[11]_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.518    M1/mac_out_reg[11]_i_15_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.116     2.634 r  M1/mac_out_reg[15]_i_15/O[2]
+                         net (fo=2, unplaced)         0.255     2.889    M1/mac_out_reg[15]_i_15_n_5
+                         LUT2 (Prop_lut2_I0_O)        0.128     3.017 r  M1/mac_out[11]_i_7/O
+                         net (fo=2, unplaced)         0.280     3.297    M1/mac_out[11]_i_7_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.126     3.423 r  M1/mac_out[11]_i_11/O
+                         net (fo=1, unplaced)         0.000     3.423    M1/mac_out[11]_i_11_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     3.596 r  M1/mac_out_reg[11]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.596    M1/mac_out_reg[11]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     3.755 r  M1/mac_out_reg[15]_i_6/O[1]
+                         net (fo=1, unplaced)         0.169     3.924    A1/P[13]
+                         LUT2 (Prop_lut2_I1_O)        0.121     4.045 r  A1/mac_out[15]_i_4/O
+                         net (fo=1, unplaced)         0.000     4.045    A1/mac_out[15]_i_4_n_0
+                         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.296     4.341 r  A1/mac_out_reg[15]_i_1/O[3]
+                         net (fo=1, unplaced)         0.000     4.341    A1/mac_out_reg[15]_i_1_n_4
+                         FDCE                                         r  A1/mac_out_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[14]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.312ns  (logic 2.382ns (55.254%)  route 1.929ns (44.746%))
+  Logic Levels:           13  (CARRY4=6 IBUF=1 LUT2=3 LUT3=2 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[15]_i_41/O
+                         net (fo=1, unplaced)         0.256     1.292    M1/mac_out[15]_i_41_n_0
+                         CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.264     1.556 r  M1/mac_out_reg[15]_i_27/O[2]
+                         net (fo=2, unplaced)         0.255     1.811    M1/mac_out_reg[15]_i_27_n_5
+                         LUT2 (Prop_lut2_I1_O)        0.128     1.939 r  M1/mac_out[11]_i_17/O
+                         net (fo=2, unplaced)         0.280     2.219    M1/mac_out[11]_i_17_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.126     2.345 r  M1/mac_out[11]_i_20/O
+                         net (fo=1, unplaced)         0.000     2.345    M1/mac_out[11]_i_20_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     2.518 r  M1/mac_out_reg[11]_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.518    M1/mac_out_reg[11]_i_15_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.116     2.634 r  M1/mac_out_reg[15]_i_15/O[2]
+                         net (fo=2, unplaced)         0.255     2.889    M1/mac_out_reg[15]_i_15_n_5
+                         LUT2 (Prop_lut2_I0_O)        0.128     3.017 r  M1/mac_out[11]_i_7/O
+                         net (fo=2, unplaced)         0.280     3.297    M1/mac_out[11]_i_7_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.126     3.423 r  M1/mac_out[11]_i_11/O
+                         net (fo=1, unplaced)         0.000     3.423    M1/mac_out[11]_i_11_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     3.596 r  M1/mac_out_reg[11]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.596    M1/mac_out_reg[11]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     3.755 r  M1/mac_out_reg[15]_i_6/O[1]
+                         net (fo=1, unplaced)         0.169     3.924    A1/P[13]
+                         LUT2 (Prop_lut2_I1_O)        0.121     4.045 r  A1/mac_out[15]_i_4/O
+                         net (fo=1, unplaced)         0.000     4.045    A1/mac_out[15]_i_4_n_0
+                         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.267     4.312 r  A1/mac_out_reg[15]_i_1/O[2]
+                         net (fo=1, unplaced)         0.000     4.312    A1/mac_out_reg[15]_i_1_n_5
+                         FDCE                                         r  A1/mac_out_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[13]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.238ns  (logic 2.224ns (52.490%)  route 2.013ns (47.510%))
+  Logic Levels:           13  (CARRY4=6 IBUF=1 LUT2=3 LUT3=2 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[15]_i_41/O
+                         net (fo=1, unplaced)         0.256     1.292    M1/mac_out[15]_i_41_n_0
+                         CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.264     1.556 r  M1/mac_out_reg[15]_i_27/O[2]
+                         net (fo=2, unplaced)         0.255     1.811    M1/mac_out_reg[15]_i_27_n_5
+                         LUT2 (Prop_lut2_I1_O)        0.128     1.939 r  M1/mac_out[11]_i_17/O
+                         net (fo=2, unplaced)         0.280     2.219    M1/mac_out[11]_i_17_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.126     2.345 r  M1/mac_out[11]_i_20/O
+                         net (fo=1, unplaced)         0.000     2.345    M1/mac_out[11]_i_20_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     2.518 r  M1/mac_out_reg[11]_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.518    M1/mac_out_reg[11]_i_15_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.116     2.634 r  M1/mac_out_reg[15]_i_15/O[2]
+                         net (fo=2, unplaced)         0.255     2.889    M1/mac_out_reg[15]_i_15_n_5
+                         LUT2 (Prop_lut2_I0_O)        0.128     3.017 r  M1/mac_out[11]_i_7/O
+                         net (fo=2, unplaced)         0.280     3.297    M1/mac_out[11]_i_7_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.126     3.423 r  M1/mac_out[11]_i_11/O
+                         net (fo=1, unplaced)         0.000     3.423    M1/mac_out[11]_i_11_n_0
+                         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.110     3.533 r  M1/mac_out_reg[11]_i_6/O[3]
+                         net (fo=1, unplaced)         0.253     3.786    A1/P[11]
+                         LUT2 (Prop_lut2_I1_O)        0.120     3.906 r  A1/mac_out[11]_i_2/O
+                         net (fo=1, unplaced)         0.000     3.906    A1/mac_out[11]_i_2_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     4.079 r  A1/mac_out_reg[11]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.079    A1/mac_out_reg[11]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     4.238 r  A1/mac_out_reg[15]_i_1/O[1]
+                         net (fo=1, unplaced)         0.000     4.238    A1/mac_out_reg[15]_i_1_n_6
+                         FDCE                                         r  A1/mac_out_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[12]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.187ns  (logic 2.173ns (51.911%)  route 2.013ns (48.089%))
+  Logic Levels:           13  (CARRY4=6 IBUF=1 LUT2=3 LUT3=2 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[15]_i_41/O
+                         net (fo=1, unplaced)         0.256     1.292    M1/mac_out[15]_i_41_n_0
+                         CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.264     1.556 r  M1/mac_out_reg[15]_i_27/O[2]
+                         net (fo=2, unplaced)         0.255     1.811    M1/mac_out_reg[15]_i_27_n_5
+                         LUT2 (Prop_lut2_I1_O)        0.128     1.939 r  M1/mac_out[11]_i_17/O
+                         net (fo=2, unplaced)         0.280     2.219    M1/mac_out[11]_i_17_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.126     2.345 r  M1/mac_out[11]_i_20/O
+                         net (fo=1, unplaced)         0.000     2.345    M1/mac_out[11]_i_20_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     2.518 r  M1/mac_out_reg[11]_i_15/CO[3]
+                         net (fo=1, unplaced)         0.000     2.518    M1/mac_out_reg[11]_i_15_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.116     2.634 r  M1/mac_out_reg[15]_i_15/O[2]
+                         net (fo=2, unplaced)         0.255     2.889    M1/mac_out_reg[15]_i_15_n_5
+                         LUT2 (Prop_lut2_I0_O)        0.128     3.017 r  M1/mac_out[11]_i_7/O
+                         net (fo=2, unplaced)         0.280     3.297    M1/mac_out[11]_i_7_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.126     3.423 r  M1/mac_out[11]_i_11/O
+                         net (fo=1, unplaced)         0.000     3.423    M1/mac_out[11]_i_11_n_0
+                         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.110     3.533 r  M1/mac_out_reg[11]_i_6/O[3]
+                         net (fo=1, unplaced)         0.253     3.786    A1/P[11]
+                         LUT2 (Prop_lut2_I1_O)        0.120     3.906 r  A1/mac_out[11]_i_2/O
+                         net (fo=1, unplaced)         0.000     3.906    A1/mac_out[11]_i_2_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     4.079 r  A1/mac_out_reg[11]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.079    A1/mac_out_reg[11]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.108     4.187 r  A1/mac_out_reg[15]_i_1/O[0]
+                         net (fo=1, unplaced)         0.000     4.187    A1/mac_out_reg[15]_i_1_n_7
+                         FDCE                                         r  A1/mac_out_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[3]
+                            (input port)
+  Destination:            A1/mac_out_reg[11]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.090ns  (logic 2.377ns (58.130%)  route 1.712ns (41.870%))
+  Logic Levels:           12  (CARRY4=6 IBUF=1 LUT2=3 LUT3=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  pixel_in[3] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[3]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 f  pixel_in_IBUF[3]_inst/O
+                         net (fo=38, unplaced)        0.434     0.993    M1/pixel_in_IBUF[3]
+                         LUT2 (Prop_lut2_I0_O)        0.050     1.043 r  M1/mac_out[7]_i_31/O
+                         net (fo=1, unplaced)         0.244     1.287    M1/mac_out[7]_i_31_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.043     1.330 r  M1/mac_out[7]_i_26/O
+                         net (fo=1, unplaced)         0.000     1.330    M1/mac_out[7]_i_26_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     1.503 r  M1/mac_out_reg[7]_i_21/CO[3]
+                         net (fo=1, unplaced)         0.000     1.503    M1/mac_out_reg[7]_i_21_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     1.662 r  M1/mac_out_reg[11]_i_24/O[1]
+                         net (fo=1, unplaced)         0.352     2.014    M1/mac_out_reg[11]_i_24_n_6
+                         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.388     2.402 r  M1/mac_out_reg[11]_i_16/O[2]
+                         net (fo=2, unplaced)         0.233     2.635    M1/mac_out_reg[11]_i_16_n_5
+                         LUT2 (Prop_lut2_I1_O)        0.131     2.766 r  M1/mac_out[7]_i_7/O
+                         net (fo=2, unplaced)         0.280     3.046    M1/mac_out[7]_i_7_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.126     3.172 r  M1/mac_out[7]_i_11/O
+                         net (fo=1, unplaced)         0.000     3.172    M1/mac_out[7]_i_11_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     3.345 r  M1/mac_out_reg[7]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.345    M1/mac_out_reg[7]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     3.504 r  M1/mac_out_reg[11]_i_6/O[1]
+                         net (fo=1, unplaced)         0.169     3.673    A1/P[9]
+                         LUT2 (Prop_lut2_I1_O)        0.121     3.794 r  A1/mac_out[11]_i_4/O
+                         net (fo=1, unplaced)         0.000     3.794    A1/mac_out[11]_i_4_n_0
+                         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.296     4.090 r  A1/mac_out_reg[11]_i_1/O[3]
+                         net (fo=1, unplaced)         0.000     4.090    A1/mac_out_reg[11]_i_1_n_4
+                         FDCE                                         r  A1/mac_out_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[9]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.086ns  (logic 2.036ns (49.842%)  route 2.049ns (50.158%))
+  Logic Levels:           9  (CARRY4=5 IBUF=1 LUT2=2 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[7]_i_24/O
+                         net (fo=1, unplaced)         0.248     1.284    M1/mac_out[7]_i_24_n_0
+                         CARRY4 (Prop_carry4_DI[2]_O[3])
+                                                      0.224     1.508 r  M1/mac_out_reg[7]_i_21/O[3]
+                         net (fo=1, unplaced)         0.412     1.920    M1/mac_out_reg[7]_i_21_n_4
+                         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.230     2.150 r  M1/mac_out_reg[7]_i_16/O[3]
+                         net (fo=2, unplaced)         0.264     2.414    M1/mac_out_reg[7]_i_16_n_4
+                         LUT2 (Prop_lut2_I1_O)        0.123     2.537 r  M1/mac_out[7]_i_10/O
+                         net (fo=2, unplaced)         0.438     2.975    M1/mac_out[7]_i_10_n_0
+                         CARRY4 (Prop_carry4_DI[0]_O[3])
+                                                      0.406     3.381 r  M1/mac_out_reg[7]_i_6/O[3]
+                         net (fo=1, unplaced)         0.253     3.634    A1/P[7]
+                         LUT2 (Prop_lut2_I1_O)        0.120     3.754 r  A1/mac_out[7]_i_2/O
+                         net (fo=1, unplaced)         0.000     3.754    A1/mac_out[7]_i_2_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     3.927 r  A1/mac_out_reg[7]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     3.927    A1/mac_out_reg[7]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     4.086 r  A1/mac_out_reg[11]_i_1/O[1]
+                         net (fo=1, unplaced)         0.000     4.086    A1/mac_out_reg[11]_i_1_n_6
+                         FDCE                                         r  A1/mac_out_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[3]
+                            (input port)
+  Destination:            A1/mac_out_reg[10]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.061ns  (logic 2.348ns (57.831%)  route 1.712ns (42.169%))
+  Logic Levels:           12  (CARRY4=6 IBUF=1 LUT2=3 LUT3=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  pixel_in[3] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[3]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 f  pixel_in_IBUF[3]_inst/O
+                         net (fo=38, unplaced)        0.434     0.993    M1/pixel_in_IBUF[3]
+                         LUT2 (Prop_lut2_I0_O)        0.050     1.043 r  M1/mac_out[7]_i_31/O
+                         net (fo=1, unplaced)         0.244     1.287    M1/mac_out[7]_i_31_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.043     1.330 r  M1/mac_out[7]_i_26/O
+                         net (fo=1, unplaced)         0.000     1.330    M1/mac_out[7]_i_26_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     1.503 r  M1/mac_out_reg[7]_i_21/CO[3]
+                         net (fo=1, unplaced)         0.000     1.503    M1/mac_out_reg[7]_i_21_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     1.662 r  M1/mac_out_reg[11]_i_24/O[1]
+                         net (fo=1, unplaced)         0.352     2.014    M1/mac_out_reg[11]_i_24_n_6
+                         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.388     2.402 r  M1/mac_out_reg[11]_i_16/O[2]
+                         net (fo=2, unplaced)         0.233     2.635    M1/mac_out_reg[11]_i_16_n_5
+                         LUT2 (Prop_lut2_I1_O)        0.131     2.766 r  M1/mac_out[7]_i_7/O
+                         net (fo=2, unplaced)         0.280     3.046    M1/mac_out[7]_i_7_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.126     3.172 r  M1/mac_out[7]_i_11/O
+                         net (fo=1, unplaced)         0.000     3.172    M1/mac_out[7]_i_11_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     3.345 r  M1/mac_out_reg[7]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.345    M1/mac_out_reg[7]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.159     3.504 r  M1/mac_out_reg[11]_i_6/O[1]
+                         net (fo=1, unplaced)         0.169     3.673    A1/P[9]
+                         LUT2 (Prop_lut2_I1_O)        0.121     3.794 r  A1/mac_out[11]_i_4/O
+                         net (fo=1, unplaced)         0.000     3.794    A1/mac_out[11]_i_4_n_0
+                         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.267     4.061 r  A1/mac_out_reg[11]_i_1/O[2]
+                         net (fo=1, unplaced)         0.000     4.061    A1/mac_out_reg[11]_i_1_n_5
+                         FDCE                                         r  A1/mac_out_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[8]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.035ns  (logic 1.985ns (49.208%)  route 2.049ns (50.792%))
+  Logic Levels:           9  (CARRY4=5 IBUF=1 LUT2=2 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[7]_i_24/O
+                         net (fo=1, unplaced)         0.248     1.284    M1/mac_out[7]_i_24_n_0
+                         CARRY4 (Prop_carry4_DI[2]_O[3])
+                                                      0.224     1.508 r  M1/mac_out_reg[7]_i_21/O[3]
+                         net (fo=1, unplaced)         0.412     1.920    M1/mac_out_reg[7]_i_21_n_4
+                         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.230     2.150 r  M1/mac_out_reg[7]_i_16/O[3]
+                         net (fo=2, unplaced)         0.264     2.414    M1/mac_out_reg[7]_i_16_n_4
+                         LUT2 (Prop_lut2_I1_O)        0.123     2.537 r  M1/mac_out[7]_i_10/O
+                         net (fo=2, unplaced)         0.438     2.975    M1/mac_out[7]_i_10_n_0
+                         CARRY4 (Prop_carry4_DI[0]_O[3])
+                                                      0.406     3.381 r  M1/mac_out_reg[7]_i_6/O[3]
+                         net (fo=1, unplaced)         0.253     3.634    A1/P[7]
+                         LUT2 (Prop_lut2_I1_O)        0.120     3.754 r  A1/mac_out[7]_i_2/O
+                         net (fo=1, unplaced)         0.000     3.754    A1/mac_out[7]_i_2_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.173     3.927 r  A1/mac_out_reg[7]_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     3.927    A1/mac_out_reg[7]_i_1_n_0
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.108     4.035 r  A1/mac_out_reg[11]_i_1/O[0]
+                         net (fo=1, unplaced)         0.000     4.035    A1/mac_out_reg[11]_i_1_n_7
+                         FDCE                                         r  A1/mac_out_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[7]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.881ns  (logic 1.840ns (47.424%)  route 2.040ns (52.576%))
+  Logic Levels:           8  (CARRY4=4 IBUF=1 LUT2=2 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[7]_i_24/O
+                         net (fo=1, unplaced)         0.248     1.284    M1/mac_out[7]_i_24_n_0
+                         CARRY4 (Prop_carry4_DI[2]_O[3])
+                                                      0.224     1.508 r  M1/mac_out_reg[7]_i_21/O[3]
+                         net (fo=1, unplaced)         0.412     1.920    M1/mac_out_reg[7]_i_21_n_4
+                         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.230     2.150 r  M1/mac_out_reg[7]_i_16/O[3]
+                         net (fo=2, unplaced)         0.264     2.414    M1/mac_out_reg[7]_i_16_n_4
+                         LUT2 (Prop_lut2_I1_O)        0.123     2.537 r  M1/mac_out[7]_i_10/O
+                         net (fo=2, unplaced)         0.438     2.975    M1/mac_out[7]_i_10_n_0
+                         CARRY4 (Prop_carry4_DI[0]_O[2])
+                                                      0.370     3.345 r  M1/mac_out_reg[7]_i_6/O[2]
+                         net (fo=1, unplaced)         0.244     3.589    A1/P[6]
+                         LUT2 (Prop_lut2_I1_O)        0.126     3.715 r  A1/mac_out[7]_i_3/O
+                         net (fo=1, unplaced)         0.000     3.715    A1/mac_out[7]_i_3_n_0
+                         CARRY4 (Prop_carry4_S[2]_O[3])
+                                                      0.166     3.881 r  A1/mac_out_reg[7]_i_1/O[3]
+                         net (fo=1, unplaced)         0.000     3.881    A1/mac_out_reg[7]_i_1_n_4
+                         FDCE                                         r  A1/mac_out_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[6]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.824ns  (logic 1.783ns (46.640%)  route 2.040ns (53.360%))
+  Logic Levels:           8  (CARRY4=4 IBUF=1 LUT2=2 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[7]_i_24/O
+                         net (fo=1, unplaced)         0.248     1.284    M1/mac_out[7]_i_24_n_0
+                         CARRY4 (Prop_carry4_DI[2]_O[3])
+                                                      0.224     1.508 r  M1/mac_out_reg[7]_i_21/O[3]
+                         net (fo=1, unplaced)         0.412     1.920    M1/mac_out_reg[7]_i_21_n_4
+                         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.230     2.150 r  M1/mac_out_reg[7]_i_16/O[3]
+                         net (fo=2, unplaced)         0.264     2.414    M1/mac_out_reg[7]_i_16_n_4
+                         LUT2 (Prop_lut2_I1_O)        0.123     2.537 r  M1/mac_out[7]_i_10/O
+                         net (fo=2, unplaced)         0.438     2.975    M1/mac_out[7]_i_10_n_0
+                         CARRY4 (Prop_carry4_DI[0]_O[2])
+                                                      0.370     3.345 r  M1/mac_out_reg[7]_i_6/O[2]
+                         net (fo=1, unplaced)         0.244     3.589    A1/P[6]
+                         LUT2 (Prop_lut2_I1_O)        0.126     3.715 r  A1/mac_out[7]_i_3/O
+                         net (fo=1, unplaced)         0.000     3.715    A1/mac_out[7]_i_3_n_0
+                         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.109     3.824 r  A1/mac_out_reg[7]_i_1/O[2]
+                         net (fo=1, unplaced)         0.000     3.824    A1/mac_out_reg[7]_i_1_n_5
+                         FDCE                                         r  A1/mac_out_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[5]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.666ns  (logic 1.745ns (47.614%)  route 1.920ns (52.386%))
+  Logic Levels:           9  (CARRY4=4 IBUF=1 LUT2=2 LUT3=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[7]_i_24/O
+                         net (fo=1, unplaced)         0.248     1.284    M1/mac_out[7]_i_24_n_0
+                         CARRY4 (Prop_carry4_DI[2]_O[3])
+                                                      0.224     1.508 r  M1/mac_out_reg[7]_i_21/O[3]
+                         net (fo=1, unplaced)         0.412     1.920    M1/mac_out_reg[7]_i_21_n_4
+                         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.230     2.150 r  M1/mac_out_reg[7]_i_16/O[3]
+                         net (fo=2, unplaced)         0.264     2.414    M1/mac_out_reg[7]_i_16_n_4
+                         LUT2 (Prop_lut2_I1_O)        0.123     2.537 r  M1/mac_out[7]_i_10/O
+                         net (fo=2, unplaced)         0.390     2.927    M1/mac_out[7]_i_10_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.128     3.055 r  M1/mac_out[7]_i_14/O
+                         net (fo=1, unplaced)         0.000     3.055    M1/mac_out[7]_i_14_n_0
+                         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.116     3.171 r  M1/mac_out_reg[7]_i_6/O[0]
+                         net (fo=1, unplaced)         0.172     3.343    A1/P[4]
+                         LUT2 (Prop_lut2_I1_O)        0.119     3.462 r  A1/mac_out[7]_i_5/O
+                         net (fo=1, unplaced)         0.000     3.462    A1/mac_out[7]_i_5_n_0
+                         CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.204     3.666 r  A1/mac_out_reg[7]_i_1/O[1]
+                         net (fo=1, unplaced)         0.000     3.666    A1/mac_out_reg[7]_i_1_n_6
+                         FDCE                                         r  A1/mac_out_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 pixel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[4]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.578ns  (logic 1.657ns (46.325%)  route 1.920ns (53.674%))
+  Logic Levels:           9  (CARRY4=4 IBUF=1 LUT2=2 LUT3=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  pixel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    pixel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  pixel_in_IBUF[0]_inst/O
+                         net (fo=26, unplaced)        0.434     0.993    M1/pixel_in_IBUF[0]
+                         LUT4 (Prop_lut4_I3_O)        0.043     1.036 r  M1/mac_out[7]_i_24/O
+                         net (fo=1, unplaced)         0.248     1.284    M1/mac_out[7]_i_24_n_0
+                         CARRY4 (Prop_carry4_DI[2]_O[3])
+                                                      0.224     1.508 r  M1/mac_out_reg[7]_i_21/O[3]
+                         net (fo=1, unplaced)         0.412     1.920    M1/mac_out_reg[7]_i_21_n_4
+                         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.230     2.150 r  M1/mac_out_reg[7]_i_16/O[3]
+                         net (fo=2, unplaced)         0.264     2.414    M1/mac_out_reg[7]_i_16_n_4
+                         LUT2 (Prop_lut2_I1_O)        0.123     2.537 r  M1/mac_out[7]_i_10/O
+                         net (fo=2, unplaced)         0.390     2.927    M1/mac_out[7]_i_10_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.128     3.055 r  M1/mac_out[7]_i_14/O
+                         net (fo=1, unplaced)         0.000     3.055    M1/mac_out[7]_i_14_n_0
+                         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.116     3.171 r  M1/mac_out_reg[7]_i_6/O[0]
+                         net (fo=1, unplaced)         0.172     3.343    A1/P[4]
+                         LUT2 (Prop_lut2_I1_O)        0.119     3.462 r  A1/mac_out[7]_i_5/O
+                         net (fo=1, unplaced)         0.000     3.462    A1/mac_out[7]_i_5_n_0
+                         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.116     3.578 r  A1/mac_out_reg[7]_i_1/O[0]
+                         net (fo=1, unplaced)         0.000     3.578    A1/mac_out_reg[7]_i_1_n_7
+                         FDCE                                         r  A1/mac_out_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 kernel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[3]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.362ns  (logic 1.787ns (53.169%)  route 1.574ns (46.831%))
+  Logic Levels:           9  (CARRY4=4 IBUF=1 LUT2=3 LUT3=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  kernel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    kernel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  kernel_in_IBUF[0]_inst/O
+                         net (fo=32, unplaced)        0.434     0.993    M1/kernel_in_IBUF[0]
+                         LUT2 (Prop_lut2_I1_O)        0.043     1.036 r  M1/mac_out[7]_i_29/O
+                         net (fo=1, unplaced)         0.000     1.036    M1/mac_out[7]_i_29_n_0
+                         CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.204     1.240 r  M1/mac_out_reg[7]_i_21/O[1]
+                         net (fo=1, unplaced)         0.352     1.592    M1/mac_out_reg[7]_i_21_n_6
+                         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.388     1.980 r  M1/mac_out_reg[7]_i_16/O[2]
+                         net (fo=2, unplaced)         0.255     2.235    M1/mac_out_reg[7]_i_16_n_5
+                         LUT2 (Prop_lut2_I1_O)        0.128     2.363 r  M1/mac_out[3]_i_7/O
+                         net (fo=2, unplaced)         0.280     2.643    M1/mac_out[3]_i_7_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.126     2.769 r  M1/mac_out[3]_i_10/O
+                         net (fo=1, unplaced)         0.000     2.769    M1/mac_out[3]_i_10_n_0
+                         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.110     2.879 r  M1/mac_out_reg[3]_i_6/O[3]
+                         net (fo=1, unplaced)         0.253     3.132    A1/P[3]
+                         LUT2 (Prop_lut2_I1_O)        0.120     3.252 r  A1/mac_out[3]_i_2/O
+                         net (fo=1, unplaced)         0.000     3.252    A1/mac_out[3]_i_2_n_0
+                         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.110     3.362 r  A1/mac_out_reg[3]_i_1/O[3]
+                         net (fo=1, unplaced)         0.000     3.362    A1/mac_out_reg[3]_i_1_n_4
+                         FDCE                                         r  A1/mac_out_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 kernel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[2]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.051ns  (logic 1.658ns (54.360%)  route 1.392ns (45.640%))
+  Logic Levels:           8  (CARRY4=4 IBUF=1 LUT2=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  kernel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    kernel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  kernel_in_IBUF[0]_inst/O
+                         net (fo=32, unplaced)        0.434     0.993    M1/kernel_in_IBUF[0]
+                         LUT2 (Prop_lut2_I1_O)        0.043     1.036 r  M1/mac_out[7]_i_29/O
+                         net (fo=1, unplaced)         0.000     1.036    M1/mac_out[7]_i_29_n_0
+                         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.116     1.152 r  M1/mac_out_reg[7]_i_21/O[0]
+                         net (fo=1, unplaced)         0.331     1.483    M1/mac_out_reg[7]_i_21_n_7
+                         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.235     1.718 r  M1/mac_out_reg[7]_i_16/O[0]
+                         net (fo=2, unplaced)         0.183     1.901    M1/mac_out_reg[7]_i_16_n_7
+                         LUT2 (Prop_lut2_I1_O)        0.123     2.024 r  M1/mac_out[3]_i_9/O
+                         net (fo=2, unplaced)         0.200     2.224    M1/mac_out[3]_i_9_n_0
+                         CARRY4 (Prop_carry4_DI[1]_O[2])
+                                                      0.348     2.572 r  M1/mac_out_reg[3]_i_6/O[2]
+                         net (fo=1, unplaced)         0.244     2.816    A1/P[2]
+                         LUT2 (Prop_lut2_I1_O)        0.126     2.942 r  A1/mac_out[3]_i_3/O
+                         net (fo=1, unplaced)         0.000     2.942    A1/mac_out[3]_i_3_n_0
+                         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.109     3.051 r  A1/mac_out_reg[3]_i_1/O[2]
+                         net (fo=1, unplaced)         0.000     3.051    A1/mac_out_reg[3]_i_1_n_5
+                         FDCE                                         r  A1/mac_out_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 kernel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.768ns  (logic 1.483ns (53.596%)  route 1.284ns (46.404%))
+  Logic Levels:           8  (CARRY4=4 IBUF=1 LUT2=2 LUT3=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  kernel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    kernel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  kernel_in_IBUF[0]_inst/O
+                         net (fo=32, unplaced)        0.434     0.993    M1/kernel_in_IBUF[0]
+                         LUT2 (Prop_lut2_I1_O)        0.043     1.036 r  M1/mac_out[7]_i_29/O
+                         net (fo=1, unplaced)         0.000     1.036    M1/mac_out[7]_i_29_n_0
+                         CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.204     1.240 r  M1/mac_out_reg[7]_i_21/O[1]
+                         net (fo=1, unplaced)         0.352     1.592    M1/mac_out_reg[7]_i_21_n_6
+                         CARRY4 (Prop_carry4_S[1]_O[1])
+                                                      0.226     1.818 r  M1/mac_out_reg[7]_i_16/O[1]
+                         net (fo=2, unplaced)         0.329     2.147    M1/mac_out_reg[7]_i_16_n_6
+                         LUT3 (Prop_lut3_I1_O)        0.121     2.268 r  M1/mac_out[3]_i_12/O
+                         net (fo=1, unplaced)         0.000     2.268    M1/mac_out[3]_i_12_n_0
+                         CARRY4 (Prop_carry4_S[1]_O[1])
+                                                      0.105     2.373 r  M1/mac_out_reg[3]_i_6/O[1]
+                         net (fo=1, unplaced)         0.169     2.542    A1/P[1]
+                         LUT2 (Prop_lut2_I1_O)        0.121     2.663 r  A1/mac_out[3]_i_4/O
+                         net (fo=1, unplaced)         0.000     2.663    A1/mac_out[3]_i_4_n_0
+                         CARRY4 (Prop_carry4_S[1]_O[1])
+                                                      0.105     2.768 r  A1/mac_out_reg[3]_i_1/O[1]
+                         net (fo=1, unplaced)         0.000     2.768    A1/mac_out_reg[3]_i_1_n_6
+                         FDCE                                         r  A1/mac_out_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 kernel_in[0]
+                            (input port)
+  Destination:            A1/mac_out_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.543ns  (logic 1.422ns (55.939%)  route 1.120ns (44.061%))
+  Logic Levels:           8  (CARRY4=4 IBUF=1 LUT2=3)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  kernel_in[0] (IN)
+                         net (fo=0)                   0.000     0.000    kernel_in[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  kernel_in_IBUF[0]_inst/O
+                         net (fo=32, unplaced)        0.434     0.993    M1/kernel_in_IBUF[0]
+                         LUT2 (Prop_lut2_I1_O)        0.043     1.036 r  M1/mac_out[7]_i_29/O
+                         net (fo=1, unplaced)         0.000     1.036    M1/mac_out[7]_i_29_n_0
+                         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.116     1.152 r  M1/mac_out_reg[7]_i_21/O[0]
+                         net (fo=1, unplaced)         0.331     1.483    M1/mac_out_reg[7]_i_21_n_7
+                         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.235     1.718 r  M1/mac_out_reg[7]_i_16/O[0]
+                         net (fo=2, unplaced)         0.183     1.901    M1/mac_out_reg[7]_i_16_n_7
+                         LUT2 (Prop_lut2_I1_O)        0.119     2.020 r  M1/mac_out[3]_i_13/O
+                         net (fo=1, unplaced)         0.000     2.020    M1/mac_out[3]_i_13_n_0
+                         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.116     2.136 r  M1/mac_out_reg[3]_i_6/O[0]
+                         net (fo=1, unplaced)         0.172     2.308    A1/P[0]
+                         LUT2 (Prop_lut2_I1_O)        0.119     2.427 r  A1/mac_out[3]_i_5/O
+                         net (fo=1, unplaced)         0.000     2.427    A1/mac_out[3]_i_5_n_0
+                         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.116     2.543 r  A1/mac_out_reg[3]_i_1/O[0]
+                         net (fo=1, unplaced)         0.000     2.543    A1/mac_out_reg[3]_i_1_n_7
+                         FDCE                                         r  A1/mac_out_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A1/mac_out_reg[0]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            mac_out[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.534ns  (logic 2.099ns (82.855%)  route 0.434ns (17.145%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  A1/mac_out_reg[0]/C
+                         FDCE (Prop_fdce_C_Q)         0.226     0.226 r  A1/mac_out_reg[0]/Q
+                         net (fo=3, unplaced)         0.434     0.660    mac_out_OBUF[0]
+                         OBUF (Prop_obuf_I_O)         1.873     2.534 r  mac_out_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     2.534    mac_out[0]
+                                                                      r  mac_out[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A1/mac_out_reg[10]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            mac_out[10]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.534ns  (logic 2.099ns (82.855%)  route 0.434ns (17.145%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  A1/mac_out_reg[10]/C
+                         FDCE (Prop_fdce_C_Q)         0.226     0.226 r  A1/mac_out_reg[10]/Q
+                         net (fo=3, unplaced)         0.434     0.660    mac_out_OBUF[10]
+                         OBUF (Prop_obuf_I_O)         1.873     2.534 r  mac_out_OBUF[10]_inst/O
+                         net (fo=0)                   0.000     2.534    mac_out[10]
+                                                                      r  mac_out[10] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A1/mac_out_reg[11]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            mac_out[11]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.534ns  (logic 2.099ns (82.855%)  route 0.434ns (17.145%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  A1/mac_out_reg[11]/C
+                         FDCE (Prop_fdce_C_Q)         0.226     0.226 r  A1/mac_out_reg[11]/Q
+                         net (fo=3, unplaced)         0.434     0.660    mac_out_OBUF[11]
+                         OBUF (Prop_obuf_I_O)         1.873     2.534 r  mac_out_OBUF[11]_inst/O
+                         net (fo=0)                   0.000     2.534    mac_out[11]
+                                                                      r  mac_out[11] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A1/mac_out_reg[12]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            mac_out[12]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.534ns  (logic 2.099ns (82.855%)  route 0.434ns (17.145%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  A1/mac_out_reg[12]/C
+                         FDCE (Prop_fdce_C_Q)         0.226     0.226 r  A1/mac_out_reg[12]/Q
+                         net (fo=3, unplaced)         0.434     0.660    mac_out_OBUF[12]
+                         OBUF (Prop_obuf_I_O)         1.873     2.534 r  mac_out_OBUF[12]_inst/O
+                         net (fo=0)                   0.000     2.534    mac_out[12]
+                                                                      r  mac_out[12] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A1/mac_out_reg[13]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            mac_out[13]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.534ns  (logic 2.099ns (82.855%)  route 0.434ns (17.145%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  A1/mac_out_reg[13]/C
+                         FDCE (Prop_fdce_C_Q)         0.226     0.226 r  A1/mac_out_reg[13]/Q
+                         net (fo=3, unplaced)         0.434     0.660    mac_out_OBUF[13]
+                         OBUF (Prop_obuf_I_O)         1.873     2.534 r  mac_out_OBUF[13]_inst/O
+                         net (fo=0)                   0.000     2.534    mac_out[13]
+                                                                      r  mac_out[13] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A1/mac_out_reg[14]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            mac_out[14]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.534ns  (logic 2.099ns (82.855%)  route 0.434ns (17.145%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  A1/mac_out_reg[14]/C
+                         FDCE (Prop_fdce_C_Q)         0.226     0.226 r  A1/mac_out_reg[14]/Q
+                         net (fo=3, unplaced)         0.434     0.660    mac_out_OBUF[14]
+                         OBUF (Prop_obuf_I_O)         1.873     2.534 r  mac_out_OBUF[14]_inst/O
+                         net (fo=0)                   0.000     2.534    mac_out[14]
+                                                                      r  mac_out[14] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A1/mac_out_reg[15]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            mac_out[15]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.534ns  (logic 2.099ns (82.855%)  route 0.434ns (17.145%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  A1/mac_out_reg[15]/C
+                         FDCE (Prop_fdce_C_Q)         0.226     0.226 r  A1/mac_out_reg[15]/Q
+                         net (fo=3, unplaced)         0.434     0.660    mac_out_OBUF[15]
+                         OBUF (Prop_obuf_I_O)         1.873     2.534 r  mac_out_OBUF[15]_inst/O
+                         net (fo=0)                   0.000     2.534    mac_out[15]
+                                                                      r  mac_out[15] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A1/mac_out_reg[16]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            mac_out[16]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.534ns  (logic 2.099ns (82.855%)  route 0.434ns (17.145%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  A1/mac_out_reg[16]/C
+                         FDCE (Prop_fdce_C_Q)         0.226     0.226 r  A1/mac_out_reg[16]/Q
+                         net (fo=3, unplaced)         0.434     0.660    mac_out_OBUF[16]
+                         OBUF (Prop_obuf_I_O)         1.873     2.534 r  mac_out_OBUF[16]_inst/O
+                         net (fo=0)                   0.000     2.534    mac_out[16]
+                                                                      r  mac_out[16] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A1/mac_out_reg[17]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            mac_out[17]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.534ns  (logic 2.099ns (82.855%)  route 0.434ns (17.145%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  A1/mac_out_reg[17]/C
+                         FDCE (Prop_fdce_C_Q)         0.226     0.226 r  A1/mac_out_reg[17]/Q
+                         net (fo=3, unplaced)         0.434     0.660    mac_out_OBUF[17]
+                         OBUF (Prop_obuf_I_O)         1.873     2.534 r  mac_out_OBUF[17]_inst/O
+                         net (fo=0)                   0.000     2.534    mac_out[17]
+                                                                      r  mac_out[17] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A1/mac_out_reg[18]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            mac_out[18]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.534ns  (logic 2.099ns (82.855%)  route 0.434ns (17.145%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  A1/mac_out_reg[18]/C
+                         FDCE (Prop_fdce_C_Q)         0.226     0.226 r  A1/mac_out_reg[18]/Q
+                         net (fo=3, unplaced)         0.434     0.660    mac_out_OBUF[18]
+                         OBUF (Prop_obuf_I_O)         1.873     2.534 r  mac_out_OBUF[18]_inst/O
+                         net (fo=0)                   0.000     2.534    mac_out[18]
+                                                                      r  mac_out[18] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A1/mac_out_reg[19]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            mac_out[19]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.534ns  (logic 2.099ns (82.855%)  route 0.434ns (17.145%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  A1/mac_out_reg[19]/C
+                         FDCE (Prop_fdce_C_Q)         0.226     0.226 r  A1/mac_out_reg[19]/Q
+                         net (fo=3, unplaced)         0.434     0.660    mac_out_OBUF[19]
+                         OBUF (Prop_obuf_I_O)         1.873     2.534 r  mac_out_OBUF[19]_inst/O
+                         net (fo=0)                   0.000     2.534    mac_out[19]
+                                                                      r  mac_out[19] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A1/mac_out_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            mac_out[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.534ns  (logic 2.099ns (82.855%)  route 0.434ns (17.145%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  A1/mac_out_reg[1]/C
+                         FDCE (Prop_fdce_C_Q)         0.226     0.226 r  A1/mac_out_reg[1]/Q
+                         net (fo=3, unplaced)         0.434     0.660    mac_out_OBUF[1]
+                         OBUF (Prop_obuf_I_O)         1.873     2.534 r  mac_out_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     2.534    mac_out[1]
+                                                                      r  mac_out[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A1/mac_out_reg[20]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            mac_out[20]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.534ns  (logic 2.099ns (82.855%)  route 0.434ns (17.145%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  A1/mac_out_reg[20]/C
+                         FDCE (Prop_fdce_C_Q)         0.226     0.226 r  A1/mac_out_reg[20]/Q
+                         net (fo=3, unplaced)         0.434     0.660    mac_out_OBUF[20]
+                         OBUF (Prop_obuf_I_O)         1.873     2.534 r  mac_out_OBUF[20]_inst/O
+                         net (fo=0)                   0.000     2.534    mac_out[20]
+                                                                      r  mac_out[20] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A1/mac_out_reg[21]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            mac_out[21]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.534ns  (logic 2.099ns (82.855%)  route 0.434ns (17.145%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  A1/mac_out_reg[21]/C
+                         FDCE (Prop_fdce_C_Q)         0.226     0.226 r  A1/mac_out_reg[21]/Q
+                         net (fo=3, unplaced)         0.434     0.660    mac_out_OBUF[21]
+                         OBUF (Prop_obuf_I_O)         1.873     2.534 r  mac_out_OBUF[21]_inst/O
+                         net (fo=0)                   0.000     2.534    mac_out[21]
+                                                                      r  mac_out[21] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A1/mac_out_reg[22]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            mac_out[22]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.534ns  (logic 2.099ns (82.855%)  route 0.434ns (17.145%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  A1/mac_out_reg[22]/C
+                         FDCE (Prop_fdce_C_Q)         0.226     0.226 r  A1/mac_out_reg[22]/Q
+                         net (fo=3, unplaced)         0.434     0.660    mac_out_OBUF[22]
+                         OBUF (Prop_obuf_I_O)         1.873     2.534 r  mac_out_OBUF[22]_inst/O
+                         net (fo=0)                   0.000     2.534    mac_out[22]
+                                                                      r  mac_out[22] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A1/mac_out_reg[23]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            mac_out[23]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.534ns  (logic 2.099ns (82.855%)  route 0.434ns (17.145%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  A1/mac_out_reg[23]/C
+                         FDCE (Prop_fdce_C_Q)         0.226     0.226 r  A1/mac_out_reg[23]/Q
+                         net (fo=3, unplaced)         0.434     0.660    mac_out_OBUF[23]
+                         OBUF (Prop_obuf_I_O)         1.873     2.534 r  mac_out_OBUF[23]_inst/O
+                         net (fo=0)                   0.000     2.534    mac_out[23]
+                                                                      r  mac_out[23] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A1/mac_out_reg[24]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            mac_out[24]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.534ns  (logic 2.099ns (82.855%)  route 0.434ns (17.145%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  A1/mac_out_reg[24]/C
+                         FDCE (Prop_fdce_C_Q)         0.226     0.226 r  A1/mac_out_reg[24]/Q
+                         net (fo=3, unplaced)         0.434     0.660    mac_out_OBUF[24]
+                         OBUF (Prop_obuf_I_O)         1.873     2.534 r  mac_out_OBUF[24]_inst/O
+                         net (fo=0)                   0.000     2.534    mac_out[24]
+                                                                      r  mac_out[24] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 A1/mac_out_reg[25]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            mac_out[25]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.534ns  (logic 2.099ns (82.855%)  route 0.434ns (17.145%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  A1/mac_out_reg[25]/C
+                         FDCE (Prop_fdce_C_Q)         0.226     0.226 r  A1/mac_out_reg[25]/Q
+                         net (fo=3, unplaced)         0.434     0.660    mac_out_OBUF[25]
+                         OBUF (Prop_obuf_I_O)         1.873     2.534 r  mac_out_OBUF[25]_inst/O
+                         net (fo=0)                   0.000     2.534    mac_out[25]
+                                                                      r  mac_out[25] (OUT)
+  -------------------------------------------------------------------    -------------------
 
 
-
-check_timing report
-
-Table of Contents
------------------
-1. checking no_clock
-2. checking constant_clock
-3. checking pulse_width_clock
-4. checking unconstrained_internal_endpoints
-5. checking no_input_delay
-6. checking no_output_delay
-7. checking multiple_clock
-8. checking generated_clocks
-9. checking loops
-10. checking partial_input_delay
-11. checking partial_output_delay
-12. checking latch_loops
-
-1. checking no_clock
---------------------
- There are 2 register/latch pins with no clock driven by root clock pin: clk (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: start (HIGH)
-
-
-2. checking constant_clock
---------------------------
- There are 0 register/latch pins with constant_clock.
-
-
-3. checking pulse_width_clock
------------------------------
- There are 0 register/latch pins which need pulse_width check
-
-
-4. checking unconstrained_internal_endpoints
---------------------------------------------
- There are 83 pins that are not constrained for maximum delay. (HIGH)
-
- There are 0 pins that are not constrained for maximum delay due to constant clock.
-
-
-5. checking no_input_delay
---------------------------
- There are 33 input ports with no input delay specified. (HIGH)
-
- There are 0 input ports with no input delay but user has a false path constraint.
-
-
-6. checking no_output_delay
----------------------------
- There are 32 ports with no output delay specified. (HIGH)
-
- There are 0 ports with no output delay but user has a false path constraint
-
- There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
-
-
-7. checking multiple_clock
---------------------------
- There are 0 register/latch pins with multiple clocks.
-
-
-8. checking generated_clocks
-----------------------------
- There are 0 generated clocks that are not connected to a clock source.
-
-
-9. checking loops
------------------
- There are 0 combinational loops in the design.
-
-
-10. checking partial_input_delay
---------------------------------
- There are 0 input ports with partial input delay specified.
-
-
-11. checking partial_output_delay
----------------------------------
- There are 0 ports with partial output delay specified.
-
-
-12. checking latch_loops
-------------------------
- There are 0 combinational latch loops in the design through latch input
-
-
-
-------------------------------------------------------------------------------------------------
-| Design Timing Summary
-| ---------------------
-------------------------------------------------------------------------------------------------
-
-    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
-    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-         NA           NA                     NA                   NA           NA           NA                     NA                   NA           NA           NA                      NA                    NA  
-
-
-There are no user specified timing constraints.
-
-
-------------------------------------------------------------------------------------------------
-| Clock Summary
-| -------------
-------------------------------------------------------------------------------------------------
-
-
-------------------------------------------------------------------------------------------------
-| Intra Clock Table
-| -----------------
-------------------------------------------------------------------------------------------------
-
-Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
------             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-
-
-------------------------------------------------------------------------------------------------
-| Inter Clock Table
-| -----------------
-------------------------------------------------------------------------------------------------
-
-From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
-----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
-
-
-------------------------------------------------------------------------------------------------
-| Other Path Groups Table
-| -----------------------
-------------------------------------------------------------------------------------------------
-
-Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
-----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
-
-
-------------------------------------------------------------------------------------------------
-| Timing Details
-| --------------
-------------------------------------------------------------------------------------------------
 
 

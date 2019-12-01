@@ -1,0 +1,43 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Sat Nov 30 07:26:31 2019
+| Host         : GCS running 64-bit Ubuntu 18.04.3 LTS
+| Command      : report_timing -file /home/gsaied/Desktop/verilog_rtl/conv10/part2/timing.rpt
+| Design       : rom_array_layer_1
+| Device       : 7vx690t-ffg1157
+| Speed File   : -3  PRODUCTION 1.11 2014-09-11
+----------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 address[0]
+                            (input port)
+  Destination:            out1[10]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.973ns  (logic 2.483ns (62.499%)  route 1.490ns (37.501%))
+  Logic Levels:           5  (IBUF=1 LUT2=1 LUT6=2 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  address[0] (IN)
+                         net (fo=0)                   0.000     0.000    address[0]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 f  address_IBUF[0]_inst/O
+                         net (fo=542, unplaced)       0.434     0.993    address_IBUF[0]
+                         LUT2 (Prop_lut2_I1_O)        0.043     1.036 r  out1_OBUF[10]_inst_i_5/O
+                         net (fo=1, unplaced)         0.244     1.280    out1_OBUF[10]_inst_i_5_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.043     1.323 r  out1_OBUF[10]_inst_i_2/O
+                         net (fo=1, unplaced)         0.377     1.700    out1_OBUF[10]_inst_i_2_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.043     1.743 r  out1_OBUF[10]_inst_i_1/O
+                         net (fo=1, unplaced)         0.434     2.177    out1_OBUF[10]
+                         OBUF (Prop_obuf_I_O)         1.795     3.973 r  out1_OBUF[10]_inst/O
+                         net (fo=0)                   0.000     3.973    out1[10]
+                                                                      r  out1[10] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+

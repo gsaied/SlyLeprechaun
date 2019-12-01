@@ -22,8 +22,13 @@ reg [width-1:0] ram3d [0:ram_num-1][0:2**address-1] ;
 genvar i ;
 generate 
 	for (i = 0 ; i < ram_num; i++) begin
-		always@(posedge clk  ) begin
-			if (ena[i]) begin
+		always@(posedge clk or negedge rst  ) begin
+			if (!rst) begin
+				for (int j = 0 ; j < 2**address ; j++) begin
+					ram3d[i][j] <= 16'b0 ;
+				end
+			end
+			else if (ena[i]) begin
 					if(wea[i]) begin
 						ram3d[i][addra[i]] <=dina[i] ;
 					end
@@ -37,6 +42,13 @@ endgenerate
 generate 
 	for (i = 0 ; i < ram_num; i++) begin
 		always@(posedge clk ) begin
+			/*
+			if (!rst) begin
+				for (int j = 0 ; j<< 2**address ; j++) begin
+					ram_3d[i][j] <= 16'b0 ;
+				end
+			end
+			*/
 			if(enb[i]) begin
 				if(web[i]) begin
 					ram3d[i][addrb[i]] <=dinb[i] ;

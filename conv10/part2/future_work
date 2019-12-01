@@ -1,0 +1,6 @@
+to be added in the same ROM
+48 fire8/expand1x1 112
+55 fire9/expand1x1 112
+41 fire7/expand1x1 64
+
+total number = 736+112*2+64=1024

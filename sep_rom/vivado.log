@@ -1,0 +1,460 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Nov 26 16:59:45 2019
+# Process ID: 4204
+# Current directory: /home/gsaied/Desktop/verilog_rtl/sep_rom
+# Command line: vivado -mode tcl -source synth.tcl
+# Log file: /home/gsaied/Desktop/verilog_rtl/sep_rom/vivado.log
+# Journal file: /home/gsaied/Desktop/verilog_rtl/sep_rom/vivado.jou
+#-----------------------------------------------------------
+source synth.tcl
+# set dirt /home/gsaied/Desktop/verilog_rtl/sep_rom
+# cd $dirt
+# read_verilog -sv [ glob *.sv ] 
+# synth_design -top rom_array_layer_1 -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none  
+Command: synth_design -top rom_array_layer_1 -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4210 
+WARNING: [Synth 8-2490] overwriting previous definition of module rom_array_layer_1 [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:338]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1435.961 ; gain = 80.500 ; free physical = 3717 ; free virtual = 7283
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rom_array_layer_1' [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:338]
+	Parameter WIDTH bound to: 16 - type: integer 
+	Parameter KERNEL bound to: 3 - type: integer 
+	Parameter ADDR bound to: 5 - type: integer 
+	Parameter NUM bound to: 64 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:350]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:353]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:356]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:359]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:362]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:365]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:368]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:371]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:374]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:377]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:380]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:383]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:386]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:389]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:392]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:395]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:398]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:401]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:404]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:407]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:410]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:413]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:416]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:419]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:422]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:425]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:428]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:431]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:434]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:437]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:440]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:443]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:446]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:449]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:452]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:455]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:458]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:461]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:464]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:467]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:470]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:473]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:476]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:479]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:482]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:485]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:488]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:491]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:494]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:497]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:500]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:503]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:506]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:509]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:512]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:515]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:518]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:521]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:524]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:527]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:530]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:533]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:536]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:539]
+INFO: [Synth 8-3876] $readmem data file 'file_1.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:541]
+INFO: [Synth 8-3876] $readmem data file 'file_2.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:542]
+INFO: [Synth 8-3876] $readmem data file 'file_3.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:543]
+INFO: [Synth 8-3876] $readmem data file 'file_4.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:544]
+INFO: [Synth 8-3876] $readmem data file 'file_5.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:545]
+INFO: [Synth 8-3876] $readmem data file 'file_6.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:546]
+INFO: [Synth 8-3876] $readmem data file 'file_7.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:547]
+INFO: [Synth 8-3876] $readmem data file 'file_8.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:548]
+INFO: [Synth 8-3876] $readmem data file 'file_9.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:549]
+INFO: [Synth 8-3876] $readmem data file 'file_10.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:550]
+INFO: [Synth 8-3876] $readmem data file 'file_11.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:551]
+INFO: [Synth 8-3876] $readmem data file 'file_12.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:552]
+INFO: [Synth 8-3876] $readmem data file 'file_13.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:553]
+INFO: [Synth 8-3876] $readmem data file 'file_14.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:554]
+INFO: [Synth 8-3876] $readmem data file 'file_15.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:555]
+INFO: [Synth 8-3876] $readmem data file 'file_16.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:556]
+INFO: [Synth 8-3876] $readmem data file 'file_17.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:557]
+INFO: [Synth 8-3876] $readmem data file 'file_18.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:558]
+INFO: [Synth 8-3876] $readmem data file 'file_19.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:559]
+INFO: [Synth 8-3876] $readmem data file 'file_20.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:560]
+INFO: [Synth 8-3876] $readmem data file 'file_21.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:561]
+INFO: [Synth 8-3876] $readmem data file 'file_22.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:562]
+INFO: [Synth 8-3876] $readmem data file 'file_23.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:563]
+INFO: [Synth 8-3876] $readmem data file 'file_24.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:564]
+INFO: [Synth 8-3876] $readmem data file 'file_25.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:565]
+INFO: [Synth 8-3876] $readmem data file 'file_26.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:566]
+INFO: [Synth 8-3876] $readmem data file 'file_27.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:567]
+INFO: [Synth 8-3876] $readmem data file 'file_28.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:568]
+INFO: [Synth 8-3876] $readmem data file 'file_29.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:569]
+INFO: [Synth 8-3876] $readmem data file 'file_30.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:570]
+INFO: [Synth 8-3876] $readmem data file 'file_31.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:571]
+INFO: [Synth 8-3876] $readmem data file 'file_32.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:572]
+INFO: [Synth 8-3876] $readmem data file 'file_33.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:573]
+INFO: [Synth 8-3876] $readmem data file 'file_34.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:574]
+INFO: [Synth 8-3876] $readmem data file 'file_35.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:575]
+INFO: [Synth 8-3876] $readmem data file 'file_36.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:576]
+INFO: [Synth 8-3876] $readmem data file 'file_37.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:577]
+INFO: [Synth 8-3876] $readmem data file 'file_38.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:578]
+INFO: [Synth 8-3876] $readmem data file 'file_39.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:579]
+INFO: [Synth 8-3876] $readmem data file 'file_40.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:580]
+INFO: [Synth 8-3876] $readmem data file 'file_41.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:581]
+INFO: [Synth 8-3876] $readmem data file 'file_42.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:582]
+INFO: [Synth 8-3876] $readmem data file 'file_43.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:583]
+INFO: [Synth 8-3876] $readmem data file 'file_44.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:584]
+INFO: [Synth 8-3876] $readmem data file 'file_45.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:585]
+INFO: [Synth 8-3876] $readmem data file 'file_46.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:586]
+INFO: [Synth 8-3876] $readmem data file 'file_47.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:587]
+INFO: [Synth 8-3876] $readmem data file 'file_48.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:588]
+INFO: [Synth 8-3876] $readmem data file 'file_49.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:589]
+INFO: [Synth 8-3876] $readmem data file 'file_50.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:590]
+INFO: [Synth 8-3876] $readmem data file 'file_51.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:591]
+INFO: [Synth 8-3876] $readmem data file 'file_52.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:592]
+INFO: [Synth 8-3876] $readmem data file 'file_53.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:593]
+INFO: [Synth 8-3876] $readmem data file 'file_54.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:594]
+INFO: [Synth 8-3876] $readmem data file 'file_55.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:595]
+INFO: [Synth 8-3876] $readmem data file 'file_56.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:596]
+INFO: [Synth 8-3876] $readmem data file 'file_57.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:597]
+INFO: [Synth 8-3876] $readmem data file 'file_58.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:598]
+INFO: [Synth 8-3876] $readmem data file 'file_59.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:599]
+INFO: [Synth 8-3876] $readmem data file 'file_60.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:600]
+INFO: [Synth 8-3876] $readmem data file 'file_61.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:601]
+INFO: [Synth 8-3876] $readmem data file 'file_62.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:602]
+INFO: [Synth 8-3876] $readmem data file 'file_63.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:603]
+INFO: [Synth 8-3876] $readmem data file 'file_64.txt' is read successfully [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:604]
+INFO: [Synth 8-6155] done synthesizing module 'rom_array_layer_1' (1#1) [/home/gsaied/Desktop/verilog_rtl/sep_rom/rom.sv:338]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1533.086 ; gain = 177.625 ; free physical = 3664 ; free virtual = 7235
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1533.086 ; gain = 177.625 ; free physical = 3672 ; free virtual = 7243
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1157-3
+INFO: [Device 21-403] Loading part xc7vx690tffg1157-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1541.090 ; gain = 185.629 ; free physical = 3671 ; free virtual = 7242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1628.684 ; gain = 273.223 ; free physical = 3439 ; free virtual = 7092
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1792.074 ; gain = 436.613 ; free physical = 3293 ; free virtual = 6937
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------+------------+---------------+----------------+
+|Module Name       | RTL Object | Depth x Width | Implemented As | 
++------------------+------------+---------------+----------------+
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
++------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1792.074 ; gain = 436.613 ; free physical = 3276 ; free virtual = 6937
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1800.082 ; gain = 444.621 ; free physical = 3263 ; free virtual = 6923
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1800.082 ; gain = 444.621 ; free physical = 3261 ; free virtual = 6921
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1800.082 ; gain = 444.621 ; free physical = 3261 ; free virtual = 6921
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1800.082 ; gain = 444.621 ; free physical = 3261 ; free virtual = 6921
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT4 |    14|
+|3     |LUT5 |   856|
+|4     |IBUF |     5|
+|5     |OBUF |  1024|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  1900|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1800.082 ; gain = 444.621 ; free physical = 3261 ; free virtual = 6921
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1800.082 ; gain = 444.621 ; free physical = 3262 ; free virtual = 6923
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1800.090 ; gain = 444.621 ; free physical = 3262 ; free virtual = 6923
+INFO: [Project 1-571] Translating synthesized netlist
+WARNING: [Netlist 29-101] Netlist 'rom_array_layer_1' is not ideal for floorplanning, since the cellview 'rom_array_layer_1' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1921.719 ; gain = 0.000 ; free physical = 3146 ; free virtual = 6823
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+137 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1921.719 ; gain = 574.262 ; free physical = 3203 ; free virtual = 6880
+# report_design_analysis -file $dirt/design.rpt
+report_design_analysis: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2572.051 ; gain = 650.332 ; free physical = 2548 ; free virtual = 6253
+# report_utilization -file $dirt/utiliziation.rpt
+# report_timing -file $dirt/timing.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+vi ss
+WARNING: [Common 17-259] Unknown Tcl command 'vi ss' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+rm ss 
+WARNING: [Common 17-259] Unknown Tcl command 'rm ss' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+vi utiliziation.rpt 
+WARNING: [Common 17-259] Unknown Tcl command 'vi utiliziation.rpt' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 26 17:01:22 2019...

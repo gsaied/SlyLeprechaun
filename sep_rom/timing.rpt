@@ -1,0 +1,39 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Tue Nov 26 17:00:31 2019
+| Host         : GCS running 64-bit Ubuntu 18.04.3 LTS
+| Command      : report_timing -file /home/gsaied/Desktop/verilog_rtl/sep_rom/timing.rpt
+| Design       : rom_array_layer_1
+| Device       : 7vx690t-ffg1157
+| Speed File   : -3  PRODUCTION 1.11 2014-09-11
+-----------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 address[3]
+                            (input port)
+  Destination:            rom_out[0][15]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.273ns  (logic 2.404ns (73.452%)  route 0.869ns (26.548%))
+  Logic Levels:           3  (IBUF=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  address[3] (IN)
+                         net (fo=0)                   0.000     0.000    address[3]
+                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  address_IBUF[3]_inst/O
+                         net (fo=870, unplaced)       0.434     0.993    address_IBUF[3]
+                         LUT5 (Prop_lut5_I3_O)        0.050     1.043 r  rom_out[0][15]_INST_0_i_1/O
+                         net (fo=1, unplaced)         0.434     1.477    rom_out[0]_OBUF[15]
+                         OBUF (Prop_obuf_I_O)         1.795     3.273 r  rom_out[0][15]_INST_0/O
+                         net (fo=0)                   0.000     3.273    rom_out[0][15]
+                                                                      r  rom_out[0][15] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+

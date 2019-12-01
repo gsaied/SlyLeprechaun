@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="conv1_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="conv1" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="3353333333fs"></ZoomStartTime>
+      <ZoomEndTime time="3889333334fs"></ZoomEndTime>
+      <Cursor1Time time="3648333000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="130"></NameColumnWidth>
+      <ValueColumnWidth column_width="193"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="30" />
+   <wvobject type="logic" fp_name="/conv1/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/conv1/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/conv1/conv1_en">
+      <obj_property name="ElementShortName">conv1_en</obj_property>
+      <obj_property name="ObjectShortName">conv1_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/conv1/conv1_end">
+      <obj_property name="ElementShortName">conv1_end</obj_property>
+      <obj_property name="ObjectShortName">conv1_end</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/ofm">
+      <obj_property name="ElementShortName">ofm[0:63][15:0]</obj_property>
+      <obj_property name="ObjectShortName">ofm[0:63][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/biasing_wire">
+      <obj_property name="ElementShortName">biasing_wire[0:63][15:0]</obj_property>
+      <obj_property name="ObjectShortName">biasing_wire[0:63][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/ofmw">
+      <obj_property name="ElementShortName">ofmw[0:63][31:0]</obj_property>
+      <obj_property name="ObjectShortName">ofmw[0:63][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/counter_10">
+      <obj_property name="ElementShortName">counter_10[4:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_10[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/conv1/clk_3">
+      <obj_property name="ElementShortName">clk_3</obj_property>
+      <obj_property name="ObjectShortName">clk_3</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/conv1_timer">
+      <obj_property name="ElementShortName">conv1_timer[15:0]</obj_property>
+      <obj_property name="ObjectShortName">conv1_timer[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/kernels">
+      <obj_property name="ElementShortName">kernels[0:63][15:0]</obj_property>
+      <obj_property name="ObjectShortName">kernels[0:63][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/kernel_regs">
+      <obj_property name="ElementShortName">kernel_regs[0:63][15:0]</obj_property>
+      <obj_property name="ObjectShortName">kernel_regs[0:63][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/weight_rom_address">
+      <obj_property name="ElementShortName">weight_rom_address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_rom_address[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/conv1/clr_pulse">
+      <obj_property name="ElementShortName">clr_pulse</obj_property>
+      <obj_property name="ObjectShortName">clr_pulse</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/img_rom_wire">
+      <obj_property name="ElementShortName">img_rom_wire[15:0]</obj_property>
+      <obj_property name="ObjectShortName">img_rom_wire[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/img_rom_address">
+      <obj_property name="ElementShortName">img_rom_address[17:0]</obj_property>
+      <obj_property name="ObjectShortName">img_rom_address[17:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/ref_address">
+      <obj_property name="ElementShortName">ref_address[17:0]</obj_property>
+      <obj_property name="ObjectShortName">ref_address[17:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/img_addr_counter">
+      <obj_property name="ElementShortName">img_addr_counter[5:0]</obj_property>
+      <obj_property name="ObjectShortName">img_addr_counter[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/clk_sampling_counter">
+      <obj_property name="ElementShortName">clk_sampling_counter[4:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_sampling_counter[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/conv1/clk_sampling">
+      <obj_property name="ElementShortName">clk_sampling</obj_property>
+      <obj_property name="ObjectShortName">clk_sampling</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/DSP_NO">
+      <obj_property name="ElementShortName">DSP_NO[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DSP_NO[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/STRIDE">
+      <obj_property name="ElementShortName">STRIDE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">STRIDE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/W_IN">
+      <obj_property name="ElementShortName">W_IN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">W_IN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/H_IN">
+      <obj_property name="ElementShortName">H_IN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">H_IN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/WIDTH">
+      <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/CHIN">
+      <obj_property name="ElementShortName">CHIN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CHIN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/KERNEL_DIM">
+      <obj_property name="ElementShortName">KERNEL_DIM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">KERNEL_DIM[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/CHOUT">
+      <obj_property name="ElementShortName">CHOUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CHOUT[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/CONV1_TIMER">
+      <obj_property name="ElementShortName">CONV1_TIMER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CONV1_TIMER[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conv1/WINDOWS">
+      <obj_property name="ElementShortName">WINDOWS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WINDOWS[31:0]</obj_property>
+   </wvobject>
+</wave_config>
