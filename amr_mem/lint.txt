@@ -1,0 +1,63 @@
+%Warning-IMPLICIT: mem.sv:53: Signal definition not found, creating implicitly: web
+%Warning-IMPLICIT: Use "/* verilator lint_off IMPLICIT */" and lint_on around source to disable this message.
+%Warning-IMPLICIT: mem.sv:54: Signal definition not found, creating implicitly: enb
+%Warning-WIDTH: mem.sv:51: Input port connection 'wea' expects 64 bits on the pin connection, but pin connection's ARRAYSEL generates 1 bits.
+%Warning-WIDTH: mem.sv:52: Input port connection 'ena' expects 64 bits on the pin connection, but pin connection's ARRAYSEL generates 1 bits.
+%Warning-WIDTH: mem.sv:53: Input port connection 'web' expects 64 bits on the pin connection, but pin connection's VARREF 'web' generates 1 bits.
+%Warning-WIDTH: mem.sv:54: Input port connection 'enb' expects 64 bits on the pin connection, but pin connection's VARREF 'enb' generates 1 bits.
+%Warning-WIDTH: mem.sv:74: Input port connection 'wea' expects 64 bits on the pin connection, but pin connection's ARRAYSEL generates 1 bits.
+%Warning-WIDTH: mem.sv:75: Input port connection 'ena' expects 64 bits on the pin connection, but pin connection's ARRAYSEL generates 1 bits.
+%Warning-WIDTH: mem.sv:76: Input port connection 'web' expects 64 bits on the pin connection, but pin connection's VARREF 'web' generates 1 bits.
+%Warning-WIDTH: mem.sv:77: Input port connection 'enb' expects 64 bits on the pin connection, but pin connection's VARREF 'enb' generates 1 bits.
+%Warning-SELRANGE: mem.sv:80: Selection index out of range: 8 outside 7:0
+%Warning-SELRANGE: mem.sv:74: Selection index out of range: 9 outside 8:0
+%Warning-SELRANGE: mem.sv:75: Selection index out of range: 9 outside 8:0
+%Warning-SELRANGE: mem.sv:80: Selection index out of range: 9 outside 7:0
+%Warning-SELRANGE: mem.sv:74: Selection index out of range: 10 outside 8:0
+%Warning-SELRANGE: mem.sv:75: Selection index out of range: 10 outside 8:0
+%Warning-SELRANGE: mem.sv:80: Selection index out of range: 10 outside 7:0
+%Warning-SELRANGE: mem.sv:74: Selection index out of range: 11 outside 8:0
+%Warning-SELRANGE: mem.sv:75: Selection index out of range: 11 outside 8:0
+%Warning-SELRANGE: mem.sv:80: Selection index out of range: 11 outside 7:0
+%Warning-SELRANGE: mem.sv:74: Selection index out of range: 12 outside 8:0
+%Warning-SELRANGE: mem.sv:75: Selection index out of range: 12 outside 8:0
+%Warning-SELRANGE: mem.sv:80: Selection index out of range: 12 outside 7:0
+%Warning-SELRANGE: mem.sv:74: Selection index out of range: 13 outside 8:0
+%Warning-SELRANGE: mem.sv:75: Selection index out of range: 13 outside 8:0
+%Warning-SELRANGE: mem.sv:80: Selection index out of range: 13 outside 7:0
+%Warning-SELRANGE: mem.sv:74: Selection index out of range: 14 outside 8:0
+%Warning-SELRANGE: mem.sv:75: Selection index out of range: 14 outside 8:0
+%Warning-SELRANGE: mem.sv:80: Selection index out of range: 14 outside 7:0
+%Warning-SELRANGE: mem.sv:74: Selection index out of range: 15 outside 8:0
+%Warning-SELRANGE: mem.sv:75: Selection index out of range: 15 outside 8:0
+%Warning-SELRANGE: mem.sv:80: Selection index out of range: 15 outside 7:0
+%Warning-WIDTH: mem.sv:121: Bit extraction of array[7:0] requires 3 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:122: Bit extraction of array[7:0] requires 3 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:135: Bit extraction of array[7:0] requires 3 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:136: Bit extraction of array[7:0] requires 3 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:151: Bit extraction of array[7:0] requires 3 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:151: Bit extraction of array[63:0] requires 6 bit index, not 7 bits.
+%Warning-WIDTH: mem.sv:152: Bit extraction of array[7:0] requires 3 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:152: Bit extraction of array[63:0] requires 6 bit index, not 7 bits.
+%Warning-WIDTH: mem.sv:171: Bit extraction of array[63:0] requires 6 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:175: Bit extraction of array[63:0] requires 6 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:178: Bit extraction of array[63:0] requires 6 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:186: Bit extraction of array[63:0] requires 6 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:174: Bit extraction of array[63:0] requires 6 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:174: Operator LT expects 32 or 11 bits on the LHS, but LHS's ARRAYSEL generates 10 bits.
+%Warning-WIDTH: mem.sv:168: Bit extraction of array[63:0] requires 6 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:199: Bit extraction of array[63:0] requires 6 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:214: Bit extraction of array[63:0] requires 6 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:218: Bit extraction of array[63:0] requires 6 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:223: Bit extraction of array[63:0] requires 6 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:229: Bit extraction of array[63:0] requires 6 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:217: Bit extraction of array[63:0] requires 6 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:211: Bit extraction of array[63:0] requires 6 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:242: Bit extraction of array[63:0] requires 6 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:246: Bit extraction of array[63:0] requires 6 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:251: Bit extraction of array[63:0] requires 6 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:257: Bit extraction of array[63:0] requires 6 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:245: Bit extraction of array[63:0] requires 6 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:239: Bit extraction of array[63:0] requires 6 bit index, not 4 bits.
+%Warning-WIDTH: mem.sv:269: Bit extraction of array[63:0] requires 6 bit index, not 4 bits.
+

@@ -1,0 +1,20 @@
+always @(posedge clk or negedge rst) begin
+        if(!rst) begin
+                counter_10<= 5'b0 ;
+                clr_pulse <= 1'b0 ;
+                clk_3 <= 1'b0;
+        end
+        else if (!conv1_end) begin
+                if (counter_10 == 27 ) begin //after 10 cycles the new output is good to go. New inputs to be fetched
+                        counter_10<= 5'b0 ;
+                        clk_3 <= 1'b1 ;
+                        clr_pulse <= 1'b1 ;
+                end
+                else begin
+                        clr_pulse <= 1'b0 ; //remain 0 as long as MAC is active
+                        counter_10<= counter_10 +1 ;
+                        clk_3 <= 1'b0;
+                end
+        end
+end
+

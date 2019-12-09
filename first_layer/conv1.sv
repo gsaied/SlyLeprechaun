@@ -36,7 +36,7 @@ wire [2*WIDTH-1:0] ofmw [0:DSP_NO-1];
 reg  [2*WIDTH-1:0] ofmw2 [0:DSP_NO-1];
 reg [4:0] counter_10 ;
 reg clk_3 ;  
-reg [$clog2(WINDOWS)-1:0] conv1_timer ; 
+//reg [$clog2(WINDOWS)-1:0] conv1_timer ; 
 ///////////////////////////////////
 //KERNELS INSTANTIATION
 ///////////////////////////////////
@@ -142,7 +142,7 @@ always @(posedge clk or negedge rst) begin
 		clk_3 <= 1'b0; 
 	end
 	else if (!conv1_end) begin
-		if (counter_10 == 27 ) begin //after 10 cycles the new output is good to go. New inputs to be fetched
+		if (counter_10 == KERNEL_DIM**2*CHIN ) begin //after 10 cycles the new output is good to go. New inputs to be fetched
 			counter_10<= 5'b0 ; 
 			clk_3 <= 1'b1 ;
 			clr_pulse <= 1'b1 ;
@@ -179,7 +179,7 @@ always @(*) begin
 	end
 end
 always@(posedge clk_sampling) begin
-	if(conv1_en) begin
+	if(!conv1_end && conv1_en) begin
 		for (int i = 0 ; i< DSP_NO ; i++) begin
 			if(ofmw[i][31] == 1'b1 ) 
 				ofm[i] <= 16'b0 ;
@@ -219,12 +219,13 @@ endgenerate//#FILTERS instances of macs
 //CHECK IF THE LAYER HAS FINISHED
 /////////////////////////////////
 
+reg [$clog2(CHOUT**2)-1:0] conv1_timer ;// will be changed
 always @(posedge clk_3 or negedge rst) begin//will be modified to use clk_sampling as the counting signal
 	if (!rst) begin
-		conv1_timer<= 16'b0 ;
+		conv1_timer<= 0 ;
 		conv1_end <= 1'b0 ; 
 	end
-	else if (conv1_timer == WINDOWS)
+	else if (conv1_timer == CHOUT**2-1)
 		conv1_end <= 1'b1 ;//LAYER_1 HAS FINISHED
 	else
 		conv1_timer<= conv1_timer+1 ; 

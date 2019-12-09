@@ -1,7 +1,6 @@
 #!/bin/bash
 	find *.mem | grep -v img | grep -v bias | grep -v weights |  while read LINE ; do rm -rf $LINE ; done
 	rm -rf rom.sv
-fi
 file_count=1
 file=""
 if [[ -n $1 ]] && [[ -n $2 ]] && [[ -n $3 ]] ; then
@@ -22,7 +21,7 @@ echo "
 	parameter NUM="$4")
 	(
 		input [ADDR-1:0] address ,
-		output reg [WIDTH-1:0] rom_out [0:NUM-1]
+		output [WIDTH-1:0] rom_out [0:NUM-1]
 	);	
 	" >> rom.sv
 echo "initial  begin" >> readmem.sv 

@@ -7,7 +7,7 @@
 	parameter NUM=64)
 	(
 		input [ADDR-1:0] address ,
-		output reg [WIDTH-1:0] rom_out [0:NUM-1]
+		output [WIDTH-1:0] rom_out [0:NUM-1]
 	);	
 	
 

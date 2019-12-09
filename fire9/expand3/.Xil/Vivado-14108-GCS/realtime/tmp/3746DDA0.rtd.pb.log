@@ -1,0 +1,3 @@
+xilinx rtfpga
+Lut_map: module rom__13_GROUP_GROUP__9 (top rom__13_GROUP_GROUP__9) has 3207 instances, cut data size 429678
+ 1-cut: 3248 2-cut: 3469 3-cut: 6286 4-cut: 13021 5-cut: 20786 6-cut: 40770

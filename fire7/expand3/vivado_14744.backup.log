@@ -1,0 +1,1110 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Dec  2 07:27:28 2019
+# Process ID: 14744
+# Current directory: /home/gsaied/Desktop/verilog_rtl/fire7/expand3
+# Command line: vivado -mode tcl -source synth.tcl
+# Log file: /home/gsaied/Desktop/verilog_rtl/fire7/expand3/vivado.log
+# Journal file: /home/gsaied/Desktop/verilog_rtl/fire7/expand3/vivado.jou
+#-----------------------------------------------------------
+source synth.tcl
+# set dirt /home/gsaied/Desktop/verilog_rtl/fire7/expand3
+# cd $dirt
+# read_verilog -sv [ glob *.sv ] 
+# synth_design -top  fire7_ex_3 -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none
+Command: synth_design -top fire7_ex_3 -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14751 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1426.457 ; gain = 71.000 ; free physical = 3059 ; free virtual = 7707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fire7_ex_3' [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/fire7_ex_3.sv:9]
+	Parameter DSP_NO bound to: 192 - type: integer 
+	Parameter STRIDE bound to: 1 - type: integer 
+	Parameter W_IN bound to: 16 - type: integer 
+	Parameter H_IN bound to: 16 - type: integer 
+	Parameter WIDTH bound to: 16 - type: integer 
+	Parameter CHIN bound to: 64 - type: integer 
+	Parameter KERNEL_DIM bound to: 3 - type: integer 
+	Parameter CHOUT bound to: 192 - type: integer 
+	Parameter WINDOWS bound to: 14400 - type: integer 
+	Parameter ITER bound to: 256 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mac' [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/mac.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'mac' (1#1) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/mac.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'biasing_rom' [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/biasing.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'biasing_rom' (2#1) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/biasing.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'rom_array_layer_1' [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:3]
+	Parameter WIDTH bound to: 16 - type: integer 
+	Parameter KERNEL bound to: 3 - type: integer 
+	Parameter ADDR bound to: 10 - type: integer 
+	Parameter NUM bound to: 192 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:15]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:18]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:21]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:24]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:27]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:30]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:33]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:36]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:39]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:42]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:45]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:48]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:51]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:54]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:57]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:60]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:63]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:66]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:69]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:72]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:75]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:78]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:81]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:84]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:87]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:90]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:93]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:96]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:99]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:102]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:105]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:108]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:111]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:114]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:117]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:120]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:123]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:126]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:129]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:132]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:135]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:138]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:141]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:144]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:147]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:150]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:153]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:156]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:159]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:162]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:165]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:168]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:171]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:174]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:177]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:180]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:183]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:186]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:189]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:192]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:195]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:198]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:201]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:204]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:207]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:210]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:213]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:216]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:219]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:222]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:225]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:228]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:231]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:234]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:237]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:240]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:243]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:246]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:249]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:252]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:255]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:258]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:261]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:264]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:267]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:270]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:273]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:276]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:279]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:282]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:285]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:288]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:291]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:294]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:297]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:300]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:303]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:306]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:309]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:312]
+INFO: [Common 17-14] Message 'Synth 8-5534' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3876] $readmem data file 'file_1.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:590]
+INFO: [Synth 8-3876] $readmem data file 'file_2.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:591]
+INFO: [Synth 8-3876] $readmem data file 'file_3.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:592]
+INFO: [Synth 8-3876] $readmem data file 'file_4.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:593]
+INFO: [Synth 8-3876] $readmem data file 'file_5.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:594]
+INFO: [Synth 8-3876] $readmem data file 'file_6.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:595]
+INFO: [Synth 8-3876] $readmem data file 'file_7.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:596]
+INFO: [Synth 8-3876] $readmem data file 'file_8.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:597]
+INFO: [Synth 8-3876] $readmem data file 'file_9.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:598]
+INFO: [Synth 8-3876] $readmem data file 'file_10.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:599]
+INFO: [Synth 8-3876] $readmem data file 'file_11.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:600]
+INFO: [Synth 8-3876] $readmem data file 'file_12.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:601]
+INFO: [Synth 8-3876] $readmem data file 'file_13.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:602]
+INFO: [Synth 8-3876] $readmem data file 'file_14.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:603]
+INFO: [Synth 8-3876] $readmem data file 'file_15.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:604]
+INFO: [Synth 8-3876] $readmem data file 'file_16.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:605]
+INFO: [Synth 8-3876] $readmem data file 'file_17.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:606]
+INFO: [Synth 8-3876] $readmem data file 'file_18.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:607]
+INFO: [Synth 8-3876] $readmem data file 'file_19.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:608]
+INFO: [Synth 8-3876] $readmem data file 'file_20.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:609]
+INFO: [Synth 8-3876] $readmem data file 'file_21.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:610]
+INFO: [Synth 8-3876] $readmem data file 'file_22.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:611]
+INFO: [Synth 8-3876] $readmem data file 'file_23.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:612]
+INFO: [Synth 8-3876] $readmem data file 'file_24.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:613]
+INFO: [Synth 8-3876] $readmem data file 'file_25.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:614]
+INFO: [Synth 8-3876] $readmem data file 'file_26.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:615]
+INFO: [Synth 8-3876] $readmem data file 'file_27.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:616]
+INFO: [Synth 8-3876] $readmem data file 'file_28.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:617]
+INFO: [Synth 8-3876] $readmem data file 'file_29.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:618]
+INFO: [Synth 8-3876] $readmem data file 'file_30.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:619]
+INFO: [Synth 8-3876] $readmem data file 'file_31.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:620]
+INFO: [Synth 8-3876] $readmem data file 'file_32.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:621]
+INFO: [Synth 8-3876] $readmem data file 'file_33.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:622]
+INFO: [Synth 8-3876] $readmem data file 'file_34.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:623]
+INFO: [Synth 8-3876] $readmem data file 'file_35.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:624]
+INFO: [Synth 8-3876] $readmem data file 'file_36.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:625]
+INFO: [Synth 8-3876] $readmem data file 'file_37.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:626]
+INFO: [Synth 8-3876] $readmem data file 'file_38.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:627]
+INFO: [Synth 8-3876] $readmem data file 'file_39.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:628]
+INFO: [Synth 8-3876] $readmem data file 'file_40.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:629]
+INFO: [Synth 8-3876] $readmem data file 'file_41.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:630]
+INFO: [Synth 8-3876] $readmem data file 'file_42.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:631]
+INFO: [Synth 8-3876] $readmem data file 'file_43.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:632]
+INFO: [Synth 8-3876] $readmem data file 'file_44.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:633]
+INFO: [Synth 8-3876] $readmem data file 'file_45.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:634]
+INFO: [Synth 8-3876] $readmem data file 'file_46.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:635]
+INFO: [Synth 8-3876] $readmem data file 'file_47.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:636]
+INFO: [Synth 8-3876] $readmem data file 'file_48.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:637]
+INFO: [Synth 8-3876] $readmem data file 'file_49.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:638]
+INFO: [Synth 8-3876] $readmem data file 'file_50.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:639]
+INFO: [Synth 8-3876] $readmem data file 'file_51.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:640]
+INFO: [Synth 8-3876] $readmem data file 'file_52.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:641]
+INFO: [Synth 8-3876] $readmem data file 'file_53.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:642]
+INFO: [Synth 8-3876] $readmem data file 'file_54.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:643]
+INFO: [Synth 8-3876] $readmem data file 'file_55.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:644]
+INFO: [Synth 8-3876] $readmem data file 'file_56.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:645]
+INFO: [Synth 8-3876] $readmem data file 'file_57.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:646]
+INFO: [Synth 8-3876] $readmem data file 'file_58.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:647]
+INFO: [Synth 8-3876] $readmem data file 'file_59.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:648]
+INFO: [Synth 8-3876] $readmem data file 'file_60.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:649]
+INFO: [Synth 8-3876] $readmem data file 'file_61.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:650]
+INFO: [Synth 8-3876] $readmem data file 'file_62.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:651]
+INFO: [Synth 8-3876] $readmem data file 'file_63.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:652]
+INFO: [Synth 8-3876] $readmem data file 'file_64.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:653]
+INFO: [Synth 8-3876] $readmem data file 'file_65.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:654]
+INFO: [Synth 8-3876] $readmem data file 'file_66.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:655]
+INFO: [Synth 8-3876] $readmem data file 'file_67.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:656]
+INFO: [Synth 8-3876] $readmem data file 'file_68.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:657]
+INFO: [Synth 8-3876] $readmem data file 'file_69.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:658]
+INFO: [Synth 8-3876] $readmem data file 'file_70.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:659]
+INFO: [Synth 8-3876] $readmem data file 'file_71.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:660]
+INFO: [Synth 8-3876] $readmem data file 'file_72.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:661]
+INFO: [Synth 8-3876] $readmem data file 'file_73.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:662]
+INFO: [Synth 8-3876] $readmem data file 'file_74.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:663]
+INFO: [Synth 8-3876] $readmem data file 'file_75.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:664]
+INFO: [Synth 8-3876] $readmem data file 'file_76.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:665]
+INFO: [Synth 8-3876] $readmem data file 'file_77.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:666]
+INFO: [Synth 8-3876] $readmem data file 'file_78.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:667]
+INFO: [Synth 8-3876] $readmem data file 'file_79.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:668]
+INFO: [Synth 8-3876] $readmem data file 'file_80.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:669]
+INFO: [Synth 8-3876] $readmem data file 'file_81.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:670]
+INFO: [Synth 8-3876] $readmem data file 'file_82.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:671]
+INFO: [Synth 8-3876] $readmem data file 'file_83.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:672]
+INFO: [Synth 8-3876] $readmem data file 'file_84.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:673]
+INFO: [Synth 8-3876] $readmem data file 'file_85.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:674]
+INFO: [Synth 8-3876] $readmem data file 'file_86.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:675]
+INFO: [Synth 8-3876] $readmem data file 'file_87.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:676]
+INFO: [Synth 8-3876] $readmem data file 'file_88.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:677]
+INFO: [Synth 8-3876] $readmem data file 'file_89.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:678]
+INFO: [Synth 8-3876] $readmem data file 'file_90.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:679]
+INFO: [Synth 8-3876] $readmem data file 'file_91.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:680]
+INFO: [Synth 8-3876] $readmem data file 'file_92.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:681]
+INFO: [Synth 8-3876] $readmem data file 'file_93.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:682]
+INFO: [Synth 8-3876] $readmem data file 'file_94.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:683]
+INFO: [Synth 8-3876] $readmem data file 'file_95.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:684]
+INFO: [Synth 8-3876] $readmem data file 'file_96.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:685]
+INFO: [Synth 8-3876] $readmem data file 'file_97.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:686]
+INFO: [Synth 8-3876] $readmem data file 'file_98.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:687]
+INFO: [Synth 8-3876] $readmem data file 'file_99.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:688]
+INFO: [Synth 8-3876] $readmem data file 'file_100.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:689]
+INFO: [Common 17-14] Message 'Synth 8-3876' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'rom_array_layer_1' (3#1) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/rom.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'fire7_ex_3' (4#1) [/home/gsaied/Desktop/verilog_rtl/fire7/expand3/fire7_ex_3.sv:9]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1557.207 ; gain = 201.750 ; free physical = 2989 ; free virtual = 7640
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1557.207 ; gain = 201.750 ; free physical = 3005 ; free virtual = 7657
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1157-3
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx690tffg1157-3
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1565.211 ; gain = 209.754 ; free physical = 3004 ; free virtual = 7656
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "clr_pulse" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fire7_ex_3_timer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fire7_ex_3_end" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1930.789 ; gain = 575.332 ; free physical = 2641 ; free virtual = 7280
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |rom_array_layer_1__GB0 |           1|     30256|
+|2     |rom_array_layer_1__GB1 |           1|      7936|
+|3     |rom_array_layer_1__GB2 |           1|      9920|
+|4     |rom_array_layer_1__GB3 |           1|     12400|
+|5     |rom_array_layer_1__GB4 |           1|     15376|
+|6     |rom_array_layer_1__GB5 |           1|     19344|
+|7     |fire7_ex_3__GCB0       |           1|     14631|
+|8     |fire7_ex_3__GCB1       |           1|      4126|
+|9     |fire7_ex_3__GCB2       |           1|      6726|
++------+-----------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 192   
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 192   
+	               16 Bit    Registers := 384   
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fire7_ex_3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 192   
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 384   
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module mac__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__5 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__6 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__7 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__8 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__9 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__10 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__11 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__12 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__13 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__14 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__15 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__16 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__17 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__18 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__19 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__20 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__21 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__22 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__23 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__24 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__25 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__26 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__27 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__28 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__29 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__30 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__31 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__32 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__33 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__34 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__35 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__36 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__37 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__38 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__39 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__40 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__41 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__42 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__43 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__44 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__45 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__46 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__47 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__48 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__49 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__50 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__51 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__52 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__53 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__54 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__55 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__56 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__57 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__58 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__59 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__60 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__61 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__62 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__63 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__64 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__65 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__66 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__67 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__68 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__69 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__70 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__71 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__72 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__73 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__74 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__75 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__76 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__77 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__78 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__79 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__80 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__81 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__82 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__83 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__84 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__85 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__86 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__87 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__88 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__89 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__90 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__91 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__92 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__93 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__94 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__95 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__96 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__97 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__98 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__99 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__100 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__101 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__102 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__103 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__104 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__105 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__106 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__107 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__108 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__109 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__110 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__111 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__112 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__113 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__114 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__115 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__116 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__117 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__118 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__119 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__120 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__121 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__122 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__123 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__124 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__125 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__126 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__127 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__128 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__129 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__130 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__131 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__132 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__133 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__134 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__135 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__136 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__137 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__138 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__139 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__140 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__141 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__142 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__143 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__144 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__145 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__146 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__147 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__148 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__149 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__150 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__151 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__152 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__153 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__154 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__155 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__156 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__157 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__158 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__159 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__160 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__161 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__162 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__163 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__164 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__165 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__166 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__167 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__168 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__169 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__170 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__171 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__172 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__173 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__174 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__175 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__176 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__177 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__178 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__179 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__180 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__181 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__182 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__183 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__184 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__185 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__186 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__187 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__188 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__189 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__190 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac__191 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mac 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------

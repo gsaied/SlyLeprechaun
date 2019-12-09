@@ -1,0 +1,5 @@
+to generate the new rom2.sv file
+1. create original files using ./script
+	CAUTION : INSTEAD OF 1 1 736 512 ENTER 1 1 512 512
+2. create subsetted memory using ./move_remainder
+3. execute ./rom2.sh

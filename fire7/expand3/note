@@ -1,0 +1,4 @@
+this layer holds 3*3*64 weights per rom which maps to 1024*16 rom
+should include some other memories
+should be merged with fire8 expand 3*3 
+total would be 4032 which is 12 bit addressed ROM

@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Dec  6 16:54:01 2019
+# Process ID: 4997
+# Current directory: /home/gsaied/Desktop/verilog_rtl/fire5/squeeze
+# Command line: vivado -mode tcl -source synth.tcl
+# Log file: /home/gsaied/Desktop/verilog_rtl/fire5/squeeze/vivado.log
+# Journal file: /home/gsaied/Desktop/verilog_rtl/fire5/squeeze/vivado.jou
+#-----------------------------------------------------------
+source synth.tcl
+vi synth.tcl 
+source synth.tcl 
+vi utiliziation.rpt 
+ls

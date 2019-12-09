@@ -1,0 +1,64 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Sun Dec  8 09:36:59 2019
+| Host         : GCS running 64-bit Ubuntu 18.04.3 LTS
+| Command      : report_design_analysis -file /home/gsaied/Desktop/verilog_rtl/fire3/expand3/design.rpt
+| Design       : fire3_expand_3
+| Device       : xc7vx690t
+--------------------------------------------------------------------------------------------------------
+
+Report Design Analysis
+
+Table of Contents
+-----------------
+1. Setup Path Characteristics 1-1
+2. Logic Level Distribution
+
+1. Setup Path Characteristics 1-1
+---------------------------------
+
++---------------------------+-----------------+
+|      Characteristics      |     Path #1     |
++---------------------------+-----------------+
+| Requirement               |           0.000 |
+| Path Delay                |           2.534 |
+| Logic Delay               | 2.099(83%)      |
+| Net Delay                 | 0.434(17%)      |
+| Clock Skew                |           0.000 |
+| Slack                     |             inf |
+| Clock Relationship        | Safely Timed    |
+| Logic Levels              |               2 |
+| Routes                    |               0 |
+| Logical Path              | FDRE OBUF       |
+| Start Point Clock         |                 |
+| End Point Clock           |                 |
+| DSP Block                 | None            |
+| BRAM                      | None            |
+| IO Crossings              |               0 |
+| Config Crossings          |               0 |
+| SLR Crossings             |               0 |
+| PBlocks                   |               0 |
+| High Fanout               |            1024 |
+| Dont Touch                |               0 |
+| Mark Debug                |               0 |
+| Start Point Pin Primitive | FDRE/C          |
+| End Point Pin Primitive   | ofm[0][0]       |
+| Start Point Pin           | ofm_reg[0][0]/C |
+| End Point Pin             | ofm[0][0]       |
++---------------------------+-----------------+
+* Bounding box calculated as % of dimensions for the target device (620, 1000)
+
+
+2. Logic Level Distribution
+---------------------------
+
++-----------------+-------------+------+
+| End Point Clock | Requirement |   2  |
++-----------------+-------------+------+
+| (none)          | 0.000ns     | 1000 |
++-----------------+-------------+------+
+* Columns represent the logic levels per end point clock
+** Distribution is for top worst 1000 paths
+
+

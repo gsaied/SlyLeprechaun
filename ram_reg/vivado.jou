@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec  4 08:51:42 2019
+# Process ID: 18855
+# Current directory: /home/gsaied/Desktop/verilog_rtl/ram_reg
+# Command line: vivado -mode tcl -source synth.tcl
+# Log file: /home/gsaied/Desktop/verilog_rtl/ram_reg/vivado.log
+# Journal file: /home/gsaied/Desktop/verilog_rtl/ram_reg/vivado.jou
+#-----------------------------------------------------------
+source synth.tcl
+vi ram_dist.sv 
+source synth.tcl 
+vi ram_dist.sv 
+vi ram_dist.sv
+source synth.tcl
+!vi
+source synth.tcl
+vi ram_dist.sv
+source synth.tcl
+vi utiliziation.rpt 
+ls
+vi ram_dist.sv 
+source synth.tcl 
+vi ram_dist.sv 
+source synth.tcl 
+vi utiliziation.rpt 
+vi ram_dist.sv 
+!so
+vi utiliziation.rpt
+source synth.tcl
+vi utiliziation.rpt 

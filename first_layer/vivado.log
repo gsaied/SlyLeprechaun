@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Fri Nov 29 21:25:20 2019
-# Process ID: 5222
+# Start of session at: Sun Dec  8 09:47:50 2019
+# Process ID: 4794
 # Current directory: /home/gsaied/Desktop/verilog_rtl/first_layer
 # Command line: vivado -mode tcl -source synth.tcl
 # Log file: /home/gsaied/Desktop/verilog_rtl/first_layer/vivado.log
@@ -13,40 +13,31 @@ source synth.tcl
 # set dirt /home/gsaied/Desktop/verilog_rtl/first_layer
 # cd $dirt
 # read_verilog -sv [ glob *.sv ] 
-# synth_design -top rom_array_layer_1 -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none
-Command: synth_design -top rom_array_layer_1 -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none
+# synth_design -top conv1 -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none
+Command: synth_design -top conv1 -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5230 
-ERROR: [Synth 8-2576] procedural assignment to a non-register ofmw2 is not permitted [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
-INFO: [Synth 8-2350] module conv1 ignored due to previous errors [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:10]
-Failed to read verilog '/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv'
-INFO: [Common 17-83] Releasing license: Synthesis
-3 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
-synth_design failed
-ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
-vi conv1.sv 
-WARNING: [Common 17-259] Unknown Tcl command 'vi conv1.sv' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
-source synth.tcl 
-# set dirt /home/gsaied/Desktop/verilog_rtl/first_layer
-# cd $dirt
-# read_verilog -sv [ glob *.sv ] 
-WARNING: [filemgmt 56-12] File '/home/gsaied/Desktop/verilog_rtl/first_layer/rom.sv' cannot be added to the project because it already exists in the project, skipping this file
-WARNING: [filemgmt 56-12] File '/home/gsaied/Desktop/verilog_rtl/first_layer/img_rom.sv' cannot be added to the project because it already exists in the project, skipping this file
-WARNING: [filemgmt 56-12] File '/home/gsaied/Desktop/verilog_rtl/first_layer/mac.sv' cannot be added to the project because it already exists in the project, skipping this file
-WARNING: [filemgmt 56-12] File '/home/gsaied/Desktop/verilog_rtl/first_layer/ram_3d.sv' cannot be added to the project because it already exists in the project, skipping this file
-WARNING: [filemgmt 56-12] File '/home/gsaied/Desktop/verilog_rtl/first_layer/biasing_rom.sv' cannot be added to the project because it already exists in the project, skipping this file
-WARNING: [filemgmt 56-12] File '/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv' cannot be added to the project because it already exists in the project, skipping this file
-# synth_design -top rom_array_layer_1 -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none
-Command: synth_design -top rom_array_layer_1 -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none
-Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: Helper process launched with PID 4801 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1451.156 ; gain = 0.000 ; free physical = 5337 ; free virtual = 8050
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1425.461 ; gain = 70.000 ; free physical = 4707 ; free virtual = 8669
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'conv1' [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:10]
+	Parameter DSP_NO bound to: 64 - type: integer 
+	Parameter STRIDE bound to: 2 - type: integer 
+	Parameter W_IN bound to: 256 - type: integer 
+	Parameter H_IN bound to: 256 - type: integer 
+	Parameter WIDTH bound to: 16 - type: integer 
+	Parameter CHIN bound to: 3 - type: integer 
+	Parameter KERNEL_DIM bound to: 3 - type: integer 
+	Parameter CHOUT bound to: 64 - type: integer 
+	Parameter WINDOWS bound to: 48387 - type: integer 
+	Parameter CONV1_TIMER bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mac' [/home/gsaied/Desktop/verilog_rtl/first_layer/mac.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'mac' (1#1) [/home/gsaied/Desktop/verilog_rtl/first_layer/mac.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'biasing_rom' [/home/gsaied/Desktop/verilog_rtl/first_layer/biasing_rom.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'biasing_rom' (2#1) [/home/gsaied/Desktop/verilog_rtl/first_layer/biasing_rom.sv:2]
 INFO: [Synth 8-6157] synthesizing module 'rom_array_layer_1' [/home/gsaied/Desktop/verilog_rtl/first_layer/rom.sv:3]
 	Parameter WIDTH bound to: 16 - type: integer 
 	Parameter KERNEL bound to: 3 - type: integer 
@@ -180,12 +171,85 @@ INFO: [Synth 8-3876] $readmem data file 'file_61.mem' is read successfully [/hom
 INFO: [Synth 8-3876] $readmem data file 'file_62.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/first_layer/rom.sv:267]
 INFO: [Synth 8-3876] $readmem data file 'file_63.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/first_layer/rom.sv:268]
 INFO: [Synth 8-3876] $readmem data file 'file_64.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/first_layer/rom.sv:269]
-INFO: [Synth 8-6155] done synthesizing module 'rom_array_layer_1' (1#1) [/home/gsaied/Desktop/verilog_rtl/first_layer/rom.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'rom_array_layer_1' (3#1) [/home/gsaied/Desktop/verilog_rtl/first_layer/rom.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'img_rom' [/home/gsaied/Desktop/verilog_rtl/first_layer/img_rom.sv:1]
+	Parameter WIDTH bound to: 16 - type: integer 
+	Parameter CH bound to: 3 - type: integer 
+	Parameter ADDR bound to: 18 - type: integer 
+	Parameter WIN bound to: 256 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed}" *) [/home/gsaied/Desktop/verilog_rtl/first_layer/img_rom.sv:13]
+INFO: [Synth 8-3876] $readmem data file 'img.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/first_layer/img_rom.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'img_rom' (4#1) [/home/gsaied/Desktop/verilog_rtl/first_layer/img_rom.sv:1]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[63]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[62]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[61]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[60]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[59]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[58]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[57]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[56]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[55]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[54]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[53]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[52]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[51]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[50]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[49]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[48]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[47]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[46]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[45]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[44]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[43]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[42]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[41]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[40]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[39]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[38]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[37]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[36]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[35]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[34]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[33]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[32]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[31]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[30]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[29]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[28]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[27]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[26]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[25]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[24]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[23]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[22]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[21]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[20]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[19]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[18]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[17]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[16]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[15]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[14]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[13]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[12]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[11]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[10]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[9]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[8]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[7]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[6]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[5]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[4]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[3]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[2]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[1]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ofmw2_reg[0]' and it is trimmed from '32' to '24' bits. [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:178]
+INFO: [Synth 8-6155] done synthesizing module 'conv1' (5#1) [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:10]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1552.398 ; gain = 101.242 ; free physical = 5288 ; free virtual = 8011
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1653.781 ; gain = 298.320 ; free physical = 4569 ; free virtual = 8538
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1552.398 ; gain = 101.242 ; free physical = 5295 ; free virtual = 8018
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1653.781 ; gain = 298.320 ; free physical = 4577 ; free virtual = 8547
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -193,10 +257,15 @@ Start Loading Part and Timing Information
 Loading part: xc7vx690tffg1157-3
 INFO: [Device 21-403] Loading part xc7vx690tffg1157-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1560.402 ; gain = 109.246 ; free physical = 5295 ; free virtual = 8018
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1661.785 ; gain = 306.324 ; free physical = 4577 ; free virtual = 8546
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/gsaied/Desktop/verilog_rtl/first_layer/conv1.sv:119]
+INFO: [Synth 8-5546] ROM "clk_3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_sampling" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv1_timer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv1_end" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1649.199 ; gain = 198.043 ; free physical = 5072 ; free virtual = 7878
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 2070.465 ; gain = 715.004 ; free physical = 4223 ; free virtual = 8201
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -209,6 +278,24 @@ No constraint files found.
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 64    
+	   2 Input     18 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 64    
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 129   
+	                5 Bit    Registers := 4     
+	                1 Bit    Registers := 4     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   8 Input     18 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -216,6 +303,33 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module conv1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 64    
+	   2 Input     18 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 4     
++---Registers : 
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 128   
+	                5 Bit    Registers := 4     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   8 Input     18 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module img_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module mac 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -233,126 +347,624 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+DSP Report: Generating DSP mul_out_reg, operation Mode is: (P+A*B)'.
+DSP Report: register mul_out_reg is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed is absorbed into DSP mul_out_reg.
+DSP Report: operator intermed0 is absorbed into DSP mul_out_reg.
+INFO: [Synth 8-5546] ROM "clk_3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_sampling" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv1_timer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv1_end" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\ref_address_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[63][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[63][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[62][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[62][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[61][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[61][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[60][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[60][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[59][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[59][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[58][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[57][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[57][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[56][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[56][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[55][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[55][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[54][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[54][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[53][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[52][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[52][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[51][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[51][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[50][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[50][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[49][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[48][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[48][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[47][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[46][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[46][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[45][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[45][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[44][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[44][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[43][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[43][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[42][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[42][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[41][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[40][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[39][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[39][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[38][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[38][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[37][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[37][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[36][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[36][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[35][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[35][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[34][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[34][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[33][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[33][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[32][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[32][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[31][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[31][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[30][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[29][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[29][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[28][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[28][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[27][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[27][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[26][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[26][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[25][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[25][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[24][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[24][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[23][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[22][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[21][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[21][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[20][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[20][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[19][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[19][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[18][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[18][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[17][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[17][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[16][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[16][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[15][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[15][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[14][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[13][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[13][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[12][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[12][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[11][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[11][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[10][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[10][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\kernel_regs_reg[9][13] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1812.590 ; gain = 361.434 ; free physical = 4890 ; free virtual = 7703
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:29 . Memory (MB): peak = 2070.465 ; gain = 715.004 ; free physical = 4185 ; free virtual = 8175
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 ROM:
-+------------------+------------+---------------+----------------+
-|Module Name       | RTL Object | Depth x Width | Implemented As | 
-+------------------+------------+---------------+----------------+
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-|rom_array_layer_1 | p_0_out    | 32x16         | LUT            | 
-+------------------+------------+---------------+----------------+
++------------------+-------------+---------------+----------------+
+|Module Name       | RTL Object  | Depth x Width | Implemented As | 
++------------------+-------------+---------------+----------------+
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|img_rom           | img_out_reg | 262144x16     | Block RAM      | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
+|rom_array_layer_1 | p_0_out     | 32x16         | LUT            | 
++------------------+-------------+---------------+----------------+
 
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mac         | (P+A*B)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_1_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_1_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_1_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_1_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_3_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_3_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_3_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_3_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_3_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_3_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_3_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_3_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_5_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_5_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_5_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_5_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_5_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_5_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_5_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_5_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_5_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_5_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_5_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_5_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_5_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_5_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_5_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_5_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_7_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_7_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_7_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_7_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_7_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_7_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_7_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_7_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_7_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_7_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_7_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_7_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_7_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_7_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_7_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/i_0/img_out_reg_7_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -364,7 +976,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1812.590 ; gain = 361.434 ; free physical = 4886 ; free virtual = 7703
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:30 . Memory (MB): peak = 2070.465 ; gain = 715.004 ; free physical = 4174 ; free virtual = 8172
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -375,8 +987,45 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_1_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_1_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_1_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_1_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_3_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_3_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_3_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_3_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_3_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_3_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_3_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_3_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_5_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_5_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_5_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance u_1/img_out_reg_5_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-6837' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1820.598 ; gain = 369.441 ; free physical = 4873 ; free virtual = 7691
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:41 . Memory (MB): peak = 2070.465 ; gain = 715.004 ; free physical = 4247 ; free virtual = 8246
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -394,7 +1043,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1820.598 ; gain = 369.441 ; free physical = 4873 ; free virtual = 7691
+Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:00:52 . Memory (MB): peak = 2070.465 ; gain = 715.004 ; free physical = 4247 ; free virtual = 8245
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -407,7 +1056,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1820.598 ; gain = 369.441 ; free physical = 4873 ; free virtual = 7691
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:00:52 . Memory (MB): peak = 2070.465 ; gain = 715.004 ; free physical = 4247 ; free virtual = 8245
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -419,7 +1068,7 @@ Report RTL Partitions:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1820.598 ; gain = 369.441 ; free physical = 4873 ; free virtual = 7690
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:00:52 . Memory (MB): peak = 2070.465 ; gain = 715.004 ; free physical = 4247 ; free virtual = 8245
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -432,42 +1081,119 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |LUT1 |     1|
-|2     |LUT4 |    14|
-|3     |LUT5 |   856|
-|4     |IBUF |     5|
-|5     |OBUF |  1024|
-+------+-----+------+
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |   216|
+|3     |DSP48E1  |    64|
+|4     |LUT1     |   251|
+|5     |LUT2     |    77|
+|6     |LUT3     |   111|
+|7     |LUT4     |    18|
+|8     |LUT5     |   877|
+|9     |LUT6     |    71|
+|10    |MUXF7    |    20|
+|11    |RAMB36E1 |   128|
+|12    |FDCE     |    71|
+|13    |FDRE     |  1978|
+|14    |IBUF     |     3|
+|15    |OBUF     |  1025|
++------+---------+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |  1900|
-+------+---------+-------+------+
++------+----------------------+------------------+------+
+|      |Instance              |Module            |Cells |
++------+----------------------+------------------+------+
+|1     |top                   |                  |  4912|
+|2     |  u_2                 |rom_array_layer_1 |   871|
+|3     |  u_1                 |img_rom           |   230|
+|4     |  \genblk1[0].mac_i   |mac__1            |     2|
+|5     |  \genblk1[1].mac_i   |mac__2            |     2|
+|6     |  \genblk1[2].mac_i   |mac__3            |     2|
+|7     |  \genblk1[3].mac_i   |mac__4            |     2|
+|8     |  \genblk1[4].mac_i   |mac__5            |     2|
+|9     |  \genblk1[5].mac_i   |mac__6            |     2|
+|10    |  \genblk1[6].mac_i   |mac__7            |     2|
+|11    |  \genblk1[7].mac_i   |mac__8            |     2|
+|12    |  \genblk1[8].mac_i   |mac__9            |     2|
+|13    |  \genblk1[9].mac_i   |mac__10           |     2|
+|14    |  \genblk1[10].mac_i  |mac__11           |     2|
+|15    |  \genblk1[11].mac_i  |mac__12           |     2|
+|16    |  \genblk1[12].mac_i  |mac__13           |     2|
+|17    |  \genblk1[13].mac_i  |mac__14           |     2|
+|18    |  \genblk1[14].mac_i  |mac__15           |     2|
+|19    |  \genblk1[15].mac_i  |mac__16           |     2|
+|20    |  \genblk1[16].mac_i  |mac__17           |     2|
+|21    |  \genblk1[17].mac_i  |mac__18           |     2|
+|22    |  \genblk1[18].mac_i  |mac__19           |     2|
+|23    |  \genblk1[19].mac_i  |mac__20           |     2|
+|24    |  \genblk1[20].mac_i  |mac__21           |     2|
+|25    |  \genblk1[21].mac_i  |mac__22           |     2|
+|26    |  \genblk1[22].mac_i  |mac__23           |     2|
+|27    |  \genblk1[23].mac_i  |mac__24           |     2|
+|28    |  \genblk1[24].mac_i  |mac__25           |     2|
+|29    |  \genblk1[25].mac_i  |mac__26           |     2|
+|30    |  \genblk1[26].mac_i  |mac__27           |     2|
+|31    |  \genblk1[27].mac_i  |mac__28           |     2|
+|32    |  \genblk1[28].mac_i  |mac__29           |     2|
+|33    |  \genblk1[29].mac_i  |mac__30           |     2|
+|34    |  \genblk1[30].mac_i  |mac__31           |     2|
+|35    |  \genblk1[31].mac_i  |mac__32           |     2|
+|36    |  \genblk1[32].mac_i  |mac__33           |     2|
+|37    |  \genblk1[33].mac_i  |mac__34           |     2|
+|38    |  \genblk1[34].mac_i  |mac__35           |     2|
+|39    |  \genblk1[35].mac_i  |mac__36           |     2|
+|40    |  \genblk1[36].mac_i  |mac__37           |     2|
+|41    |  \genblk1[37].mac_i  |mac__38           |     2|
+|42    |  \genblk1[38].mac_i  |mac__39           |     2|
+|43    |  \genblk1[39].mac_i  |mac__40           |     2|
+|44    |  \genblk1[40].mac_i  |mac__41           |     2|
+|45    |  \genblk1[41].mac_i  |mac__42           |     2|
+|46    |  \genblk1[42].mac_i  |mac__43           |     2|
+|47    |  \genblk1[43].mac_i  |mac__44           |     2|
+|48    |  \genblk1[44].mac_i  |mac__45           |     2|
+|49    |  \genblk1[45].mac_i  |mac__46           |     2|
+|50    |  \genblk1[46].mac_i  |mac__47           |     2|
+|51    |  \genblk1[47].mac_i  |mac__48           |     2|
+|52    |  \genblk1[48].mac_i  |mac__49           |     2|
+|53    |  \genblk1[49].mac_i  |mac__50           |     2|
+|54    |  \genblk1[50].mac_i  |mac__51           |     2|
+|55    |  \genblk1[51].mac_i  |mac__52           |     2|
+|56    |  \genblk1[52].mac_i  |mac__53           |     2|
+|57    |  \genblk1[53].mac_i  |mac__54           |     2|
+|58    |  \genblk1[54].mac_i  |mac__55           |     2|
+|59    |  \genblk1[55].mac_i  |mac__56           |     2|
+|60    |  \genblk1[56].mac_i  |mac__57           |     2|
+|61    |  \genblk1[57].mac_i  |mac__58           |     2|
+|62    |  \genblk1[58].mac_i  |mac__59           |     2|
+|63    |  \genblk1[59].mac_i  |mac__60           |     2|
+|64    |  \genblk1[60].mac_i  |mac__61           |     2|
+|65    |  \genblk1[61].mac_i  |mac__62           |     2|
+|66    |  \genblk1[62].mac_i  |mac__63           |     2|
+|67    |  \genblk1[63].mac_i  |mac               |     2|
++------+----------------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1820.598 ; gain = 369.441 ; free physical = 4873 ; free virtual = 7690
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:00:52 . Memory (MB): peak = 2070.465 ; gain = 715.004 ; free physical = 4247 ; free virtual = 8245
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1820.598 ; gain = 369.441 ; free physical = 4873 ; free virtual = 7691
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1820.598 ; gain = 369.441 ; free physical = 4873 ; free virtual = 7691
+Synthesis finished with 0 errors, 0 critical warnings and 64 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:00:52 . Memory (MB): peak = 2070.465 ; gain = 715.004 ; free physical = 4249 ; free virtual = 8247
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:00:52 . Memory (MB): peak = 2070.473 ; gain = 715.004 ; free physical = 4259 ; free virtual = 8258
 INFO: [Project 1-571] Translating synthesized netlist
-WARNING: [Netlist 29-101] Netlist 'rom_array_layer_1' is not ideal for floorplanning, since the cellview 'rom_array_layer_1' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Netlist 29-17] Analyzing 428 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1941.234 ; gain = 0.000 ; free physical = 4751 ; free virtual = 7582
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2094.477 ; gain = 0.000 ; free physical = 4153 ; free virtual = 8151
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-137 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+360 Infos, 64 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1941.234 ; gain = 490.078 ; free physical = 4806 ; free virtual = 7639
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:00:58 . Memory (MB): peak = 2094.477 ; gain = 747.020 ; free physical = 4223 ; free virtual = 8221
 # report_design_analysis -file $dirt/design.rpt
-report_design_analysis: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2590.566 ; gain = 649.332 ; free physical = 4143 ; free virtual = 7013
+report_design_analysis: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 2628.465 ; gain = 533.988 ; free physical = 3596 ; free virtual = 7586
 # report_utilization -file $dirt/utiliziation.rpt
 # report_timing -file $dirt/timing.rpt
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: max.
@@ -475,5 +1201,10 @@ INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum o
 INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
 vi utiliziation.rpt 
 WARNING: [Common 17-259] Unknown Tcl command 'vi utiliziation.rpt' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+vi note
+WARNING: [Common 17-259] Unknown Tcl command 'vi note' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+cd ../fire9/
+mkdir expand1
+WARNING: [Common 17-259] Unknown Tcl command 'mkdir expand1' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri Nov 29 21:27:30 2019...
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 09:54:08 2019...

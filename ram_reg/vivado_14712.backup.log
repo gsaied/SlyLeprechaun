@@ -1,0 +1,328 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Dec  3 23:30:32 2019
+# Process ID: 14712
+# Current directory: /home/gsaied/Desktop/verilog_rtl/ram_reg
+# Command line: vivado -mode tcl -source synth.tcl
+# Log file: /home/gsaied/Desktop/verilog_rtl/ram_reg/vivado.log
+# Journal file: /home/gsaied/Desktop/verilog_rtl/ram_reg/vivado.jou
+#-----------------------------------------------------------
+source synth.tcl
+# set dirt /home/gsaied/Desktop/verilog_rtl/ram_reg
+# cd $dirt
+# read_verilog -sv [ glob *.sv ] 
+# synth_design -top ram_dist  -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none
+Command: synth_design -top ram_dist -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14720 
+WARNING: [Synth 8-2611] redeclaration of ansi port output_data is not allowed [/home/gsaied/Desktop/verilog_rtl/ram_reg/ram_dist.sv:18]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1451.148 ; gain = 100.500 ; free physical = 1323 ; free virtual = 6663
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ram_dist' [/home/gsaied/Desktop/verilog_rtl/ram_reg/ram_dist.sv:1]
+	Parameter RAM_WIDTH bound to: 16 - type: integer 
+	Parameter RAM_ADDR_BITS bound to: 10 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "registers" *) [/home/gsaied/Desktop/verilog_rtl/ram_reg/ram_dist.sv:16]
+WARNING: [Synth 8-2898] ignoring malformed $readmem task: invalid memory name [/home/gsaied/Desktop/verilog_rtl/ram_reg/ram_dist.sv:21]
+INFO: [Synth 8-6155] done synthesizing module 'ram_dist' (1#1) [/home/gsaied/Desktop/verilog_rtl/ram_reg/ram_dist.sv:1]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1518.273 ; gain = 167.625 ; free physical = 1303 ; free virtual = 6648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1518.273 ; gain = 167.625 ; free physical = 1311 ; free virtual = 6656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1157-3
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx690tffg1157-3
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1526.277 ; gain = 175.629 ; free physical = 1310 ; free virtual = 6655
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "ram_dist_reg[735]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[734]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[733]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[732]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[731]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[730]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[729]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[728]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[727]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[726]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[725]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[724]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[723]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[722]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[721]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[720]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[719]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[718]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[717]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[716]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[715]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[714]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[713]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[712]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[711]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[710]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[709]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[708]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[707]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[706]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[705]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[704]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[703]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[702]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[701]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[700]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[699]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[698]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[697]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[696]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[695]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[694]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[693]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[692]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[691]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[690]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[689]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[688]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[687]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[686]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[685]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[684]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[683]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[682]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[681]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[680]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[679]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[678]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[677]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[676]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[675]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[674]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[673]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[672]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[671]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[670]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[669]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[668]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[667]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[666]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[665]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[664]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[663]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[662]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[661]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[660]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[659]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[658]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[657]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[656]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[655]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[654]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[653]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[652]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[651]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[650]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[649]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[648]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[647]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[646]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[645]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[644]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[643]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[642]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[641]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[640]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[639]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[638]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[637]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dist_reg[636]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1757.816 ; gain = 407.168 ; free physical = 944 ; free virtual = 6376
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 736   
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 736   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ram_dist 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 736   
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 736   
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:35 . Memory (MB): peak = 1885.738 ; gain = 535.090 ; free physical = 840 ; free virtual = 6290
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:36 . Memory (MB): peak = 1885.738 ; gain = 535.090 ; free physical = 845 ; free virtual = 6291
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:40 . Memory (MB): peak = 1885.738 ; gain = 535.090 ; free physical = 869 ; free virtual = 6320
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 1885.738 ; gain = 535.090 ; free physical = 862 ; free virtual = 6320
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 1885.738 ; gain = 535.090 ; free physical = 862 ; free virtual = 6320
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:42 . Memory (MB): peak = 1885.738 ; gain = 535.090 ; free physical = 864 ; free virtual = 6319
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT2  |    23|
+|3     |LUT3  |    23|
+|4     |LUT4  |    45|
+|5     |LUT5  |   293|
+|6     |LUT6  |  3674|
+|7     |MUXF7 |  1568|
+|8     |MUXF8 |   752|
+|9     |FDRE  | 11776|
+|10    |IBUF  |    38|
+|11    |OBUF  |    16|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       | 18209|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:42 . Memory (MB): peak = 1885.738 ; gain = 535.090 ; free physical = 864 ; free virtual = 6319
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:00:43 . Memory (MB): peak = 1885.738 ; gain = 535.090 ; free physical = 866 ; free virtual = 6322
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:43 . Memory (MB): peak = 1885.746 ; gain = 535.090 ; free physical = 866 ; free virtual = 6322
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2320 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'ram_dist' is not ideal for floorplanning, since the cellview 'ram_dist' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1958.750 ; gain = 0.000 ; free physical = 770 ; free virtual = 6220
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+113 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:01 . Memory (MB): peak = 1958.750 ; gain = 628.559 ; free physical = 837 ; free virtual = 6283
+# report_design_analysis -file $dirt/design.rpt
+report_design_analysis: Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 2606.793 ; gain = 648.043 ; free physical = 150 ; free virtual = 5626
+# report_utilization -file $dirt/utiliziation.rpt
+# report_timing -file $dirt/timing.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+vi ram_dist.sv 
+WARNING: [Common 17-259] Unknown Tcl command 'vi ram_dist.sv' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.

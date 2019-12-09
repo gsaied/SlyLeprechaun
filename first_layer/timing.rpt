@@ -1,10 +1,10 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Fri Nov 29 21:26:37 2019
+| Date         : Sun Dec  8 09:49:12 2019
 | Host         : GCS running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_timing -file /home/gsaied/Desktop/verilog_rtl/first_layer/timing.rpt
-| Design       : rom_array_layer_1
+| Design       : conv1
 | Device       : 7vx690t-ffg1157
 | Speed File   : -3  PRODUCTION 1.11 2014-09-11
 ---------------------------------------------------------------------------------------------
@@ -12,26 +12,28 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 Timing Report
 
 Slack:                    inf
-  Source:                 address[3]
-                            (input port)
-  Destination:            rom_out[0][15]
-                            (output port)
+  Source:                 u_1/img_out_reg_4_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1)
+  Destination:            genblk1[0].mac_i/mul_out_reg/A[0]
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        3.273ns  (logic 2.404ns (73.452%)  route 0.869ns (26.548%))
-  Logic Levels:           3  (IBUF=1 LUT5=1 OBUF=1)
+  Data Path Delay:        3.296ns  (logic 2.362ns (71.666%)  route 0.934ns (28.334%))
+  Logic Levels:           4  (LUT3=1 MUXF7=1 RAMB36E1=2)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-                                                      0.000     0.000 r  address[3] (IN)
-                         net (fo=0)                   0.000     0.000    address[3]
-                         IBUF (Prop_ibuf_I_O)         0.558     0.558 r  address_IBUF[3]_inst/O
-                         net (fo=870, unplaced)       0.434     0.993    address_IBUF[3]
-                         LUT5 (Prop_lut5_I3_O)        0.050     1.043 r  rom_out[0][15]_INST_0_i_1/O
-                         net (fo=1, unplaced)         0.434     1.477    rom_out[0]_OBUF[15]
-                         OBUF (Prop_obuf_I_O)         1.795     3.273 r  rom_out[0][15]_INST_0/O
-                         net (fo=0)                   0.000     3.273    rom_out[0][15]
-                                                                      r  rom_out[0][15] (OUT)
+                         RAMB36E1                     0.000     0.000 r  u_1/img_out_reg_4_0/CLKARDCLK
+                         RAMB36E1 (Prop_ramb36e1_CLKARDCLK_CASCADEOUTA)
+                                                      1.915     1.915 r  u_1/img_out_reg_4_0/CASCADEOUTA
+                         net (fo=1, unplaced)         0.065     1.980    u_1/img_out_reg_4_0_n_0
+                         RAMB36E1 (Prop_ramb36e1_CASCADEINA_DOADO[0])
+                                                      0.291     2.271 r  u_1/img_out_reg_5_0/DOADO[0]
+                         net (fo=1, unplaced)         0.434     2.705    u_1/img_out_reg_5_0_n_35
+                         LUT3 (Prop_lut3_I2_O)        0.043     2.748 r  u_1/img_out[0]_INST_0_i_2/O
+                         net (fo=1, unplaced)         0.000     2.748    u_1/img_out[0]_INST_0_i_2_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.113     2.861 r  u_1/img_out[0]_INST_0/O
+                         net (fo=64, unplaced)        0.434     3.296    genblk1[0].mac_i/pix[0]
+                         DSP48E1                                      r  genblk1[0].mac_i/mul_out_reg/A[0]
   -------------------------------------------------------------------    -------------------
 
 

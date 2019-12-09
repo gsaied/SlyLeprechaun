@@ -1,0 +1,2 @@
+set_param synth.elabortation.rodinMOreOptions "rt::set_parameter var_size_limit 4194304"
+

@@ -1,0 +1,36 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Dec  4 08:59:52 2019
+| Host         : GCS running 64-bit Ubuntu 18.04.3 LTS
+| Command      : report_timing -file /home/gsaied/Desktop/verilog_rtl/ram_reg/timing.rpt
+| Design       : ram_dist
+| Device       : 7vx690t-ffg1157
+| Speed File   : -3  PRODUCTION 1.11 2014-09-11
+-----------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 output_data_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            output_data[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        2.534ns  (logic 2.099ns (82.855%)  route 0.434ns (17.145%))
+  Logic Levels:           2  (FDRE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDRE                         0.000     0.000 r  output_data_reg[0]/C
+                         FDRE (Prop_fdre_C_Q)         0.226     0.226 r  output_data_reg[0]/Q
+                         net (fo=1, unplaced)         0.434     0.660    output_data_OBUF[0]
+                         OBUF (Prop_obuf_I_O)         1.873     2.534 r  output_data_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     2.534    output_data[0]
+                                                                      r  output_data[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+

@@ -1,3 +1,0 @@
-Breakpoint File Version 1.0
-206 true /home/gsaied/Desktop/verilog_rtl/first_layer/rom.sv
-211 true /home/gsaied/Desktop/verilog_rtl/first_layer/rom.sv

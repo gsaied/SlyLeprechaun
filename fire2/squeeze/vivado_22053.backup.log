@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Dec  8 12:45:52 2019
+# Process ID: 22053
+# Current directory: /home/gsaied/Desktop/verilog_rtl/fire2/squeeze
+# Command line: vivado -mode tcl -source synth.tcl
+# Log file: /home/gsaied/Desktop/verilog_rtl/fire2/squeeze/vivado.log
+# Journal file: /home/gsaied/Desktop/verilog_rtl/fire2/squeeze/vivado.jou
+#-----------------------------------------------------------
+source synth.tcl
+# set dirt /home/gsaied/Desktop/verilog_rtl/fire2/expand3
+# cd $dirt
+# read_verilog -sv [ glob *.sv ] 
+# synth_design -top  fire2_ex_3 -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none
+Command: synth_design -top fire2_ex_3 -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22059 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1425.461 ; gain = 70.000 ; free physical = 3630 ; free virtual = 7496
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-439] module 'fire2_ex_3' not found
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1471.211 ; gain = 115.750 ; free physical = 3645 ; free virtual = 7510
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+2 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+vi fire2_expand_3.sv 
+WARNING: [Common 17-259] Unknown Tcl command 'vi fire2_expand_3.sv' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+vi synth.tcl 
+WARNING: [Common 17-259] Unknown Tcl command 'vi synth.tcl' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+source synth.tcl 
+# set dirt /home/gsaied/Desktop/verilog_rtl/fire2/squeeze
+# cd $dirt
+# read_verilog -sv [ glob *.sv ] 
+# synth_design -top   fire2_expand_3 -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none
+Command: synth_design -top fire2_expand_3 -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+WARNING: [Synth 8-2490] overwriting previous definition of module rom_array_layer_1 [/home/gsaied/Desktop/verilog_rtl/fire2/squeeze/rom.sv:3]
+WARNING: [Synth 8-2490] overwriting previous definition of module biasing_rom [/home/gsaied/Desktop/verilog_rtl/fire2/squeeze/biasing.sv:2]
+WARNING: [Synth 8-2490] overwriting previous definition of module mac [/home/gsaied/Desktop/verilog_rtl/fire2/squeeze/mac.sv:1]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1471.219 ; gain = 0.000 ; free physical = 3632 ; free virtual = 7498
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-439] module 'fire2_expand_3' not found
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1471.219 ; gain = 0.000 ; free physical = 3649 ; free virtual = 7516
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+2 Infos, 3 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+vi synth.tcl 
+WARNING: [Common 17-259] Unknown Tcl command 'vi synth.tcl' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+pwd
+/home/gsaied/Desktop/verilog_rtl/fire2/squeeze
+vi synth.tcl 
+WARNING: [Common 17-259] Unknown Tcl command 'vi synth.tcl' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 12:47:32 2019...

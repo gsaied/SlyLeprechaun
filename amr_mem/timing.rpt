@@ -1,0 +1,37 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Dec  5 19:17:59 2019
+| Host         : GCS running 64-bit Ubuntu 18.04.3 LTS
+| Command      : report_timing -file /home/gsaied/Desktop/verilog_rtl/amr_mem/timing.rpt
+| Design       : mem
+| Device       : 7vx690t-ffg1157
+| Speed File   : -3  PRODUCTION 1.11 2014-09-11
+-----------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 ram_3d2[6].u/genblk2[0].ram3d_reg[0][797]/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1)
+  Destination:            douta[0][0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        3.794ns  (logic 3.359ns (88.549%)  route 0.434ns (11.451%))
+  Logic Levels:           2  (OBUF=1 RAMB18E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E1                     0.000     0.000 r  ram_3d2[6].u/genblk2[0].ram3d_reg[0][797]/CLKARDCLK
+                         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      1.564     1.564 r  ram_3d2[6].u/genblk2[0].ram3d_reg[0][797]/DOADO[0]
+                         net (fo=16, unplaced)        0.434     1.998    douta[0]_OBUF[0]
+                         OBUF (Prop_obuf_I_O)         1.795     3.794 r  douta[0][0]_INST_0/O
+                         net (fo=0)                   0.000     3.794    douta[0][0]
+                                                                      r  douta[0][0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+

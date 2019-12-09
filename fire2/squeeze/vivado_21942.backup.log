@@ -1,0 +1,346 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Dec  8 12:44:40 2019
+# Process ID: 21942
+# Current directory: /home/gsaied/Desktop/verilog_rtl/fire2/squeeze
+# Command line: vivado -mode tcl -source synth.tcl
+# Log file: /home/gsaied/Desktop/verilog_rtl/fire2/squeeze/vivado.log
+# Journal file: /home/gsaied/Desktop/verilog_rtl/fire2/squeeze/vivado.jou
+#-----------------------------------------------------------
+source synth.tcl
+# set dirt /home/gsaied/Desktop/verilog_rtl/fire9/expand3
+# cd $dirt
+# read_verilog -sv [ glob *.sv ] 
+# synth_design -top  fire9_ex_3 -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none
+Command: synth_design -top fire9_ex_3 -part xc7vx690t -keep_equivalent_registers -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21948 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1426.453 ; gain = 71.000 ; free physical = 4863 ; free virtual = 8666
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fire9_ex_3' [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/fire9_ex_3.sv:9]
+	Parameter DSP_NO bound to: 368 - type: integer 
+	Parameter STRIDE bound to: 1 - type: integer 
+	Parameter W_IN bound to: 8 - type: integer 
+	Parameter H_IN bound to: 8 - type: integer 
+	Parameter WIDTH bound to: 16 - type: integer 
+	Parameter CHIN bound to: 112 - type: integer 
+	Parameter KERNEL_DIM bound to: 3 - type: integer 
+	Parameter CHOUT bound to: 368 - type: integer 
+	Parameter WINDOWS bound to: 5488 - type: integer 
+	Parameter ITER bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mac' [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/mac.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'mac' (1#1) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/mac.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'biasing_rom' [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/biasing.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'biasing_rom' (2#1) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/biasing.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'rom_array_layer_1' [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:3]
+	Parameter WIDTH bound to: 16 - type: integer 
+	Parameter KERNEL bound to: 3 - type: integer 
+	Parameter ADDR bound to: 10 - type: integer 
+	Parameter NUM bound to: 368 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:16]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:19]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:22]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:25]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:28]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:31]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:34]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:37]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:40]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:43]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:46]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:49]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:52]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:55]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:58]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:61]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:64]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:67]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:70]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:73]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:76]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:79]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:82]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:85]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:88]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:91]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:94]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:97]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:100]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:103]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:106]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:109]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:112]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:115]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:118]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:121]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:124]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:127]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:130]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:133]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:136]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:139]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:142]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:145]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:148]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:151]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:154]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:157]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:160]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:163]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:166]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:169]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:172]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:175]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:178]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:181]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:184]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:187]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:190]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:193]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:196]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:199]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:202]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:205]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:208]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:211]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:214]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:217]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:220]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:223]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:226]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:229]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:232]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:235]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:238]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:241]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:244]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:247]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:250]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:253]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:256]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:259]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:262]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:265]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:268]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:271]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:274]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:277]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:280]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:283]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:286]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:289]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:292]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:295]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:298]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:301]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:304]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:307]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:310]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{block}" *) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:313]
+INFO: [Common 17-14] Message 'Synth 8-5534' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3876] $readmem data file 'file_1.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1119]
+INFO: [Synth 8-3876] $readmem data file 'file_2.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1120]
+INFO: [Synth 8-3876] $readmem data file 'file_3.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1121]
+INFO: [Synth 8-3876] $readmem data file 'file_4.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1122]
+INFO: [Synth 8-3876] $readmem data file 'file_5.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1123]
+INFO: [Synth 8-3876] $readmem data file 'file_6.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1124]
+INFO: [Synth 8-3876] $readmem data file 'file_7.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1125]
+INFO: [Synth 8-3876] $readmem data file 'file_8.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1126]
+INFO: [Synth 8-3876] $readmem data file 'file_9.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1127]
+INFO: [Synth 8-3876] $readmem data file 'file_10.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1128]
+INFO: [Synth 8-3876] $readmem data file 'file_11.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1129]
+INFO: [Synth 8-3876] $readmem data file 'file_12.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1130]
+INFO: [Synth 8-3876] $readmem data file 'file_13.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1131]
+INFO: [Synth 8-3876] $readmem data file 'file_14.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1132]
+INFO: [Synth 8-3876] $readmem data file 'file_15.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1133]
+INFO: [Synth 8-3876] $readmem data file 'file_16.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1134]
+INFO: [Synth 8-3876] $readmem data file 'file_17.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1135]
+INFO: [Synth 8-3876] $readmem data file 'file_18.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1136]
+INFO: [Synth 8-3876] $readmem data file 'file_19.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1137]
+INFO: [Synth 8-3876] $readmem data file 'file_20.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1138]
+INFO: [Synth 8-3876] $readmem data file 'file_21.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1139]
+INFO: [Synth 8-3876] $readmem data file 'file_22.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1140]
+INFO: [Synth 8-3876] $readmem data file 'file_23.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1141]
+INFO: [Synth 8-3876] $readmem data file 'file_24.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1142]
+INFO: [Synth 8-3876] $readmem data file 'file_25.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1143]
+INFO: [Synth 8-3876] $readmem data file 'file_26.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1144]
+INFO: [Synth 8-3876] $readmem data file 'file_27.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1145]
+INFO: [Synth 8-3876] $readmem data file 'file_28.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1146]
+INFO: [Synth 8-3876] $readmem data file 'file_29.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1147]
+INFO: [Synth 8-3876] $readmem data file 'file_30.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1148]
+INFO: [Synth 8-3876] $readmem data file 'file_31.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1149]
+INFO: [Synth 8-3876] $readmem data file 'file_32.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1150]
+INFO: [Synth 8-3876] $readmem data file 'file_33.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1151]
+INFO: [Synth 8-3876] $readmem data file 'file_34.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1152]
+INFO: [Synth 8-3876] $readmem data file 'file_35.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1153]
+INFO: [Synth 8-3876] $readmem data file 'file_36.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1154]
+INFO: [Synth 8-3876] $readmem data file 'file_37.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1155]
+INFO: [Synth 8-3876] $readmem data file 'file_38.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1156]
+INFO: [Synth 8-3876] $readmem data file 'file_39.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1157]
+INFO: [Synth 8-3876] $readmem data file 'file_40.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1158]
+INFO: [Synth 8-3876] $readmem data file 'file_41.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1159]
+INFO: [Synth 8-3876] $readmem data file 'file_42.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1160]
+INFO: [Synth 8-3876] $readmem data file 'file_43.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1161]
+INFO: [Synth 8-3876] $readmem data file 'file_44.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1162]
+INFO: [Synth 8-3876] $readmem data file 'file_45.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1163]
+INFO: [Synth 8-3876] $readmem data file 'file_46.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1164]
+INFO: [Synth 8-3876] $readmem data file 'file_47.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1165]
+INFO: [Synth 8-3876] $readmem data file 'file_48.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1166]
+INFO: [Synth 8-3876] $readmem data file 'file_49.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1167]
+INFO: [Synth 8-3876] $readmem data file 'file_50.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1168]
+INFO: [Synth 8-3876] $readmem data file 'file_51.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1169]
+INFO: [Synth 8-3876] $readmem data file 'file_52.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1170]
+INFO: [Synth 8-3876] $readmem data file 'file_53.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1171]
+INFO: [Synth 8-3876] $readmem data file 'file_54.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1172]
+INFO: [Synth 8-3876] $readmem data file 'file_55.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1173]
+INFO: [Synth 8-3876] $readmem data file 'file_56.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1174]
+INFO: [Synth 8-3876] $readmem data file 'file_57.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1175]
+INFO: [Synth 8-3876] $readmem data file 'file_58.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1176]
+INFO: [Synth 8-3876] $readmem data file 'file_59.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1177]
+INFO: [Synth 8-3876] $readmem data file 'file_60.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1178]
+INFO: [Synth 8-3876] $readmem data file 'file_61.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1179]
+INFO: [Synth 8-3876] $readmem data file 'file_62.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1180]
+INFO: [Synth 8-3876] $readmem data file 'file_63.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1181]
+INFO: [Synth 8-3876] $readmem data file 'file_64.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1182]
+INFO: [Synth 8-3876] $readmem data file 'file_65.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1183]
+INFO: [Synth 8-3876] $readmem data file 'file_66.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1184]
+INFO: [Synth 8-3876] $readmem data file 'file_67.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1185]
+INFO: [Synth 8-3876] $readmem data file 'file_68.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1186]
+INFO: [Synth 8-3876] $readmem data file 'file_69.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1187]
+INFO: [Synth 8-3876] $readmem data file 'file_70.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1188]
+INFO: [Synth 8-3876] $readmem data file 'file_71.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1189]
+INFO: [Synth 8-3876] $readmem data file 'file_72.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1190]
+INFO: [Synth 8-3876] $readmem data file 'file_73.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1191]
+INFO: [Synth 8-3876] $readmem data file 'file_74.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1192]
+INFO: [Synth 8-3876] $readmem data file 'file_75.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1193]
+INFO: [Synth 8-3876] $readmem data file 'file_76.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1194]
+INFO: [Synth 8-3876] $readmem data file 'file_77.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1195]
+INFO: [Synth 8-3876] $readmem data file 'file_78.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1196]
+INFO: [Synth 8-3876] $readmem data file 'file_79.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1197]
+INFO: [Synth 8-3876] $readmem data file 'file_80.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1198]
+INFO: [Synth 8-3876] $readmem data file 'file_81.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1199]
+INFO: [Synth 8-3876] $readmem data file 'file_82.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1200]
+INFO: [Synth 8-3876] $readmem data file 'file_83.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1201]
+INFO: [Synth 8-3876] $readmem data file 'file_84.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1202]
+INFO: [Synth 8-3876] $readmem data file 'file_85.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1203]
+INFO: [Synth 8-3876] $readmem data file 'file_86.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1204]
+INFO: [Synth 8-3876] $readmem data file 'file_87.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1205]
+INFO: [Synth 8-3876] $readmem data file 'file_88.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1206]
+INFO: [Synth 8-3876] $readmem data file 'file_89.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1207]
+INFO: [Synth 8-3876] $readmem data file 'file_90.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1208]
+INFO: [Synth 8-3876] $readmem data file 'file_91.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1209]
+INFO: [Synth 8-3876] $readmem data file 'file_92.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1210]
+INFO: [Synth 8-3876] $readmem data file 'file_93.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1211]
+INFO: [Synth 8-3876] $readmem data file 'file_94.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1212]
+INFO: [Synth 8-3876] $readmem data file 'file_95.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1213]
+INFO: [Synth 8-3876] $readmem data file 'file_96.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1214]
+INFO: [Synth 8-3876] $readmem data file 'file_97.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1215]
+INFO: [Synth 8-3876] $readmem data file 'file_98.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1216]
+INFO: [Synth 8-3876] $readmem data file 'file_99.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1217]
+INFO: [Synth 8-3876] $readmem data file 'file_100.mem' is read successfully [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:1218]
+INFO: [Common 17-14] Message 'Synth 8-3876' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'rom_array_layer_1' (3#1) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/rom.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'fire9_ex_3' (4#1) [/home/gsaied/Desktop/verilog_rtl/fire9/expand3/fire9_ex_3.sv:9]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1743.203 ; gain = 387.750 ; free physical = 4636 ; free virtual = 8447
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1743.203 ; gain = 387.750 ; free physical = 4665 ; free virtual = 8477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1157-3
+INFO: [Device 21-403] Loading part xc7vx690tffg1157-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1751.207 ; gain = 395.754 ; free physical = 4665 ; free virtual = 8476
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "clr_pulse" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fire9_ex_3_timer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fire9_ex_3_end" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:28 . Memory (MB): peak = 2339.777 ; gain = 984.324 ; free physical = 4239 ; free virtual = 8052
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 368   
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 368   
+	               16 Bit    Registers := 736   
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 368   
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fire9_ex_3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 368   
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 368   
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module rom_array_layer_1 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 368   
++---ROMs : 
+	                              ROMs := 368   
+Module mac 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
